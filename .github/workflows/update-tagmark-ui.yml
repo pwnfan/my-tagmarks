@@ -1,0 +1,47 @@
+name: Update tagmark-ui
+
+on:
+  repository_dispatch:
+    types:
+      - tagmark-ui-main-update
+  push:
+    paths:
+      - 'data/*'
+      - 'docs/*.md'
+
+env:
+  TAGMARK_UI_DIR: tagmark-ui
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    name: Update TagMark UI
+    steps:
+    - name: Checkout This Repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GH_PAT_TAGMARK }}
+
+    - name: Checkout and Merge tagmark-ui Code
+      uses: actions/checkout@v3
+      with:
+        repository: pwnfan/tagmark-ui
+        path: ${{ env.TAGMARK_UI_DIR }}
+        ref: main
+  
+    - name: Merge New tagmark-ui code
+      run: |
+        rm -rf \
+          ${{ env.TAGMARK_UI_DIR }}/.git* \
+          ${{ env.TAGMARK_UI_DIR }}/*.md \
+          tagmark-ui/LICENSE \
+          ${{ env.TAGMARK_UI_DIR }}/Makefile \
+          ${{ env.TAGMARK_UI_DIR }}/data/
+        cp -rf ${{ env.TAGMARK_UI_DIR }}/* ./
+        rm -rf ${{ env.TAGMARK_UI_DIR }}
+    
+    - name: Commit and Push New Code
+      uses: EndBug/add-and-commit@v9
+      with:
+        default_author: github_actions
+        pull: '--autostash'
