@@ -8,13 +8,13 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 - [2. My TagMark Cheat Sheet](#2-my-tagmark-cheat-sheet)
   - [2.1. CyberSecurity](#21-cybersecurity)
     - [2.1.1. Common / Basic Topics](#211-common--basic-topics)
-    - [2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research](#212-red-team-penatraction-bug-bounty-bug-hunt-research)
+    - [2.1.2. Red Team, Penetration, Bug Bounty, Bug Hunt, Research](#212-red-team-penetration-bug-bounty-bug-hunt-research)
     - [2.1.3. Enterprise Security, Blue Team, Security Defence](#213-enterprise-security-blue-team-security-defence)
     - [2.1.4. Cloud (Native) Security, Docker / Container Security](#214-cloud-native-security-docker--container-security)
     - [2.1.5. Common Vulnerabilities](#215-common-vulnerabilities)
     - [2.1.6. Applications (Softwares / Frameworks / Midware / Web Service) Security, Operating System Security, Programming Language Security](#216-applications-softwares--frameworks--midware--web-service-security-operating-system-security-programming-language-security)
     - [2.1.7. Protocol (Service, Standard) Security](#217-protocol-service-standard-security)
-    - [2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs](#218-ctf-vulnerability-labs-testbeds--playgrounds--simulations-write-ups--walk-throughs)
+    - [2.1.8. CTF, Vulnerability Labs (Testbeds / Playgrounds / Simulations), Write-Ups / Walk-Throughs](#218-ctf-vulnerability-labs-testbeds--playgrounds--simulations-write-ups--walk-throughs)
     - [2.1.9. Mobile Security, IoT (Hardware/Device) Security, Physical Hacking, Industry Security](#219-mobile-security-iot-hardwaredevice-security-physical-hacking-industry-security)
     - [2.1.10. Web3, Blockchain, Digital Currency, Smart Contacts](#2110-web3-blockchain-digital-currency-smart-contacts)
     - [2.1.11. AI Security / Security with AI](#2111-ai-security--security-with-ai)
@@ -32,7 +32,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 
 ## 1. Notice
 
-* One tag (i.e. topic) may have different meaning depending on contexts, So the  `Total` counts and `Github` counts may be inaccurate in some contexts. For instance, tag `django` might mean ehither:
+* One tag (i.e. topic) may have different meaning depending on contexts, so the  `Total` counts and `Github` counts may be inaccurate in some contexts. For instance, tag `django` might mean either one bellow:
    * this is a open source software made by `Django`
    * this is a security tool for testing `Django` vulnerabilities
 * One tag may occur in multiple sections in this doc. For instance, tag `attack-surface` may be in the `Red Team` related section and also in the `Blue Team` related section.
@@ -97,12 +97,12 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [thesis]{{f+c:sec AND thesis}}
 * [tips]{{f+c:sec AND tips}}
 * [tool]{{f+c:sec AND tool}}
-* [vacabulary]{{f+c:sec AND vacabulary}}
+* [vocabulary]{{f+c:sec AND vacabulary}}
 * [video]{{f+c:sec AND video}}
 * {{t+f+c:vul-definition}}
 * [wiki]{{f+c:sec AND wiki}}
 
-#### 2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research
+#### 2.1.2. Red Team, Penetration, Bug Bounty, Bug Hunt, Research
 
 * {{t+f+c:0day}}
 * [Active Directory]{{f+c:sec AND active-directory}}
@@ -211,7 +211,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [law]{{f+c:sec AND law}}
 * [LDAP]{{f+c:sec AND ldap}}
   * [LDAP ACL]{{f+c:sec AND ldap-acl}}
-* [library / moudle / package]{{f+c:sec AND (library OR moudle OR package)}}
+* [library / module / package]{{f+c:sec AND (library OR module OR package)}}
 * [Linux]{{f+c:sec AND linux}}
 * [geographic location]{{f+c:sec AND location}}
 * [log]{{f+c:sec AND log}}
@@ -432,7 +432,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [java]{{f+c:sec AND java}}
 * [javascript]{{f+c:sec AND javascript}}
 * [law]{{f+c:sec AND law}}
-* [library / moudle / package]{{f+c:sec AND (library OR moudle OR package)}}
+* [library / module / package]{{f+c:sec AND (library OR module OR package)}}
 * [Linux]{{f+c:sec AND linux}}
 * [log]{{f+c:sec AND log}}
 * [Apache Log4j]{{f+c:sec AND log4j}}
@@ -731,7 +731,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [WinRM (Windows Remote Management)]{{f+c:sec AND winrm}}
 * [WMI (Windows Management Instrumentation)]{{f+c:sec AND wmi}}
 
-#### 2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs
+#### 2.1.8. CTF, Vulnerability Labs (Testbeds / Playgrounds / Simulations), Write-Ups / Walk-Throughs
 
 * {{t+f+c:ctf}}
 * {{t+f+c:ctf-challenge}}
@@ -1005,7 +1005,7 @@ without "cybersecurity":
 * [kernel]{{f+c:dev AND NOT sec AND kernel}}
 * [knowledge sharing]{{f+c:dev AND NOT sec AND knowledge-share}}
 * [kubectl]{{f+c:dev AND kubectl}}
-* [library / moudle / package]{{f+c:dev AND NOT sec AND (library OR moudle)}}
+* [library / module / package]{{f+c:dev AND NOT sec AND (library OR module)}}
 * [license]{{f+c:dev AND NOT sec AND license}}
 * [linter]{{f+c:dev AND NOT sec AND linter}}
 * [management (in DevOps)]{{f+c:dev AND NOT sec AND management}}
