@@ -1,0 +1,1173 @@
+# PwnFan's TagMark Cheat Sheet
+
+Curated topics (i.e. tags) from my personal bookmarks. All topics are formatted as query links linked to a tag based bookmark manager page made with [TagMark](#3-about-tagmark).
+
+My bookmarks mainly focus on `cybersecurity` and related `development` things. Here are the ToC:
+
+- [1. Notice](#1-notice)
+- [2. My TagMark Cheat Sheet](#2-my-tagmark-cheat-sheet)
+  - [2.1. CyberSecurity](#21-cybersecurity)
+    - [2.1.1. Common / Basic Topics](#211-common--basic-topics)
+    - [2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research](#212-red-team-penatraction-bug-bounty-bug-hunt-research)
+    - [2.1.3. Enterprise Security, Blue Team, Security Defence](#213-enterprise-security-blue-team-security-defence)
+    - [2.1.4. Cloud (Native) Security, Docker / Container Security](#214-cloud-native-security-docker--container-security)
+    - [2.1.5. Common Vulnerabilities](#215-common-vulnerabilities)
+    - [2.1.6. Applications (Softwares / Frameworks / Midware / Web Service) Security, Operating System Security, Programming Language Security](#216-applications-softwares--frameworks--midware--web-service-security-operating-system-security-programming-language-security)
+    - [2.1.7. Protocol (Service, Standard) Security](#217-protocol-service-standard-security)
+    - [2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs](#218-ctf-vulnerability-labs-testbeds--playgrounds--simulations-write-ups--walk-throughs)
+    - [2.1.9. Mobile Security, IoT (Hardware/Device) Security, Physical Hacking, Industry Security](#219-mobile-security-iot-hardwaredevice-security-physical-hacking-industry-security)
+    - [2.1.10. Web3, Blockchain, Digital Currency, Smart Contacts](#2110-web3-blockchain-digital-currency-smart-contacts)
+    - [2.1.11. AI Security / Security with AI](#2111-ai-security--security-with-ai)
+    - [2.1.12. Security Certification, Career](#2112-security-certification-career)
+    - [2.1.13. Other Topics](#2113-other-topics)
+  - [2.2. Development](#22-development)
+    - [2.2.1. Common / Basic Topics](#221-common--basic-topics)
+    - [2.2.2. Subtopics](#222-subtopics)
+  - [2.3. AI, Machine Learning, Math, Data Science, NLP, Computer Vision](#23-ai-machine-learning-math-data-science-nlp-computer-vision)
+  - [2.4. Digital Media Processing](#24-digital-media-processing)
+  - [2.5. Finance, Economics, Commerce](#25-finance-economics-commerce)
+  - [2.6. Other Topics](#26-other-topics)
+- [3. About TagMark](#3-about-tagmark)
+
+
+## 1. Notice
+
+* One tag (i.e. topic) may have different meaning depending on contexts, So the  `Total` counts and `Github` counts may be inaccurate in some contexts. For instance, tag `django` might mean ehither:
+   * this is a open source software made by `Django`
+   * this is a security tool for testing `Django` vulnerabilities
+* One tag may occur in multiple sections in this doc. For instance, tag `attack-surface` may be in the `Red Team` related section and also in the `Blue Team` related section.
+
+## 2. My TagMark Cheat Sheet
+
+* {{T:}}
+
+### 2.1. CyberSecurity
+
+* {{t+f+c:sec}}
+
+#### 2.1.1. Common / Basic Topics
+
+* [aggregator site]{{f+c:sec AND aggregator-site}}
+* [article]{{f+c:sec AND article}}
+  * [Chinese]{{f+c:sec AND article AND chinese}}
+  * [English]{{f+c:sec AND article AND NOT chinese AND NOT japanese AND NOT korean}}
+  * [Japanese]{{f+c:sec AND article AND japanese}}
+* [Awesome]{{f+c:sec AND awesome}}
+* [basic knowledge]{{f+c:sec AND basic-knowledge}}
+* [best practices]{{f+c:sec AND best-practices}}
+* [blog]{{f+c:sec AND blog }}
+  * language
+    * [Chinese]{{f+c:sec AND blog AND chinese}}
+    * [English]{{f+c:sec AND blog AND NOT chinese AND NOT japanese AND NOT korean}}
+    * [Japanese]{{f+c:sec AND blog AND japanese}}
+  * owner
+    * [college]{{f+c:sec AND blog AND college}}
+    * [enterprise]{{f+c:sec AND blog AND enterprise}}
+    * [personal]{{f+c:sec AND blog AND personal}}
+    * [team]{{f+c:sec AND blog AND team}}
+    * [organization]{{f+c:sec AND blog AND organization}}
+* [book]{{f+c:sec AND book}}
+* [cheat sheet]{{f+c:sec AND cheat-sheet}}
+* [checklist]{{f+c:sec AND checklist}}
+* [community site]{{f+c:sec AND community}}
+* [conference topic]{{f+c:sec AND conference-topic}}
+* [team cooperation]{{f+c:sec AND cooperation}}
+* [course]{{f+c:sec AND course}}
+* [ebook]{{f+c:sec AND ebook}}
+* [development]{{f+c:sec AND development}}
+* [forum]{{f+c:sec AND forum}}
+* [free resources]{{f+c:sec AND free}}
+* [how-to]{{f+c:sec AND how-to}}
+* [learning notes]{{f+c:sec AND learning-notes}}
+* [Methodology]{{f+c:sec AND methodology}}
+* [mind map]{{f+c:sec AND mind-map}}
+* [navigation site / page]{{f+c:sec AND navigation-site}}
+* [news site / page]{{f+c:sec AND news}}
+* [online resource / tool]{{f+c:sec AND online}}
+* [Open-Source Software (OSS)]{{f+c:sec AND oss}}
+* [optimization]{{f+c:optimization}}
+* [outline]{{f+c:sec AND outline}}
+* [paid resources]{{f+c:sec AND paid}}
+* [productivity]{{f+c:sec AND productivity}}
+* [resource collection]{{f+c:sec AND resource-collection}}
+* [resource search]{{f+c:sec AND resource-search}}
+* [roadmap]{{f+c:sec AND roadmap}}
+* [RSS]{{f+c:sec AND rss}}
+* [terminology]{{f+c:sec AND terminology}}
+* [thesis]{{f+c:sec AND thesis}}
+* [tips]{{f+c:sec AND tips}}
+* [tool]{{f+c:sec AND tool}}
+* [vacabulary]{{f+c:sec AND vacabulary}}
+* [video]{{f+c:sec AND video}}
+* {{t+f+c:vul-definition}}
+* [wiki]{{f+c:sec AND wiki}}
+
+#### 2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research
+
+* {{t+f+c:0day}}
+* [Active Directory]{{f+c:sec AND active-directory}}
+* {{t+f+c:adversary-emulation}}
+* {{t+f+c:antivirus}}
+* [API]{{f+c:sec AND api}}
+  * [API key]{{f+c:sec AND api-key}}
+* {{t+f+c:apt}}
+* {{t+f+c:assessment}}
+* {{t+f+c:attack-surface}}
+* {{t+f+c:audit}}
+* {{t+f+c:auto-penetration}}
+* [automation]{{f+c:sec AND automation}}
+* {{t+f+c:av-evasion}}
+* {{t+f+c:backdoor}}
+* {{t+f+c:bloodhound}}
+* {{t+f+c:bootkit}}
+* {{t+f+c:brute-force}}
+  * {{t+f+c:brute-force-dir}}
+  * {{t+f+c:brute-force-spraying}}
+* {{t+f+c:bug-bounty}}
+* {{t+f+c:bug-hunt}}
+* {{t+f+c:burpsuite}}
+  * {{t+f+c:burpsuite-extension}}
+  * {{t+f+c:burpsuite-intruder}}
+* {{t+f+c:bypass-40x}}
+* {{t+f+c:bypass-asmi}}
+* {{t+f+c:bypass-cdn}}
+* {{t+f+c:bypass-gfw}}
+* {{t+f+c:bypass-uac}}
+* {{t+f+c:bypass-waf}}
+* {{t+f+c:c2}}
+  * {{t+f+c:c2-agent}}
+  * {{t+f+c:c2-malleable}}
+  * {{t+f+c:c2-mythic}}
+* {{t+f+c:captcha-crack}}
+* [CI/CD]{{f+c:sec AND ci_cd}}
+* {{t+f+c:cloudflare}}
+* {{t+f+c:cobalt-strike}}
+  * {{t+f+c:cobalt-strike-aggressor}}
+  * {{t+f+c:cobalt-strike-beacon}}
+  * {{t+f+c:cobalt-strike-bof}}
+* {{t+f+c:code-audit}}
+* {{t+f+c:code-obfuscation}}
+* {{t+f+c:codeql}}
+* {{t+f+c:container-escape}}
+* {{t+f+c:crack-hash}}
+* {{t+f+c:crack-password}}
+* [crawler / spider]{{f+c:sec AND (crawler OR spider)}}
+* {{t+f+c:cred}}
+* {{t+f+c:cve}}
+* {{t+f+c:cyberspace-mapping}}
+* {{t+f+c:data-exfiltration}}
+* {{t+f+c:data-infiltration}}
+* [data set (data collection)]{{f+c:sec AND data-set}}
+* {{t+f+c:decompile}}
+* {{t+f+c:defence-evasion}}
+* {{t+f+c:defence-kill}}
+* {{t+f+c:deobfuscation}}
+* {{t+f+c:deserialization}}
+* {{t+f+c:dictionary-generator}}
+* [dictionary / wordlist]{{f+c:sec AND (dictionary OR dictionary)}}
+* {{t+f+c:dlp-evasion}}
+* {{t+f+c:domain-categorisation}}
+* {{t+f+c:domain-fronting}}
+* [driver]{{f+c:sec AND driver}}
+* [dynamic analysis]{{f+c:sec AND dynamic-analysis}}
+* {{t+f+c:edr-evasion}}
+* [Email]{{f+c:sec AND email}}
+* {{t+f+c:encryption}}
+* {{t+f+c:enum-risk}}
+* {{t+f+c:enum-url}}
+* {{t+f+c:enum-user}}
+* {{t+f+c:exp-search}}
+* {{t+f+c:fake-service}}
+* {{t+f+c:file-signature}}
+* {{t+f+c:fingerprint}}
+* {{t+f+c:fofa}}
+* [frontend]{{f+c:sec AND frontend}}
+* {{t+f+c:fuzzing}}
+* [Git]{{f+c:sec AND git}}
+* [GitHub Actions]{{f+c:sec AND github-actions}}
+* [Github]{{f+c:sec AND github}}
+* [GitLab]{{f+c:sec AND gitlab}}
+* {{t+f+c:gmail}}
+* {{t+f+c:google-hacking}}
+* {{t+f+c:grey-box}}
+* {{t+f+c:hackerone}}
+* {{t+f+c:hiding}}
+* {{t+f+c:hijacking}}
+* {{t+f+c:hook}}
+* {{t+f+c:hta}}
+* {{t+f+c:hvv}}
+* {{t+f+c:ida}}
+* {{t+f+c:idn-homograph-attack}}
+* {{t+f+c:indicator-removal}}
+* [infrastructure setup]{{f+c:sec AND infra-setup}}
+* [infrastructure]{{f+c:sec AND infra}}
+* [intranet]{{f+c:sec AND intranet}}
+* [java]{{f+c:sec AND java}}
+* [javascript]{{f+c:sec AND javascript}}
+* {{t+f+c:kerberos}}
+* [kernel]{{f+c:sec AND kernel}}
+* {{t+f+c:keylogger}}
+* {{t+f+c:lateral-movement}}
+* [law]{{f+c:sec AND law}}
+* [LDAP]{{f+c:sec AND ldap}}
+  * [LDAP ACL]{{f+c:sec AND ldap-acl}}
+* [library / moudle / package]{{f+c:sec AND (library OR moudle OR package)}}
+* [Linux]{{f+c:sec AND linux}}
+* [geographic location]{{f+c:sec AND location}}
+* [log]{{f+c:sec AND log}}
+* {{t+f+c:lsass}}
+* {{t+f+c:malware}}
+* [mapping]{{f+c:sec AND mapping}}
+* {{t+f+c:massive-scan}}
+* [Apache Maven]{{f+c:sec AND maven}}
+* {{t+f+c:memory-injection}}
+* {{t+f+c:memory-trojan}}
+* {{t+f+c:mimikatz}}
+* {{t+f+c:misc-tool}}
+* {{t+f+c:misconfig}}
+* {{t+f+c:mitm}}
+* {{t+f+c:mitre-att&ck}}
+* {{t+f+c:msf}}
+  * {{t+f+c:msf-meterpreter}}
+  * {{t+f+c:msfvenom}}
+* [NAT]{{f+c:sec AND nat}}
+* {{t+f+c:net-ntlm-hash}}
+* [network]{{f+c:sec AND network}}
+* [Nim (programming language)]{{f+c:sec AND nim}}
+* {{t+f+c:nmap}}
+  * {{t+f+c:nse}}
+* [Node.js]{{f+c:sec AND node.js}}
+* {{t+f+c:nuclei}}
+* {{t+f+c:oa}}
+  * {{t+f+c:oa-seeyon}}
+  * {{t+f+c:oa-tongda}}
+  * {{t+f+c:oa-weaver}}
+  * {{t+f+c:oa-yonyou}}
+  * {{t+f+c:oa-泛微}}
+  * {{t+f+c:oa-用友}}
+  * {{t+f+c:oa-致远}}
+  * {{t+f+c:oa-通达}}
+* {{t+f+c:oast}}
+* {{t+f+c:origin-ip}}
+* {{t+f+c:os-process}}
+* {{t+f+c:osint}}
+* [passive]{{f+c:sec AND passive}}
+* {{t+f+c:payload}}
+* {{t+f+c:penetration}}
+* {{t+f+c:persistence}}
+* {{t+f+c:phishing}}
+* [phone number]{{f+c:sec AND phone}}
+* {{t+f+c:physical-hacking}}
+* {{t+f+c:poison}}
+* {{t+f+c:post-exploitation}}
+* [PowerShell]{{f+c:sec AND powershell}}
+* {{t+f+c:powerview}}
+* {{t+f+c:ppl}}
+* {{t+f+c:privilege-escalation-horizontal}}
+* {{t+f+c:privilege-escalation}}
+* {{t+f+c:proxy-pool}}
+* {{t+f+c:proxy}}
+* {{t+f+c:quake}}
+* {{t+f+c:rat}}
+* {{t+f+c:recon}}
+* {{t+f+c:red-team}}
+* [Windows Registry]{{f+c:sec AND registry}}
+* [report]{{f+c:sec AND report}}
+* [research]{{f+c:sec AND research}}
+* [resource collection]{{f+c:sec AND resource-collection}}
+* {{t+f+c:reverse-dns}}
+* {{t+f+c:reverse-engineering}}
+* {{t+f+c:reverse-proxy}}
+* {{t+f+c:reverse-shell}}
+* {{t+f+c:rootkit}}
+* {{t+f+c:rop}}
+  * {{t+f+c:rop-gadget}}
+* {{t+f+c:sandbox-escape}}
+* {{t+f+c:sast}}
+* {{t+f+c:scan-backup}}
+* {{t+f+c:scan-port}}
+* {{t+f+c:scan-vul}}
+* [screenshot]{{f+c:sec AND screenshot}}
+* {{t+f+c:sensitive-info}}
+* [serverless]{{f+c:sec AND serverless}}
+* {{t+f+c:session-hijacking}}
+* {{t+f+c:shellcode}}
+* {{t+f+c:shodan}}
+* {{t+f+c:sidejacking}}
+* {{t+f+c:sniffer}}
+* {{t+f+c:social-engineering}}
+* {{t+f+c:social-network}}
+* [source code]{{f+c:sec AND source-code}}
+* {{t+f+c:sqlmap}}
+  * {{t+f+c:sqlmap-tamper}}
+* [static analysis]{{f+c:sec AND static-analysis}}
+* [subdomain]{{f+c:sec AND subdomain}}
+* [software supplier]{{f+c:sec AND supplier}}
+* [supply chain (IT)]{{f+c:sec AND supply-chain}}
+* {{t+f+c:surveillance}}
+* [syscall]{{f+c:sec AND syscall}}
+* {{t+f+c:tcp-over-http}}
+* {{t+f+c:threat-intelligence}}
+* [token]{{f+c:sec AND token}}
+* {{t+f+c:traffic-analysis}}
+* {{t+f+c:traffic-capture}}
+* {{t+f+c:traffic-replay}}
+* {{t+f+c:trojan}}
+* {{t+f+c:ttp}}
+* {{t+f+c:tunnel}}
+* {{t+f+c:uac}}
+* {{t+f+c:user-agent}}
+* [username]{{f+c:sec AND username}}
+* [VIN (Vehicle Identification Number)]{{f+c:sec AND vin}}
+* {{t+f+c:vm-escape}}
+* [VSCode]{{f+c:sec AND vscode}}
+  * [VSCode extension]{{f+c:sec AND vscode-extension}}
+* {{t+f+c:vul}}
+* {{t+f+c:vul-alert}}
+* {{t+f+c:vul-analysis}}
+* {{t+f+c:vul-exp}}
+* {{t+f+c:vul-poc}}
+* {{t+f+c:vul-reproduction}}
+* {{t+f+c:vul-search}}
+* {{t+f+c:vulners}}
+* [web]{{f+c:sec AND web}}
+* {{t+f+c:wayback-machine}}
+* {{t+f+c:weak-cred}}
+* {{t+f+c:web-cache}}
+* {{t+f+c:webshell}}
+* {{t+f+c:whitelist}}
+* {{t+f+c:whois}}
+* {{t+f+c:winlogon}}
+* {{t+f+c:wmi}}
+* {{t+f+c:xray}}
+* {{t+f+c:yara}}
+* {{t+f+c:zoomeye}}
+
+#### 2.1.3. Enterprise Security, Blue Team, Security Defence
+
+* {{t+f+c:0day}}
+* [Active Directory]{{f+c:sec AND (enterprise OR blue-team OR defence) AND active-directory}}
+* {{t+f+c:adversary-emulation}}
+* [API]{{f+c:sec AND api}}
+  * [API key]{{f+c:sec AND api-key}}
+* {{t+f+c:apt}}
+* {{t+f+c:asm}}
+* {{t+f+c:assessment}}
+* {{t+f+c:attack-analysis}}
+* {{t+f+c:attack-surface}}
+* {{t+f+c:audit}}
+* {{t+f+c:auto-penetration}}
+* [automation]{{f+c:sec AND automation}}
+* {{t+f+c:backdoor}}
+* {{t+f+c:bas}}
+* {{t+f+c:bastion}}
+* {{t+f+c:benchmark}}
+* {{t+f+c:best-practices}}
+* {{t+f+c:blacklist}}
+* {{t+f+c:bloodhound}}
+* {{t+f+c:blue-team}}
+* {{t+f+c:bom}}
+* {{t+f+c:botnet}}
+* [CI/CD]{{f+c:sec AND ci_cd}}
+* {{t+f+c:cis}}
+* {{t+f+c:cnnvd}}
+* {{t+f+c:cnvd}}
+* [code analysis]{{f+c:sec AND code-analysis}}
+* {{t+f+c:code-audit}}
+* {{t+f+c:code-obfuscation}}
+* {{t+f+c:codeql}}
+* [coding guidelines / coding standards / programming style guides]{{f+c:sec AND coding-guidelines}}
+* {{t+f+c:compliance}}
+* {{t+f+c:cred}}
+* {{t+f+c:cspm}}
+* {{t+f+c:cve}}
+* {{t+f+c:cyberspace-mapping}}
+* {{t+f+c:dast}}
+* [data set (data collection)]{{f+c:sec AND data-set}}
+* [database]{{f+c:sec AND database}}
+* {{t+f+c:defence}}
+* {{t+f+c:delete-account}}
+* {{t+f+c:detect-backdoor}}
+* {{t+f+c:detect-malware}}
+* {{t+f+c:detect-rootkit}}
+* {{t+f+c:detection}}
+* {{t+f+c:devsecops}}
+* {{t+f+c:digital-forensics}}
+* {{t+f+c:dlp}}
+* {{t+f+c:drps}}
+* {{t+f+c:dynamic-analysis}}
+* {{t+f+c:easm}}
+* {{t+f+c:edr}}
+* {{t+f+c:encoding}}
+* {{t+f+c:encryption}}
+* {{t+f+c:endpoint}}
+* [enterprise]{{f+c:sec AND enterprise}}
+* {{t+f+c:enum-risk}}
+* {{t+f+c:env-var}}
+* [Security Errors]{{f+c:sec AND error}}
+* [event (in operating system)]{{f+c:sec AND event}}
+* {{t+f+c:exp-search}}
+* {{t+f+c:firewall}}
+* {{t+f+c:fofa}}
+* [frontend]{{f+c:sec AND frontend}}
+* {{t+f+c:fuzzing}}
+* [Git]{{f+c:sec AND git}}
+* [GitHub Actions]{{f+c:sec AND github-actions}}
+* [Github]{{f+c:sec AND github}}
+* [GitLab]{{f+c:sec AND gitlab}}
+* [guidance]{{f+c:sec AND guidance}}
+* {{t+f+c:hids}}
+* {{t+f+c:honeypot}}
+* {{t+f+c:honeytoken}}
+* {{t+f+c:hvv}}
+* {{t+f+c:iam}}
+* {{t+f+c:iast}}
+* {{t+f+c:ids}}
+* {{t+f+c:incident-response}}
+* {{t+f+c:incident}}
+* [infrastructure]{{f+c:sec AND infra}}
+* [intranet]{{f+c:sec AND intranet}}
+* {{t+f+c:ioc}}
+* {{t+f+c:ips}}
+* [java]{{f+c:sec AND java}}
+* [javascript]{{f+c:sec AND javascript}}
+* [law]{{f+c:sec AND law}}
+* [library / moudle / package]{{f+c:sec AND (library OR moudle OR package)}}
+* [Linux]{{f+c:sec AND linux}}
+* [log]{{f+c:sec AND log}}
+* [Apache Log4j]{{f+c:sec AND log4j}}
+* {{t+f+c:malware-analysis}}
+* {{t+f+c:malware}}
+* [management (in DevOps)]{{f+c:sec AND management}}
+* [mapping (in computer vision and data visualization)](http://localhost:8000/?tags=mapping) `Total 3 (Github 3)`
+* {{t+f+c:massive-scan}}
+* [Apache Maven]{{f+c:sec AND maven}}
+* [midware]{{f+c:sec and midware}}
+* {{t+f+c:misconfig}}
+* {{t+f+c:mitre-att&ck}}
+* {{t+f+c:modsecurity}}
+* [monitoring]{{f+c:sec and monitoring}}
+* [network]{{f+c:sec AND network}}
+* {{t+f+c:nids}}
+* {{t+f+c:nuclei}}
+* {{t+f+c:oa}}
+  * {{t+f+c:oa-seeyon}}
+  * {{t+f+c:oa-tongda}}
+  * {{t+f+c:oa-weaver}}
+  * {{t+f+c:oa-yonyou}}
+  * {{t+f+c:oa-泛微}}
+  * {{t+f+c:oa-用友}}
+  * {{t+f+c:oa-致远}}
+  * {{t+f+c:oa-通达}}
+* [operations]{{f+c:sec AND operations}}
+* {{t+f+c:os-process}}
+* {{t+f+c:osint}}
+* {{t+f+c:osquery}}
+* [outline]{{f+c:sec AND outline}}
+* {{t+f+c:owasp-masvs}}
+* {{t+f+c:owasp}}
+* {{t+f+c:pcap}}
+* {{t+f+c:phishing}}
+* {{t+f+c:privacy}}
+* [PWA (Progressive Web App)]{{f+c:sec AND pwa}}
+* {{t+f+c:rasp}}
+* [rule (of softwares, e.g. WAF)]{{f+c:sec AND rule}}
+* {{t+f+c:sandbox}}
+* {{t+f+c:sast}}
+* {{t+f+c:sbom}}
+* {{t+f+c:sca}}
+* {{t+f+c:scan-port}}
+* {{t+f+c:scan-vul}}
+* {{t+f+c:sensitive-info}}
+* [serverless]{{f+c:sec AND serverless}}
+* {{t+f+c:shodan}}
+* {{t+f+c:siem}}
+* {{t+f+c:sigma}}
+* {{t+f+c:sniffer}}
+* {{t+f+c:snort}}
+* {{t+f+c:soar}}
+* {{t+f+c:soc}}
+* [source code]{{f+c:sec AND source-code}}
+* [static analysis]{{f+c:sec AND static-analysis}}
+* {{t+f+c:stix}}
+* [subdomain]{{f+c:sec AND subdomain}}
+* [software supplier]{{f+c:sec AND supplier}}
+* [supply chain (IT)]{{f+c:sec AND supply-chain}}
+* [syscall]{{f+c:sec AND syscall}}
+* {{t+f+c:sysmon}}
+* [system construction (IT system of an enterprise, mainly security systems)]{{f+c:sec AND system-construction}}
+* [test automation]{{f+c:sec AND test-automation}}
+* [test]{{f+c:sec AND test}}
+* {{t+f+c:threat-hunting}}
+* {{t+f+c:threat-intelligence}}
+* [token]{{f+c:sec AND token}}
+* {{t+f+c:traffic-analysis}}
+* {{t+f+c:traffic-capture}}
+* {{t+f+c:traffic-replay}}
+* {{t+f+c:vul}}
+* {{t+f+c:vul-alert}}
+* {{t+f+c:vul-analysis}}
+* {{t+f+c:vul-exp}}
+* {{t+f+c:vul-management}}
+* {{t+f+c:vul-poc}}
+* {{t+f+c:vul-reproduction}}
+* {{t+f+c:vul-search}}
+* {{t+f+c:vulners}}
+* {{t+f+c:waf}}
+* {{t+f+c:wayback-machine}}
+* {{t+f+c:weak-cred}}
+* [web]{{f+c:sec AND web}}
+* [webshell (detection)]{{f+c:sec AND webshell AND blue-team}}
+* {{t+f+c:whitelist}}
+* {{t+f+c:windows-timeline}}
+* {{t+f+c:xray}}
+* {{t+f+c:yara}}
+* {{t+f+c:zero-trust}}
+* {{t+f+c:zoomeye}}
+
+#### 2.1.4. Cloud (Native) Security, Docker / Container Security
+
+* [Alibaba Cloud (Aliyun)]{{f+c:sec AND alibaba-cloud}}
+* [AWS]{{f+c:sec AND aws}}
+  * [AWS S3]{{f+c:sec AND aws-s3}}
+* [Azure]{{f+c:sec AND azure}}
+* [Cloud Native]{{f+c:sec AND cloud-native}}
+* [Cloud (Computing)]{{f+c:sec AND cloud}}
+* [container escape]{{f+c:sec AND container-escape}}
+* [container]{{f+c:sec AND container}}
+* [Docker]{{f+c:sec AND docker}}
+* [Dockerfile]{{f+c:sec AND dockerfile}}
+* [GCP (Google Cloud Platform)]{{f+c:sec AND gcp}}
+  * [GCP buckets]{{f+c:sec AND gcp-buckets}}
+* [Huawei Cloud]{{f+c:sec AND huawei-cloud}}
+* [K8s (Kubernetes)]{{f+c:sec AND k8s}}
+* [kubectl]{{f+c:sec AND kubectl}}
+* [Oracle Cloud]{{f+c:sec AND oriacle-cloud}}
+* [Tencent Cloud]{{f+c:sec AND tencent-cloud}}
+* [Terraform]{{f+c:sec AND terraform}}
+
+#### 2.1.5. Common Vulnerabilities
+
+* {{t+f+c:admin-panel}}
+* [API]{{f+c:sec AND api}}
+  * [API key]{{f+c:sec AND api-key}}
+* {{t+f+c:buffer-overflow}}
+* {{t+f+c:cache-poison}}
+* {{t+f+c:clickjacking}}
+* {{t+f+c:code-injection}}
+* {{t+f+c:command-injection}}
+* {{t+f+c:cors}}
+* {{t+f+c:crlf-injection}}
+* {{t+f+c:cspp}}
+* {{t+f+c:csrf}}
+* {{t+f+c:default-cred}}
+* {{t+f+c:default-settings}}
+* {{t+f+c:dir-traversal}}
+* {{t+f+c:dns-dangling-record}}
+* {{t+f+c:dns-rebind}}
+* {{t+f+c:dns-takeover}}
+* {{t+f+c:dns-zone-transfer}}
+* {{t+f+c:dom-xss}}
+* {{t+f+c:header-injection}}
+* {{t+f+c:html-smuggling}}
+* {{t+f+c:http-request-smuggling}}
+* {{t+f+c:lfi}}
+* {{t+f+c:logic-vul}}
+* {{t+f+c:misconfig}}
+* {{t+f+c:open-redirect}}
+* {{t+f+c:param-pollution}}
+* {{t+f+c:prototype-pollution}}
+* {{t+f+c:rce}}
+* {{t+f+c:rfi}}
+* {{t+f+c:sql-injection-blind}}
+* {{t+f+c:sql-injection}}
+* {{t+f+c:ssrf}}
+* {{t+f+c:ssti}}
+* {{t+f+c:unauthorized-access}}
+* {{t+f+c:upload}}
+* {{t+f+c:weak-cred}}
+* {{t+f+c:xss}}
+* {{t+f+c:xxe}}
+
+#### 2.1.6. Applications (Softwares / Frameworks / Midware / Web Service) Security, Operating System Security, Programming Language Security
+
+* [Apache HTTP Server]{{f+c:sec AND apache-http-server}}
+* [Apache Velocity]{{f+c:sec AND apache-velocity}}
+* [CakePHP]{{f+c:sec AND cakephp}}
+* [CMS]{{f+c:sec AND cms}}
+* [database]{{f+c:sec AND database}}
+* [Django (Python)]{{f+c:sec AND django}}
+* [Drupal (PHP)]{{f+c:sec AND drupal}}
+* [Electron]{{f+c:sec AND electron}}
+* [ERP]{{f+c:sec AND erp}}
+* [Microsoft Exchange]{{f+c:sec AND exchange}}
+* [Fastjson]{{f+c:sec AND fastjson}}
+* [Flask (Python)]{{f+c:sec AND flask}}
+* [Git]{{f+c:sec AND git}}
+* [Github]{{f+c:sec AND github}}
+  * [GitHub Actions]{{f+c:sec AND github-actions}}
+* [GitLab]{{f+c:sec AND gitlab}}
+* [gist]{{f+c:sec AND gist}}
+* [Google Analytics]{{f+c:sec AND google-analytics}}
+* [Google Chrome]{{f+c:sec AND chrome}}
+  * [Google Chrome Extension]{{f+c:sec AND chrome-extension}}
+* [GraphQL]{{f+c:sec AND graphql}}
+  * [GraphQL introspection]{{f+c:sec AND graphql-introspection}}
+  * [Apollo GraphQL platform suggestions feature]{{f+c:sec AND graphql-suggestions}}
+* [Apache Hadoop]{{f+c:sec AND hadoop}}
+* [IIS short filename vulnerability]{{f+c:sec AND iis-short-filename}}
+* [IIS]{{f+c:sec AND iis}}
+* [J2EE (Java EE)]{{f+c:sec AND j2ee}}
+* [Java]{{f+c:sec AND java}}
+* [Jenkins]{{f+c:sec AND jenkins}}
+* [JNDI (Java Naming and Directory Interface)]{{f+c:sec AND jndi}}
+* [Joomla (PHP)]{{f+c:sec AND joomla}}
+* [Laravel (PHP)]{{f+c:sec AND laravel}}
+* [Linux]{{f+c:sec AND linux}}
+* [Log4j]{{f+c:sec AND log4j}}
+* [logrotate]{{f+c:sec AND logrotate}}
+* [MacOS]{{f+c:sec AND mac-os}}
+* [Markdown]{{f+c:sec AND markdown}}
+* [Apache Maven]{{f+c:sec AND maven}}
+* [midware]{{f+c:sec AND midware}}
+* [MongoDB]{{f+c:sec AND mongodb}}
+* [Microsoft Excel]{{f+c:sec AND ms-office-excel}}
+* [Microsoft Office macro]{{f+c:sec AND ms-office-macro}}
+* [Microsoft Word]{{f+c:sec AND ms-office-word}}
+* [Microsoft Office]{{f+c:sec AND ms-office}}
+* [MSSQL (Microsoft SQL Server)]{{f+c:sec AND mssql}}
+* [MySQL]{{f+c:sec AND mysql}}
+* [Node.js]{{f+c:sec AND node.js}}
+* [NoSQL]{{f+c:sec AND nosql}}
+* [NPM (Node Package Manager)]{{f+c:sec AND npm}}
+* [NTP]{{f+c:sec AND ntp}}
+* [OA (office automation)]{{f+c:sec AND oa}}
+  * [Seeyon OA (致远OA)]{{f+c:sec AND oa-seeyon}}
+  * [Tongda OA (通达OA)]{{f+c:sec AND oa-tongda}}
+  * [Weaver OA (泛微OA)]{{f+c:sec AND oa-weaver}}
+  * [Yonyou OA (用友OA)]{{f+c:sec AND oa-yonyou}}
+  * [泛微OA (Weaver OA)]{{f+c:sec AND oa-泛微}}
+  * [用友OA (Yonyou OA)]{{f+c:sec AND oa-用友}}
+  * [致远OA (Seeyon OA)]{{f+c:sec AND oa-致远}}
+  * [通达OA (Tongda OA)]{{f+c:sec AND oa-通达}}
+* [Microsoft Office 365]{{f+c:sec AND office365}}
+* [OneDrive]{{f+c:sec AND onedrive}}
+* [ONLYOFFICE]{{f+c:sec AND onlyoffice}}
+* [OpenVPN]{{f+c:sec AND openvpn}}
+* [Oracle Database]{{f+c:sec AND oracle-database}}
+* [Microsoft Outlook]{{f+c:sec AND outlook}}
+* [OWA (Microsoft Outlook Web Access)]{{f+c:sec AND owa}}
+* [Padrino (Ruby)]{{f+c:sec AND padrino}}
+* [pastebin]{{f+c:sec AND pastebin}}
+* [Phoenix (Elixir)]{{f+c:sec AND phoenix}}
+* [PHP]{{f+c:sec AND php}}
+* [Polkit]{{f+c:sec AND polkit}}
+* [PostgreSQL]{{f+c:sec AND postgresql}}
+* [PyPI (Python Package Index)]{{f+c:sec AND pypi}}
+* [Redis]{{f+c:sec AND redis}}
+* [Ruby on Rails]{{f+c:sec AND ruby-on-rails}}
+* [Ruby]{{f+c:sec AND ruby}}
+* [Skype]{{f+c:sec AND skype}}
+* [Apache Spark]{{f+c:sec AND spark}}
+* [Spring Boot]{{f+c:sec AND spring-boot}}
+* [Spring Framework]{{f+c:sec AND spring}}
+* [SQL]{{f+c:sec AND sql}}
+* [Apache Struts]{{f+c:sec AND struts}}
+* [Apache Tomcat]{{f+c:sec AND tomcat}}
+* [UEFI (Unified Extensible Firmware Interface)]{{f+c:sec AND uefi}}
+* [Unix]{{f+c:sec AND unix}}
+* [vBulletin]{{f+c:sec AND vbulletin}}
+* [VMware vCenter]{{f+c:sec AND vcenter}}
+* [VMware]{{f+c:sec AND vmware}}
+* [VMware vRealize]{{f+c:sec AND vrealize}}
+* [VSCode]{{f+c:sec AND vscode}}
+  * [VSCode extension]{{f+c:sec AND vscode-extension}}
+* [web server]{{f+c:sec AND web-server}}
+* [Oracle WebLogic Server]{{f+c:sec AND weblogic}}
+* [Webpack]{{f+c:sec AND webpack}}
+* [WebRTC (Web Real-Time Communication)]{{f+c:sec AND webrtc}}
+* [WeChat]{{f+c:sec AND wechat}}
+  * [WeChat Mini Program]{{f+c:sec AND wechat-mini-program}}
+* [WhatsApp]{{f+c:sec AND whatsapp}}
+* [Windows]{{f+c:sec AND windows}}
+* [WordPress]{{f+c:sec AND wordpress}}
+
+#### 2.1.7. Protocol (Service, Standard) Security
+
+* [DNS (Domain Name System)]{{f+c:sec AND dns}}
+* [domain]{{f+c:sec AND domain}}
+* [FTP (File Transfer Protocol)]{{f+c:sec AND ftp}}
+* [Gopher]{{f+c:sec AND gopher}}
+* [HTTP (Hypertext Transfer Protocol)]{{f+c:sec AND http}}
+  * [HTTP header]{{f+c:sec AND http-header}}
+  * [HTTP parameter]{{f+c:sec AND http-param}}
+* [HTTPS (Hypertext Transfer Protocol Secure)]{{f+c:sec AND https}}
+* [JDWP (Java Debug Wire Protocol)]{{f+c:sec AND jdwp}}
+* [JWT (JSON Web Token)]{{f+c:sec AND jwt}}
+* [Kerberos]{{f+c:sec AND kerberos}}
+* [LDAP ACL (LDAP Access Control List)]{{f+c:sec AND ldap-acl}}
+* [LDAP (Lightweight Directory Access Protocol)]{{f+c:sec AND ldap}}
+* [Net-NTLM hash]{{f+c:sec AND net-ntlm-hash}}
+* [network]{{f+c:sec AND network}}
+* [NTLM (NT LAN Manager)]{{f+c:sec AND ntlm}}
+* [NTP (Network Time Protocol)]{{f+c:sec AND ntp}}
+* [protocol]{{f+c:sec AND protocol}}
+* [RDP (Remote Desktop Protocol)]{{f+c:sec AND rdp}}
+* [REST (Representational State Transfer)]{{f+c:sec AND rest}}
+* [RMI (Remote Method Invocation)]{{f+c:sec AND rmi}}
+* [RPC (Remote Procedure Call)]{{f+c:sec AND rpc}}
+* [SMB (Server Message Block)]{{f+c:sec AND smb}}
+* [SNMP ( Simple Network Management Protocol)]{{f+c:sec AND snmp}}
+* [SSH (Secure Shell)]{{f+c:sec AND ssh}}
+* [sshd (SSH daemon)]{{f+c:sec AND sshd}}
+* [SSL (Secure Sockets Layer)]{{f+c:sec AND ssl}}
+* [TCP (Transmission Control Protocol)]{{f+c:sec AND tcp}}
+* [TLS (Transport Layer Security)]{{f+c:sec AND tls}}
+* [UDP (User Datagram Protocol)]{{f+c:sec AND udp}}
+* [UPnP (Universal Plug and Play)]{{f+c:sec AND upnp}}
+* [VNC (Virtual Network Computing)]{{f+c:sec AND vnc}}
+* [WebDAV (Web Distributed Authoring and Versioning)]{{f+c:sec AND webdav}}
+* [WebSocket]{{f+c:sec AND websocket}}
+* [WinRM (Windows Remote Management)]{{f+c:sec AND winrm}}
+* [WMI (Windows Management Instrumentation)]{{f+c:sec AND wmi}}
+
+#### 2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs
+
+* {{t+f+c:ctf}}
+* {{t+f+c:ctf-challenge}}
+* {{t+f+c:htb}}
+* {{t+f+c:offsec-proving-grounds}}
+* {{t+f+c:try-hack-me}}
+* [vulnerability lab (testbed / playground / simulation)]{{f+c:sec AND (vul-lab OR vul-testbed OR vul-playground OR vul-simulation)}}
+  * [online]{{f+c:sec AND online AND (vul-lab OR vul-testbed OR vul-playground OR vul-simulation)}}
+* [walk through / write up]{{f+c:sec AND (walk-through OR write-up)}}
+
+#### 2.1.9. Mobile Security, IoT (Hardware/Device) Security, Physical Hacking, Industry Security
+
+* [Android]{{f+c:sec AND android}}
+* [APK]{{f+c:sec AND apk}}
+* [app]{{f+c:sec AND app}}
+* [App lockers]{{f+c:sec AND applocker}}
+* [ARM]{{f+c:sec AND arm}}
+* [Bluetooth]{{f+c:sec AND bluetooth}}
+* [Cisco]{{f+c:sec AND cisco}}
+* [DVR (Digital Video Recorder)]{{f+c:sec AND dvr}}
+* [firmware analysis]{{f+c:sec AND firmware-analysis}}
+* [firmware emulation (hardware emulation)]{{f+c:sec AND firmware-emulation}}
+* [firmware]{{f+c:sec AND firmware}}
+* [HackRF]{{f+c:sec AND hackrf}}
+* [hardware / device]{{f+c:sec AND hardware}}
+* [HID (Human Interface Devices)]{{f+c:sec AND hid}}
+* [ICS (Industrial Control System)]{{f+c:sec AND ics}}
+* [iOS]{{f+c:sec AND ios}}
+* [IoT (Internet of Things)]{{f+c:sec AND iot}}
+* [MIPS]{{f+c:sec AND mips}}
+* [MITM (Man-in-the-Middle)]{{f+c:sec AND mitm}}
+* [mobile]{{f+c:sec AND mobile}}
+* [physical hacking (aka physical penetration testing / physical security testing,)]{{f+c:sec AND physical-hacking}}
+* [PLC (Programmable Logic Controller)]{{f+c:sec AND plc}}
+* [printer]{{f+c:sec AND printer}}
+* [ROM]{{f+c:sec AND rom}}
+* [router]{{f+c:sec AND router}}
+* {{t+f+c:rtos}}
+* [SCADA (Supervisory Control and Data Acquisition)]{{f+c:sec AND scada}}
+* [SMM (System Management Mode)]{{f+c:sec AND smm}}
+* [USB]{{f+c:sec AND usb}}
+* [USRP (Universal Software Radio Peripheral)]{{f+c:sec AND usrp}}
+* [webcam]{{f+c:sec AND webcam}}
+* [WIDS (Wireless Intrusion Detection System)]{{f+c:sec AND wids}}
+* [Wi-Fi hotspot]{{f+c:sec AND wifi-hotspot}}
+* [Wi-Fi]{{f+c:sec AND wifi}}
+* [wiki]{{f+c:sec AND wiki AND (hardware OR iot)}}
+* [Wireless HID (Wireless Human Interface Devices)]{{f+c:sec AND wireless-hid}}
+
+#### 2.1.10. Web3, Blockchain, Digital Currency, Smart Contacts
+
+* {{t+f+c:bitcoin}}
+* {{t+f+c:blockchain}}
+* {{t+f+c:defi}}
+* {{t+f+c:digital-currency}}
+* {{t+f+c:smart-contracts}}
+* {{t+f+c:solidity}}
+* {{t+f+c:web3}}
+
+#### 2.1.11. AI Security / Security with AI
+
+* [AI]{{f+c:sec AND ai}}
+* [chatbot]{{f+c:sec AND chatbot}}
+* [GPT]{{f+c:sec AND gpt}}
+
+#### 2.1.12. Security Certification, Career
+
+* {{t+f+c:bscp}}
+* [career development]{{f+c:sec AND career}}
+* {{t+f+c:health}}
+* [job interview]{{f+c:sec AND job-interview}}
+* [leadership]{{f+c:sec AND leadership}}
+* [market (analysis)]{{f+c:sec AND market}}
+* {{t+f+c:osce3}}
+* {{t+f+c:oscp}}
+* {{t+f+c:osed}}
+* {{t+f+c:osep}}
+* {{t+f+c:oswe}}
+* {{t+f+c:skill-tree}}
+* {{t+f+c:startups}}
+
+#### 2.1.13. Other Topics
+
+* [aggregator]{{f+c:sec AND aggregator}}
+* [anonymous email]{{f+c:sec AND anonymous-email}}
+* [API provided]{{f+c:sec AND api-provided}}
+* [ARM]{{f+c:sec AND arm}}
+* [ASP.NET]{{f+c:sec AND asp.net}}
+* [ASP]{{f+c:sec AND asp}}
+* [aspx]{{f+c:sec AND aspx}}
+* [AST (Abstract Syntax Tree)]{{f+c:sec AND ast}}
+* [basic knowledge]{{f+c:sec AND basic-knowledge}}
+* [browser extension (aka browser add-on / browser plugin)]{{f+c:sec AND browser-extension}}
+* [browser]{{f+c:sec AND browser}}
+* [SSL pinning (certificate pinning)]{{f+c:sec AND certificate-pinning}}
+* [Certificate Transparency (CT)]{{f+c:sec AND certificate-transparency}}
+* [certificate]{{f+c:sec AND certificate}}
+* [CGI (Common Gateway Interface)]{{f+c:sec AND cgi}}
+* [CIDR (Classless Inter-Domain Routing)]{{f+c:sec AND cidr}}
+* [shell command]{{f+c:sec AND command}}
+* [concurrency]{{f+c:sec AND concurrency}}
+* [software configuration (file)]{{f+c:sec AND config}}
+* [core dump]{{f+c:sec AND core-dump}}
+* [cryptography]{{f+c:sec AND cryptography}}
+* [custom 404 page]{{f+c:sec AND custom-404}}
+* [debug]{{f+c:sec AND debug}}
+* [decryption]{{f+c:sec AND decryption}}
+* [diagram]{{f+c:sec AND diagram}}
+* [Discord]{{f+c:sec AND discord}}
+* [distributed]{{f+c:sec AND distributed}}
+* [document]{{f+c:sec AND doc}}
+* [efficiency]{{f+c:sec AND efficiency}}
+* [favicon]{{f+c:sec AND favicon}}
+* [.bin (binary file)]{{f+c:sec AND file-bin}}
+* [.dll (Dynamic Link Library)]{{f+c:sec AND file-dll}}
+* [.elf (Executable and Linkable Format)]{{f+c:sec AND file-elf}}
+* [.exe (Executable file)]{{f+c:sec AND file-exe}}
+* [PE (Portable Executable)]{{f+c:sec AND file-pe}}
+* [framework]{{f+c:sec AND framework}}
+* [GDB]{{f+c:sec AND gdb}}
+* [Google]{{f+c:sec AND google}}
+* [GUI]{{f+c:sec AND gui}}
+* [Hashcat]{{f+c:sec AND hashcat}}
+* [HTML5]{{f+c:sec AND html5}}
+* [ICP Filing (ICP备案 / ICP beian)]{{f+c:sec AND icp-filing}}
+* [IP range (aka IP address range / IP subnet)]{{f+c:sec AND ip-range}}
+* [IP]{{f+c:sec AND ip}}
+* [IPv4]{{f+c:sec AND ipv4}}
+* [IPv6]{{f+c:sec AND ipv6}}
+* [JA3 fingerprints]{{f+c:sec AND ja3}}
+* [.jar (Java Archive)]{{f+c:sec AND jar}}
+* [JSP (JavaServer Pages)]{{f+c:sec AND jsp}}
+* [Kali Linux]{{f+c:sec AND kali}}
+* [Microsoft]{{f+c:sec AND microsoft}}
+* [MMDB (MaxMind DB)]{{f+c:sec AND mmdb}}
+* [Public Opinion Analysis]{{f+c:sec AND opinion-analysis}}
+* [Public Opinion Monitoring]{{f+c:sec AND opinion-monitoring}}
+* [URL parsing]{{f+c:sec AND parse-url}}
+* [pdf]{{f+c:sec AND pdf}}
+* [performance]{{f+c:sec AND performance}}
+* [plugin / add-on / extension]{{f+c:sec AND plugin}}
+* [port forwarding]{{f+c:sec AND port-forwarding}}
+* [port]{{f+c:sec AND port}}
+* [QR code]{{f+c:sec AND qrcode}}
+* [robots.txt]{{f+c:sec AND robots.txt}}
+* [shell]{{f+c:sec AND shell}}
+* [SMS]{{f+c:sec AND sms}}
+* [SOCKS5]{{f+c:sec AND socks5}}
+* [Tencent]{{f+c:sec AND tencent}}
+* [thick client (aka fat client)]{{f+c:sec AND thick-client}}
+* [UI]{{f+c:sec AND ui}}
+* [URL]{{f+c:sec AND url}}
+* [virtual machine image]{{f+c:sec AND vm-image}}
+* [VPS]{{f+c:sec AND vps}}
+* [Wireshark]{{f+c:sec AND wireshark}}
+* [WooYun]{{f+c:sec AND wooyun}}
+
+
+### 2.2. Development
+
+* {{t+f+c:dev}}
+  * [development (without "cybersecurity")]{{f+c:dev AND NOT sec}}
+  * [development (with "cybersecurity")]{{f+c:dev AND sec}}
+
+#### 2.2.1. Common / Basic Topics
+
+most without "cybersecurity":
+
+* [article]{{f+c:dev AND NOT sec AND article}}
+  * [Chinese]{{f+c:dev AND NOT sec AND article AND chinese}}
+  * [English]{{f+c:dev AND NOT sec AND article AND NOT chinese AND NOT japanese AND NOT korean}}
+  * [Japanese]{{f+c:dev AND NOT sec AND article AND japanese}}
+* [basic knowledge]{{f+c:dev AND NOT sec AND basic-knowledge}}
+* [best practices]{{f+c:dev AND NOT sec AND best-practices}}
+* [blog]{{f+c:dev AND NOT sec AND blog}}
+* [book]{{f+c:dev AND NOT sec AND book}}
+* [cheat sheet]{{f+c:dev AND NOT sec AND cheat-sheet}}
+* [checklist]{{f+c:dev AND NOT sec AND checklist}}
+* [community site]{{f+c:dev AND NOT sec AND community}}
+* [career development]{{f+c:dev AND NOT sec AND career}}
+* [course]{{f+c:dev AND NOT sec AND course}}
+* [ebook]{{f+c:dev AND NOT sec AND ebook}}
+* [efficiency]{{f+c:dev AND NOT sec AND efficiency}}
+* [free resources]{{f+c:dev AND NOT sec AND free}}
+* [how-to]{{f+c:dev AND NOT sec AND how-to}}
+* [issue]{{f+c:dev AND NOT sec AND issue}}
+* [leadership]{{f+c:dev AND leadership}}
+* [learning notes]{{f+c:dev AND NOT sec AND learning-notes}}
+* [Methodology]{{f+c:dev AND NOT sec AND methodology}}
+* [mind map]{{f+c:dev AND NOT sec AND mind-map}}
+* [navigation site / page]{{f+c:dev AND NOT sec AND navigation-site}}
+* [news site / page]{{f+c:dev AND NOT sec AND news}}
+* [online resource / tool]{{f+c:dev AND NOT sec AND online}}
+* [Open-Source Software (OSS)]{{f+c:dev AND NOT sec AND oss}}
+* {{t+f+c:optimization}}
+* [productivity]{{f+c:dev AND NOT sec AND productivity}}
+* [resource collection]{{f+c:dev AND NOT sec AND resource-collection}}
+* [resource search]{{f+c:dev AND NOT sec AND resource-search}}
+* [roadmap]{{f+c:dev AND NOT sec AND roadmap}}
+* [RSS]{{f+c:dev AND NOT sec AND rss}}
+* [skill tree]{{f+c:dev AND NOT sec AND skill-tree}}
+* [startups]{{f+c:dev AND NOT sec AND startups}}
+* [terminology]{{f+c:dev AND NOT sec AND terminology}}
+* [thesis]{{f+c:dev AND NOT sec AND thesis}}
+* [tips]{{f+c:dev AND NOT sec AND tips}}
+* [tool]{{f+c:dev AND NOT sec AND tool}}
+* [vacabulary]{{f+c:dev AND NOT sec AND vacabulary}}
+* [wiki]{{f+c:dev AND NOT sec AND wiki}}
+
+
+#### 2.2.2. Subtopics
+
+without "cybersecurity":
+
+* [app]{{f+c:dev AND NOT sec AND app}}
+* [architecture]{{f+c:dev AND NOT sec AND architecture}}
+* [automation]{{f+c:dev AND NOT sec AND automation}}
+* [big data]{{f+c:dev AND NOT sec AND big-data}}
+* [browser]{{f+c:dev AND NOT sec AND browser}}
+  * [browser extension (aka browser add-on / browser plugin)]{{f+c:dev AND NOT sec AND browser-extension}}
+* [chatbot]{{f+c:dev AND NOT sec AND chatbot}}
+* [CI/CD]{{f+c:dev AND NOT sec AND ci_cd}}
+* [Cloud Native]{{f+c:dev AND NOT sec AND cloud-native}}
+* [Cloud (Computing)]{{f+c:dev AND NOT sec AND cloud}}
+* [code analysis]{{f+c:dev AND NOT sec AND code-analysis}}
+* [code complexity]{{f+c:dev AND NOT sec AND code-complexity}}
+* [code example (code snippet)]{{f+c:dev AND NOT sec AND code-example}}
+* [code formatting]{{f+c:dev AND NOT sec AND code-format}}
+* [code optimization]{{f+c:dev AND NOT sec AND code-optimization}}
+* [code playground (aka online code editor / coding sandbox)]{{f+c:dev AND NOT sec AND code-playground}}
+* [code quality]{{f+c:dev AND NOT sec AND code-quality}}
+* [code review]{{f+c:dev AND NOT sec AND code-review}}
+* [code style]{{f+c:dev AND NOT sec AND code-style}}
+* [shell command]{{f+c:dev AND NOT sec AND command}}
+* [compiler]{{f+c:dev AND NOT sec AND compiler}}
+* [concurrency]{{f+c:dev AND NOT sec AND concurrency}}
+* [software configuration (file)]{{f+c:dev AND NOT sec AND config}}
+* [team cooperation]{{f+c:dev AND NOT sec AND cooperation}}
+* [coroutine]{{f+c:dev AND NOT sec AND coroutine}}
+* [Cyclomatic complexity]{{f+c:dev AND NOT sec AND cyclomatic-complexity}}
+* [database]{{f+c:dev AND NOT sec AND database}}
+* [debug]{{f+c:dev AND NOT sec AND debug}}
+* [desktop APP (aka desktop software / PC software / PC APP)]{{f+c:dev AND NOT sec AND desktop-app}}
+* [devcontainer]{{f+c:NOT sec AND devcontainer}}
+* [DevOps]{{f+c:dev AND NOT sec AND devops}}
+* [DevSecOps]{{f+c:dev AND devsecops}}
+* [ASCII art diagram]{{f+c:dev AND NOT sec AND diagram-ascii}}
+* [ER diagram (Entity-Relationship diagram)]{{f+c:dev AND NOT sec AND diagram-er}}
+* [flowchart]{{f+c:dev AND NOT sec AND diagram-flowchart}}
+* [Mermaid]{{f+c:dev AND NOT sec AND diagram-mermaid}}
+* [UML (Unified Modeling Language)]{{f+c:dev AND NOT sec AND diagram-uml}}
+* [diagram]{{f+c:dev AND NOT sec AND diagram}}
+* [document]{{f+c:dev AND NOT sec AND doc}}
+* [Docker Compose]{{f+c:dev AND NOT sec AND docker-compose}}
+* [docstring]{{f+c:dev AND NOT sec AND docstring}}
+* [document database (aka document-oriented database)]{{f+c:dev AND NOT sec AND document-database}}
+* [ECMAScript]{{f+c:dev AND NOT sec AND ecmascript}}
+* [environment (setup)]{{f+c:dev AND NOT sec AND env}}
+* [file system]{{f+c:dev AND NOT sec AND file-system}}
+* [file transfer]{{f+c:dev AND NOT sec AND file-transfer}}
+* [Git]{{f+c:dev AND NOT sec AND git}}
+* [Github]{{f+c:dev AND NOT sec AND github}}
+* [GitHub Pages]{{f+c:dev AND NOT sec AND github-pages}}
+* [GUI]{{f+c:dev AND NOT sec AND gui}}
+* [Halstead metrics]{{f+c:dev AND NOT sec AND halstead-metrics}}
+* [Hexo]{{f+c:dev AND NOT sec AND hexo}}
+* [HTML]{{f+c:dev AND NOT sec AND html}}
+* [IaaS (Infrastructure as a Service)]{{f+c:dev AND NOT sec AND iaas}}
+* [journalctl]{{f+c:dev AND NOT sec AND journalctl}}
+* [Jupyter]{{f+c:dev AND NOT sec AND jupyter}}
+* [kernel]{{f+c:dev AND NOT sec AND kernel}}
+* [knowledge sharing]{{f+c:dev AND NOT sec AND knowledge-share}}
+* [kubectl]{{f+c:dev AND kubectl}}
+* [library / moudle / package]{{f+c:dev AND NOT sec AND (library OR moudle)}}
+* [license]{{f+c:dev AND NOT sec AND license}}
+* [linter]{{f+c:dev AND NOT sec AND linter}}
+* [management (in DevOps)]{{f+c:dev AND NOT sec AND management}}
+* [language migration]{{f+c:dev AND NOT sec AND migrate-language}}
+* [monitoring]{{f+c:dev AND NOT sec AND monitoring}}
+* [multiple processes]{{f+c:dev AND NOT sec AND multi-process}}
+* [NAT (Network Address Translation)]{{f+c:dev AND NOT sec AND nat}}
+* [network]{{f+c:dev AND NOT sec AND network}}
+* [Nginx]{{f+c:dev AND NOT sec AND nginx}}
+* [operations]{{f+c:dev AND NOT sec AND operations}}
+* [ORM (Object-Relational Mapping)]{{f+c:dev AND NOT sec AND orm}}
+* [PaaS (Platform as a Service)]{{f+c:dev AND NOT sec AND paas}}
+* [packaging (in Python)]{{f+c:dev AND NOT sec AND packaging}}
+* [parallel computing]{{f+c:dev AND NOT sec AND parallel-computing}}
+* [URL parsing]{{f+c:dev AND NOT sec AND parse-url}}
+* [PEP 8]{{f+c:dev AND NOT sec AND pep8}}
+* [performance analysis]{{f+c:dev AND NOT sec AND performance-analysis}}
+* [performance]{{f+c:dev AND NOT sec AND performance}}
+* [Plotly.js]{{f+c:dev AND NOT sec AND plotly}}
+* [plugin / add-on / extension]{{f+c:dev AND NOT sec AND plugin}}
+* [port forwarding]{{f+c:dev AND NOT sec AND port-forwarding}}
+* [port]{{f+c:dev AND NOT sec AND port}}
+* [progress bar (aka progress indicator)]{{f+c:dev AND NOT sec AND process-bar}}
+* [profiler]{{f+c:dev AND NOT sec AND profiler}}
+* [protocol]{{f+c:dev AND NOT sec AND protocol}}
+* [prototyping]{{f+c:dev AND NOT sec AND prototyping}}
+* [Pytest]{{f+c:dev AND NOT sec AND pytest}}
+* [typing (in Python)]{{f+c:dev AND NOT sec AND python-typing}}
+* [Python]{{f+c:dev AND NOT sec AND python}}
+* [Redis]{{f+c:dev AND NOT sec AND redis}}
+* [rich text]{{f+c:dev AND NOT sec AND rich-text}}
+* [RPA (Robotic Process Automation)]{{f+c:dev AND NOT sec AND rpa}}
+* [SaaS (Software as a Service)]{{f+c:dev AND NOT sec AND saas}}
+* [sampling profiler]{{f+c:dev AND NOT sec AND sampling-profiler}}
+* [scaffolding]{{f+c:dev AND NOT sec AND scaffolding}}
+* [screen sharing]{{f+c:dev AND NOT sec AND screen-share}}
+* [shell]{{f+c:dev AND NOT sec AND shell}}
+* [shortcut key]{{f+c:dev AND NOT sec AND shortcut-key}}
+* [skill challenge]{{f+c:dev AND NOT sec AND skill-challenge}}
+* [spinner (in command-line interface (CLI) applications)]{{f+c:dev AND NOT sec AND spinner}}
+* [SQL]{{f+c:dev AND NOT sec AND sql}}
+* [systemd]{{f+c:dev AND NOT sec AND systemd}}
+* [TCP]{{f+c:dev AND NOT sec AND tcp}}
+* [test]{{f+c:dev AND NOT sec AND test}}
+  * [test automation]{{f+c:dev AND NOT sec AND test-automation}}
+  * [coverage test]{{f+c:dev AND NOT sec AND test-coverage}}
+  * [unit test]{{f+c:dev AND NOT sec AND test-unit}}
+* [tmux]{{f+c:dev AND NOT sec AND tmux}}
+* [UI design,]{{f+c:dev AND NOT sec AND ui-design}}
+* [UI]{{f+c:dev AND NOT sec AND ui}}
+* [Unicode]{{f+c:dev AND NOT sec AND unicode}}
+* [Unix]{{f+c:dev AND NOT sec AND unix}}
+* [variable name]{{f+c:dev AND NOT sec AND var-name}}
+* [version control (aka source control / revision control)]{{f+c:dev AND NOT sec AND version-control}}
+* [version manager]{{f+c:dev AND NOT sec AND version-manager}}
+* [Vim]{{f+c:dev AND NOT sec AND vim}}
+* [VPS]{{f+c:dev AND NOT sec AND vps}}
+* [VSCode extension]{{f+c:dev AND NOT sec AND vscode-extension}}
+* [VSCode]{{f+c:dev AND NOT sec AND vscode}}
+* [WSL (Windows Subsystem for Linux)]{{f+c:dev AND NOT sec AND wsl}}
+* [Apache ZooKeeper]{{f+c:dev AND NOT sec AND zookeeper}}
+
+### 2.3. AI, Machine Learning, Math, Data Science, NLP, Computer Vision
+
+including "cybersecruity" and "development":
+
+* {{t+f+c:ai}}
+* {{t+f+c:chatbot}}
+* {{t+f+c:computer-vision}}
+* {{t+f+c:corpus}}
+  * {{t+f+c:corpus-name}}
+* {{t+f+c:data-analysis}}
+* {{t+f+c:data-mining}}
+* {{t+f+c:data-science}}
+* {{t+f+c:data-visualization}}
+* {{t+f+c:deep-learning}}
+* {{t+f+c:diagram}}
+  * {{t+f+c:diagram-ascii}}
+  * {{t+f+c:diagram-er}}
+  * {{t+f+c:diagram-flowchart}}
+  * {{t+f+c:diagram-mermaid}}
+  * {{t+f+c:diagram-uml}}
+* {{t+f+c:echarts}}
+* {{t+f+c:face-recognition}}
+* {{t+f+c:face-swap}}
+* {{t+f+c:formula}}
+* [free resources]{{f+c:free AND (ai OR machine-learning OR math OR data-science OR nlp OR computer-vision)}}
+* {{t+f+c:geofencing}}
+* {{t+f+c:geospatial}}
+* {{t+f+c:gis}}
+* {{t+f+c:gpt}}
+  * {{t+f+c:gpt-4}}
+  * {{t+f+c:gpt-private}}
+  * {{t+f+c:gpt-prompt}}
+* [how-to]{{f+c:how-to AND (ai OR machine-learning OR math OR data-science OR nlp OR computer-vision)}}
+* {{t+f+c:image-recognition}}
+* {{t+f+c:image-synthesis}}
+* {{t+f+c:latex}}
+* {{t+f+c:linear-algebra}}
+* {{t+f+c:machine-learning}}
+* {{t+f+c:map}}
+* {{t+f+c:math}}
+* {{t+f+c:matplotlib}}
+* {{t+f+c:neural-network-convolutional}}
+* {{t+f+c:nlp}}
+* {{t+f+c:ocr}}
+* {{t+f+c:pandas}}
+* {{t+f+c:pytorch}}
+* {{t+f+c:rpa}}
+* {{t+f+c:scikit-learn}}
+* {{t+f+c:tensorflow}}
+* [wiki]{{f+c:wiki AND (ai OR machine-learning OR math OR data-science OR nlp OR computer-vision)}}
+* {{t+f+c:word-segmentation}}
+
+### 2.4. Digital Media Processing
+
+* {{t+f+c:digital-media}}
+* {{t+f+c:icon}}
+* {{t+f+c:image-classification}}
+* {{t+f+c:image-editing}}
+* {{t+f+c:image-hosting}}
+* {{t+f+c:image-recognition}}
+* {{t+f+c:image-synthesis}}
+* [video]{{f+c:digital-media AND video}}
+* {{t+f+c:video-editing}}
+* {{t+f+c:video-production}}
+
+### 2.5. Finance, Economics, Commerce
+
+* {{t+f+c:commerce}}
+* {{t+f+c:data-set}}
+* {{t+f+c:economics}}
+* {{t+f+c:finance-analysis}}
+* {{t+f+c:finance-etf}}
+* {{t+f+c:finance-stocks}}
+* {{t+f+c:finance}}
+* {{t+f+c:financial-report}}
+* {{t+f+c:fundamental-analysis}}
+* {{t+f+c:index-data}}
+* {{t+f+c:investment}}
+* [news]{{f+c:(finance OR economics OR commerce) AND news}}
+* {{t+f+c:technical-analysis}}
+* {{t+f+c:trading}}
+
+### 2.6. Other Topics
+
+* {{t+f+c:glossary}}
+* {{t+f+c:chinese}}
+* {{t+f+c:japanese}}
+* {{t+f+c:literature}}
+* {{t+f+c:ppt}}
+* {{t+f+c:software}}
+
+## 3. About TagMark
+
+TagMark is a tag based bookmark solution I created for IT or Science practitioners who:
+
+* have a lot of bookmarks and want to organise them well, and want to easily retrieve and share them with others
+* often work with Github and star many repositories
+
+TagMark related resources:
+
+* tagmark-py
+* tagmark-ui
+* my-tagmarks (this repo)

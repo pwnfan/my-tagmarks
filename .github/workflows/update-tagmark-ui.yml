@@ -7,7 +7,7 @@ on:
   push:
     paths:
       - 'data/*'
-      - 'docs/*.md'
+      - 'docs/'
 
 env:
   TAGMARK_UI_DIR: tagmark-ui
@@ -34,9 +34,10 @@ jobs:
         rm -rf \
           ${{ env.TAGMARK_UI_DIR }}/.git* \
           ${{ env.TAGMARK_UI_DIR }}/*.md \
-          tagmark-ui/LICENSE \
+          ${{ env.TAGMARK_UI_DIR }}/LICENSE \
           ${{ env.TAGMARK_UI_DIR }}/Makefile \
-          ${{ env.TAGMARK_UI_DIR }}/data/
+          ${{ env.TAGMARK_UI_DIR }}/data/ \
+          ${{ env.TAGMARK_UI_DIR }}/docs/*.template
         cp -rf ${{ env.TAGMARK_UI_DIR }}/* ./
         rm -rf ${{ env.TAGMARK_UI_DIR }}
     
