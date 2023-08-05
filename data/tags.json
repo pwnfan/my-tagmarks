@@ -7631,10 +7631,10 @@
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
-    "vacabulary": {
+    "vocabulary": {
         "abbr": null,
         "alias": null,
-        "definition": "Vacabulary",
+        "definition": "Vocabulary",
         "full_name": null,
         "gpt_prompt_context": null,
         "prefer_format": "{tag}"
