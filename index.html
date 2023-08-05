@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>TagMark - a tag based bookmark manager</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5/dist/css/tabulator_midnight.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="css/tagmark.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css"
+            integrity="sha256-7jUS+MWeqkFdmW9ozkZ7mPagz+QmMbsBlt+Q3MsE+FU="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5/dist/js/tabulator.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/rainbowvis.js@1.1.1/rainbowvis.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/marked@5/lib/marked.umd.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/marked-gfm-heading-id@3/lib/index.umd.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/marked-mangle@1/lib/index.umd.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://kit.fontawesome.com/ef69816b0b.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/string-format@2.0.0/index.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"
+            integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js"
+            integrity="sha256-mW1wrhuKp2Cl0DCVr/7+GTdl168ZrmB6FayoMAlSmH0="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="js/tagmark.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+
+    <body>
+        <div id="tagmark-table"></div>
+        <div id="tag-definition"></div>
+        <div id="all-tags-show-switch-container-title">
+            Click to show all tags...
+        </div>
+
+        <div id="all-tags-overlay" class="overlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="header-container">
+                        <h2>All Tags</h2>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-menu" id="all-tags-menu">
+                    <div id="all-tags-sort-container">
+                        <span>sort: </span>
+                        <fieldset id="all-tags-sort-fieldset">
+                            <span>
+                                <input
+                                    type="radio"
+                                    id="tags-sort-by-count"
+                                    name="tags-sort"
+                                    value="count"
+                                    checked
+                                />
+                                <label for="tags-sort-by-count">count</label>
+                            </span>
+                            <span>
+                                <input
+                                    type="radio"
+                                    id="tags-sort-by-name"
+                                    name="tags-sort"
+                                    value="name"
+                                />
+                                <label for="tags-sort-by-name">name</label>
+                            </span>
+                        </fieldset>
+                    </div>
+                    <div id="all-tags-show-container">
+                        <span>show: </span>
+                        <fieldset id="all-tags-show-fieldset">
+                            <span>
+                                <input
+                                    type="radio"
+                                    id="tags-show-tag"
+                                    name="tags-show-name"
+                                    value="tag"
+                                />
+                                <label for="tags-show-tag">tag</label>
+                            </span>
+                            <span>
+                                <input
+                                    type="radio"
+                                    id="tags-show-formatted-name"
+                                    name="tags-show-name"
+                                    value="formatted_name"
+                                    checked
+                                />
+                                <label for="tags-show-formatted-name"
+                                    >formatted name</label
+                                >
+                            </span>
+                        </fieldset>
+                    </div>
+                    <span
+                        class="github-link"
+                        onclick="window.open('data/tagmarks.jsonl')"
+                        title="TagMark UI Data"
+                    >
+                        <i class="fa-solid fa-link fa-beat-fade"></i>
+                        <span class="github-link-text">tagmarks.jsonl</span>
+                    </span>
+                    <span
+                        class="github-link"
+                        onclick="window.open('data/tags.json')"
+                        title="Tags Information"
+                    >
+                        <i class="fa-solid fa-link fa-beat-fade"></i>
+                        <span class="github-link-text">tags.json</span>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <div id="all-tags-div" class="body-container">
+                        <!-- add content here -->
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+
+        <div id="filter-doc-overlay" class="overlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="header-container">
+                        <h2>TagMark Filters</h2>
+                        <button class="close-btn">&times;</button>
+                    </div>
+                </div>
+                <div class="modal-menu">
+                    <span>languge: </span>
+                    <select name="language" id="filter-doc-language-select">
+                        <option value="en">English</option>
+                        <option value="ja">Japanese</option>
+                        <option value="zh_CN">Chinese(Simple)</option>
+                    </select>
+                    <span
+                        class="github-link"
+                        onclick="window.open('https://github.com/pwnfan/tagmark-ui/tree/main/docs')"
+                    >
+                        <i class="fa-brands fa-github fa-beat-fade"></i>
+                        <span class="github-link-text">Docs on Github</span>
+                    </span>
+                </div>
+
+                <div class="modal-body">
+                    <div id="filter-doc" class="body-container">
+                        <!-- add content here -->
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="statistics">
+                    <i class="fa-solid fa-star"></i>
+                    Bookmarks: <span id="bookmark-count"></span>
+                    | Github Bookmarks:
+                    <span id="github-bookmark-count"></span>
+                    | Tags:
+                    <span id="tag-count"></span>
+                    |
+                    <span onclick="window.open('https://busuanzi.ibruce.info/')"
+                        ><i class="fa-solid fa-chart-simple fa-fade"></i>
+                    </span>
+                    Page Views: <span id="busuanzi_value_page_pv"></span> | Site
+                    Views: <span id="busuanzi_value_site_pv"></span> | Visitors:
+                    <span id="busuanzi_value_site_uv"></span>
+                </div>
+                <div class="copyright">
+                    © 2023
+                    <span
+                        onclick="window.open('https://github.com/pwnfan/tagmark-ui')"
+                        ><i class="fa-brands fa-github fa-beat-fade"></i
+                    ></span>
+                    pwnfan
+                    <span
+                        onclick="window.open('https://pwnfan.github.io/post/en/TagMark-Maybe-a-Better-Browser-Bookmark-Solution/')"
+                        ><i class="fa-brands fa-readme fa-beat-fade"></i
+                    ></span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
