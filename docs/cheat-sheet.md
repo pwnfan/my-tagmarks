@@ -8,13 +8,13 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 - [2. My TagMark Cheat Sheet](#2-my-tagmark-cheat-sheet)
   - [2.1. CyberSecurity](#21-cybersecurity)
     - [2.1.1. Common / Basic Topics](#211-common--basic-topics)
-    - [2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research](#212-red-team-penatraction-bug-bounty-bug-hunt-research)
+    - [2.1.2. Red Team, Penetration, Bug Bounty, Bug Hunt, Research](#212-red-team-penetration-bug-bounty-bug-hunt-research)
     - [2.1.3. Enterprise Security, Blue Team, Security Defence](#213-enterprise-security-blue-team-security-defence)
     - [2.1.4. Cloud (Native) Security, Docker / Container Security](#214-cloud-native-security-docker--container-security)
     - [2.1.5. Common Vulnerabilities](#215-common-vulnerabilities)
     - [2.1.6. Applications (Softwares / Frameworks / Midware / Web Service) Security, Operating System Security, Programming Language Security](#216-applications-softwares--frameworks--midware--web-service-security-operating-system-security-programming-language-security)
     - [2.1.7. Protocol (Service, Standard) Security](#217-protocol-service-standard-security)
-    - [2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs](#218-ctf-vulnerability-labs-testbeds--playgrounds--simulations-write-ups--walk-throughs)
+    - [2.1.8. CTF, Vulnerability Labs (Testbeds / Playgrounds / Simulations), Write-Ups / Walk-Throughs](#218-ctf-vulnerability-labs-testbeds--playgrounds--simulations-write-ups--walk-throughs)
     - [2.1.9. Mobile Security, IoT (Hardware/Device) Security, Physical Hacking, Industry Security](#219-mobile-security-iot-hardwaredevice-security-physical-hacking-industry-security)
     - [2.1.10. Web3, Blockchain, Digital Currency, Smart Contacts](#2110-web3-blockchain-digital-currency-smart-contacts)
     - [2.1.11. AI Security / Security with AI](#2111-ai-security--security-with-ai)
@@ -32,7 +32,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 
 ## 1. Notice
 
-* One tag (i.e. topic) may have different meaning depending on contexts, So the  `Total` counts and `Github` counts may be inaccurate in some contexts. For instance, tag `django` might mean ehither:
+* One tag (i.e. topic) may have different meaning depending on contexts, so the  `Total` counts and `Github` counts may be inaccurate in some contexts. For instance, tag `django` might mean either one bellow:
    * this is a open source software made by `Django`
    * this is a security tool for testing `Django` vulnerabilities
 * One tag may occur in multiple sections in this doc. For instance, tag `attack-surface` may be in the `Red Team` related section and also in the `Blue Team` related section.
@@ -97,12 +97,12 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [thesis](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+thesis) `Total 10 (Github 4)`
 * [tips](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+tips) `Total 40 (Github 12)`
 * [tool](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+tool) `Total 939 (Github 824)`
-* [vacabulary](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+vacabulary) `Total 2 (Github 0)`
+* [vocabulary](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+vacabulary) `Total 0 (Github 0)`
 * [video](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+video) `Total 4 (Github 3)`
 * [vulnerability definition](https://pwnfan.github.io/my-tagmarks/?tags=vul-definition) `Total 2 (Github 0)`
 * [wiki](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+wiki) `Total 138 (Github 83)`
 
-#### 2.1.2. Red Team, Penatraction, Bug Bounty, Bug Hunt, Research
+#### 2.1.2. Red Team, Penetration, Bug Bounty, Bug Hunt, Research
 
 * [0day](https://pwnfan.github.io/my-tagmarks/?tags=0day) `Total 2 (Github 0)`
 * [Active Directory](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+active-directory) `Total 67 (Github 56)`
@@ -211,7 +211,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [law](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+law) `Total 1 (Github 1)`
 * [LDAP](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+ldap) `Total 6 (Github 5)`
   * [LDAP ACL](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+ldap-acl) `Total 1 (Github 1)`
-* [library / moudle / package](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+%28library+OR+moudle+OR+package%29) `Total 21 (Github 20)`
+* [library / module / package](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+%28library+OR+module+OR+package%29) `Total 21 (Github 20)`
 * [Linux](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+linux) `Total 48 (Github 40)`
 * [geographic location](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+location) `Total 11 (Github 5)`
 * [log](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+log) `Total 12 (Github 9)`
@@ -432,7 +432,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [java](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+java) `Total 128 (Github 116)`
 * [javascript](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+javascript) `Total 35 (Github 30)`
 * [law](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+law) `Total 1 (Github 1)`
-* [library / moudle / package](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+%28library+OR+moudle+OR+package%29) `Total 21 (Github 20)`
+* [library / module / package](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+%28library+OR+module+OR+package%29) `Total 21 (Github 20)`
 * [Linux](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+linux) `Total 48 (Github 40)`
 * [log](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+log) `Total 12 (Github 9)`
 * [Apache Log4j](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+log4j) `Total 6 (Github 5)`
@@ -731,7 +731,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [WinRM (Windows Remote Management)](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+winrm) `Total 1 (Github 1)`
 * [WMI (Windows Management Instrumentation)](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+wmi) `Total 2 (Github 2)`
 
-#### 2.1.8. CTF, Vulnerability Labs (Testbeds / playgrounds / Simulations), Write-Ups / Walk-Throughs
+#### 2.1.8. CTF, Vulnerability Labs (Testbeds / Playgrounds / Simulations), Write-Ups / Walk-Throughs
 
 * [CTF](https://pwnfan.github.io/my-tagmarks/?tags=ctf) `Total 17 (Github 7)`
 * [CTF challenge](https://pwnfan.github.io/my-tagmarks/?tags=ctf-challenge) `Total 23 (Github 5)`
@@ -938,7 +938,7 @@ most without "cybersecurity":
 * [thesis](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+thesis) `Total 1 (Github 0)`
 * [tips](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+tips) `Total 5 (Github 2)`
 * [tool](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+tool) `Total 132 (Github 101)`
-* [vacabulary](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+vacabulary) `Total 4 (Github 1)`
+* [vacabulary](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+vacabulary) `Total 0 (Github 0)`
 * [wiki](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+wiki) `Total 14 (Github 10)`
 
 
@@ -1005,7 +1005,7 @@ without "cybersecurity":
 * [kernel](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+kernel) `Total 2 (Github 0)`
 * [knowledge sharing](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+knowledge-share) `Total 2 (Github 1)`
 * [kubectl](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+kubectl) `Total 1 (Github 0)`
-* [library / moudle / package](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+%28library+OR+moudle%29) `Total 45 (Github 45)`
+* [library / module / package](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+%28library+OR+module%29) `Total 45 (Github 45)`
 * [license](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+license) `Total 9 (Github 0)`
 * [linter](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+linter) `Total 18 (Github 18)`
 * [management (in DevOps)](https://pwnfan.github.io/my-tagmarks/?tags=dev+AND+NOT+sec+AND+management) `Total 2 (Github 1)`
