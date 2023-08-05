@@ -85,7 +85,7 @@ jobs:
         poetry run tagmark_cli maketagdoc \
           -d ${{ env.TAGMARKS_JSON }} \
           -t ${{ env.TAGS_JSON }} \
-          -u https://${{ github.actor }}.github.io/${{ github.repository }} \
+          -u https://${{ github.actor }}.github.io/${GITHUB_REPOSITORY#*/} \
           -m ${{ env.TAGS_DOC_TEMPLATE }} \
           -o ${{ env.TAGS_DOC }}
   
