@@ -9,6 +9,8 @@ on:
       - 'data/*'
       - 'docs/'
 
+  workflow_dispatch:
+
 env:
   TAGMARK_UI_DIR: tagmark-ui
 

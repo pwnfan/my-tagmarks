@@ -7,6 +7,9 @@ on:
     paths:
       - 'data/tagmarks.jsonl'
 
+  workflow_dispatch:
+
+
 env:
   TAGMARK_PY_DIR: tagmark-py
   TAGMARK_UI_DATA: ${{ github.workspace }}/data/tagmarks.jsonl

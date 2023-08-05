@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'docs/cheat-sheet.template'
+  
+  workflow_dispatch:
 
 env:
   TAGMARK_UI_DIR: tagmark-ui
