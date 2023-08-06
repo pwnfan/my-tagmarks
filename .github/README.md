@@ -1,1 +1,1 @@
-../docs/cheat-sheet.md
+../docs/tag-doc.md

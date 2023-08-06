@@ -1,11 +1,11 @@
-name: Update Cheet Sheet
+name: Update Tag Doc
 
 on: 
   push:
     branches:
       - main
     paths:
-      - 'docs/cheat-sheet.template'
+      - 'docs/tag-doc.template'
   
   workflow_dispatch:
 
@@ -14,8 +14,8 @@ env:
   TAGMARK_PY_DIR: tagmark-py
   TAGMARKS_JSON: ${{ github.workspace }}/data/tagmarks.jsonl
   TAGS_JSON: ${{ github.workspace }}/data/tags.json
-  TAGS_DOC_TEMPLATE: ${{ github.workspace }}/docs/cheat-sheet.template
-  TAGS_DOC: ${{ github.workspace }}/docs/cheat-sheet.md
+  TAGS_DOC_TEMPLATE: ${{ github.workspace }}/docs/tag-doc.template
+  TAGS_DOC: ${{ github.workspace }}/docs/tag-doc.md
 
 jobs:
   update:
@@ -34,7 +34,7 @@ jobs:
         path: ${{ env.TAGMARK_UI_DIR }}
         ref: main
   
-    - name: Merge NEW tagmark-ui code
+    - name: Merge New tagmark-ui code
       run: |
         rm -rf \
           ${{ env.TAGMARK_UI_DIR }}/.git* \
@@ -79,7 +79,7 @@ jobs:
         path: .venv
         key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
 
-    - name: Make TagMark Cheat Sheet
+    - name: Make TagMark Tag Doc
       working-directory: ${{ env.TAGMARK_PY_DIR }}
       run: |
         poetry install --no-interaction
