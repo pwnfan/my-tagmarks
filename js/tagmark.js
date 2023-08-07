@@ -18,6 +18,7 @@ const DATA_OPTIONS = {
 const uiDataUrl = "data/tagmarks.jsonl";
 const tagsUrl = "data/tags.json";
 const fitlerDocUrlTempl = "docs/filter.{language}.md";
+const tagmarkTagDocUrl = "docs/tag-doc.md";
 
 const customizedHeaderFilterPlaceholder =
     "Press CTRL/CMD and click here for help...";
@@ -31,12 +32,38 @@ var rainbow = new Rainbow();
 var docs = {
     en: {
         filter: undefined,
+        tagmarkTagDoc: undefined,
     },
     zh_CN: {
         filter: undefined,
     },
     ja: {
         filter: undefined,
+    },
+};
+
+var buttonShowSwitches = {
+    "all-tags-show-switch-container": {
+        buttonSpanClasses: ["fa-solid", "fa-tags", "fa-beat-fade"],
+        titleDivId: "all-tags-show-switch-container-title",
+        events: {
+            click: () => {
+                document
+                    .getElementById("all-tags-overlay")
+                    .classList.toggle("active");
+            },
+            mouseover: handleButtonShowSwitchContainerMouseover,
+            mouseout: handleButtonShowSwitchContainerMouseout,
+        },
+    },
+    "tagmark-tag-doc-show-switch-container": {
+        buttonSpanClasses: ["fa-brands", "fa-readme", "fa-beat-fade"],
+        titleDivId: "tagmark-tag-doc-show-switch-container-title",
+        events: {
+            click: displayTagMarkTagDoc,
+            mouseover: handleButtonShowSwitchContainerMouseover,
+            mouseout: handleButtonShowSwitchContainerMouseout,
+        },
     },
 };
 
@@ -381,20 +408,26 @@ function createTable() {
             titleFormatter: function (cell, formatterParams) {
                 let title = cell.getValue();
 
-                let allTagsShowSwitchContainer = document.createElement("span");
-                allTagsShowSwitchContainer.id =
-                    "all-tags-show-switch-container";
-                let allTagsShowSwitch = document.createElement("i");
-                allTagsShowSwitch.classList.add(
-                    "fa-solid",
-                    "fa-tags",
-                    "fa-beat-fade"
-                );
-                allTagsShowSwitchContainer.appendChild(allTagsShowSwitch);
+                for (const id in buttonShowSwitches) {
+                    buttonShowSwitches[id]["spanElement"] =
+                        document.createElement("span");
+                    buttonShowSwitches[id]["spanElement"].id = id;
+                    buttonShowSwitches[id]["spanElement"].classList.add(
+                        "button-show-switch-container"
+                    );
+                    let showSwitch = document.createElement("i");
+                    buttonShowSwitches[id]["buttonSpanClasses"].forEach(
+                        (className) => {
+                            showSwitch.classList.add(className);
+                        }
+                    );
+                    buttonShowSwitches[id]["spanElement"].appendChild(
+                        showSwitch
+                    );
+                    title += ` ${buttonShowSwitches[id]["spanElement"].outerHTML}`; // <span id="all-tags-show-switch-container"><i class="fa-solid fa-tags fa-beat"></i></span>;
+                }
 
-                // let allTagsShowSwitchHtml = `<span id="all-tags-show-switch-container"><i class="fa-solid fa-tags fa-beat"></i></span>`;
-
-                return `${title} ${allTagsShowSwitchContainer.outerHTML}`;
+                return title;
             },
             headerFilter: "input",
             headerFilterPlaceholder: customizedHeaderFilterPlaceholder,
@@ -543,6 +576,7 @@ function createTable() {
 
     return new Tabulator("#tagmark-table", {
         data: tabulatorData,
+        popupContainer: true,
         columns: columns,
         layout: "fitDataFill",
         pagination: "local",
@@ -626,7 +660,7 @@ function showTagDefinition(event) {
     // set X position of tagDefinitionDiv
     if (boundingRect.left + boundingRect.width / 2 < windowWidth / 2) {
         tagDefinitionDiv.style.left = `${
-            (boundingRect.left + boundingRect.right) / 2 + window.pageXOffset
+            (boundingRect.left + boundingRect.right) / 2 + window.scrollX
         }px`;
         tagDefinitionDiv.style.right = "auto";
     } else {
@@ -634,7 +668,7 @@ function showTagDefinition(event) {
         tagDefinitionDiv.style.right = `${
             windowWidth -
             (boundingRect.left + boundingRect.right) / 2 +
-            window.pageXOffset
+            window.scrollX
         }px`;
     }
     tagDefinitionDiv.style.display = "block";
@@ -642,10 +676,10 @@ function showTagDefinition(event) {
     // check div top overflow and reset it
     tagDefinitionDivBoundingRect = tagDefinitionDiv.getBoundingClientRect();
     if (tagDefinitionDivBoundingRect.top < 0) {
-        tagDefinitionDiv.style.top = `${window.pageYOffset}px`;
+        tagDefinitionDiv.style.top = `${window.scrollY}px`;
     }
     if (tagDefinitionDivBoundingRect.bottom > window.innerHeight) {
-        tagDefinitionDiv.style.bottom = `${window.pageYOffset}px`;
+        tagDefinitionDiv.style.bottom = `${window.scrollY}px`;
     }
 }
 
@@ -662,7 +696,7 @@ function addTagIntoHeaderFilter(event) {
     event.preventDefault();
     let tag = getClickedTag(this);
 
-    // here we can not use table.setHeaderFilterValue because it refresh the table automately, which is not we want
+    // here we can not use table.setHeaderFilterValue because it refresh the table automatically, which is not we want
     //table.setHeaderFilterValue("tags", newTagsHeaderFilterValue);
     let tagsHeaderFilterInput = document.querySelector(
         '.tabulator-col[tabulator-field="tags"] input[type="text"]'
@@ -681,26 +715,23 @@ function addTagIntoHeaderFilter(event) {
     }, 3000);
 }
 
-function handleAllTagsShowSwitchContainerMouseover(event) {
-    let allTagsShowSwitchTitle = document.getElementById(
-        "all-tags-show-switch-container-title"
+function handleButtonShowSwitchContainerMouseover(event) {
+    let titleDiv = document.getElementById(
+        buttonShowSwitches[event.currentTarget.id].titleDivId
     );
-    let boundingRect = this.getBoundingClientRect();
-    allTagsShowSwitchTitle.style.top =
-        boundingRect.bottom + window.pageYOffset + "px";
-    allTagsShowSwitchTitle.style.left =
-        (boundingRect.left + boundingRect.right) / 2 +
-        window.pageXOffset +
-        "px";
+    let boundingRect = event.currentTarget.getBoundingClientRect();
+    titleDiv.style.top = boundingRect.bottom + window.scrollY + "px";
+    titleDiv.style.left =
+        (boundingRect.left + boundingRect.right) / 2 + window.scrollX + "px";
 
-    allTagsShowSwitchTitle.style.display = "block";
+    titleDiv.style.display = "block";
 }
 
-function handleAllTagsShowSwitchContainerMouseout(event) {
-    let allTagsShowSwitchTitle = document.getElementById(
-        "all-tags-show-switch-container-title"
+function handleButtonShowSwitchContainerMouseout(event) {
+    let titleDiv = document.getElementById(
+        buttonShowSwitches[event.currentTarget.id].titleDivId
     );
-    allTagsShowSwitchTitle.style.display = "none";
+    titleDiv.style.display = "none";
 }
 
 function addTags(
@@ -785,7 +816,7 @@ function addTags(
     return tagsDiv;
 }
 
-function displayFilterDoc() {
+function changeFilterDoc() {
     let filterDocLanguageSelect = document.getElementById(
         "filter-doc-language-select"
     );
@@ -793,7 +824,7 @@ function displayFilterDoc() {
     let language = filterDocLanguageSelect.value;
     let doc = docs[language].filter;
 
-    if (!doc || !filterDocDiv.innerHTML) {
+    if (!doc || !filterDocDiv.innerHTML.trim()) {
         let docUrl = fitlerDocUrlTempl.replace("{language}", language);
         fetch(docUrl)
             .then((response) => {
@@ -814,6 +845,35 @@ function displayFilterDoc() {
             });
     } else {
         filterDocDiv.innerHTML = marked.parse(doc);
+    }
+}
+
+function displayTagMarkTagDoc() {
+    document
+        .getElementById("tagmark-tag-doc-overlay")
+        .classList.toggle("active");
+    let tagmarkTagDocDiv = document.getElementById("tagmark-tag-doc");
+
+    if (!tagmarkTagDocDiv.innerHTML.trim()) {
+        fetch(tagmarkTagDocUrl)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.text();
+            })
+            .then((markdown) => {
+                docs.en.tagmarkTagDoc = markdown;
+                tagmarkTagDocDiv.innerHTML = marked.parse(markdown);
+            })
+            .catch((error) => {
+                console.error(
+                    "There was a problem with the fetch operation:",
+                    error
+                );
+            });
+    } else {
+        tagmarkTagDocDiv.innerHTML = marked.parse(docs.en.tagmarkTagDoc);
     }
 }
 
@@ -888,24 +948,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 tagCountSpan.innerText = Object.keys(tagsInfo).length;
 
                 // add events
-                let allTagsOverlay =
-                    document.getElementById("all-tags-overlay");
-                let allTagsShowSwitchContainer = document.getElementById(
-                    "all-tags-show-switch-container"
-                );
                 let allTagsDiv = document.getElementById("all-tags-div");
-                let allTagsOverlayCloseBtn = document.querySelector(
-                    "#all-tags-overlay .close-btn"
-                );
+
                 let allTagsFiledsets = document
                     .getElementById("all-tags-menu")
                     .getElementsByTagName("fieldset");
 
                 let filterDocOverlay =
                     document.getElementById("filter-doc-overlay");
-                let filterDocOverlayCloseBtn = document.querySelector(
-                    "#filter-doc-overlay .close-btn"
-                );
+
                 let allHeaderFilterInput = document.querySelectorAll(
                     ".tabulator-header-filter>input"
                 );
@@ -916,17 +967,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 let toTop = document.getElementById("to-top");
                 let toBottom = document.getElementById("to-bottom");
 
-                allTagsShowSwitchContainer.addEventListener("click", () => {
-                    allTagsOverlay.classList.toggle("active");
-                });
-                allTagsShowSwitchContainer.addEventListener(
-                    "mouseover",
-                    handleAllTagsShowSwitchContainerMouseover
-                );
-                allTagsShowSwitchContainer.addEventListener(
-                    "mouseout",
-                    handleAllTagsShowSwitchContainerMouseout
-                );
                 allTagsDiv.appendChild(
                     addTags(
                         Object.keys(tagsInfo).filter(
@@ -939,9 +979,23 @@ document.addEventListener("DOMContentLoaded", () => {
                         "count"
                     )
                 );
-                allTagsOverlayCloseBtn.addEventListener("click", () => {
-                    allTagsOverlay.classList.remove("active");
-                });
+
+                document
+                    .querySelectorAll(".overlay .close-btn")
+                    .forEach((closeBtn) => {
+                        closeBtn.addEventListener("click", (event) => {
+                            let overlayDiv = event.currentTarget.parentNode;
+                            while (overlayDiv !== null) {
+                                if (overlayDiv.classList.contains("overlay")) {
+                                    // Found the ancestor with the class "overlay"
+                                    break;
+                                }
+                                overlayDiv = overlayDiv.parentNode;
+                            }
+                            overlayDiv.classList.toggle("active");
+                        });
+                    });
+
                 for (const fieldset of allTagsFiledsets) {
                     fieldset.addEventListener("change", (event) => {
                         const sortFieldset = document.getElementById(
@@ -989,9 +1043,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                 }
 
-                filterDocOverlayCloseBtn.addEventListener("click", () => {
-                    filterDocOverlay.classList.remove("active");
-                });
                 allHeaderFilterInput.forEach((input) =>
                     input.addEventListener("mousedown", function (event) {
                         if (
@@ -1001,13 +1052,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         ) {
                             event.preventDefault();
                             filterDocOverlay.classList.toggle("active");
-                            displayFilterDoc();
+                            changeFilterDoc();
                         }
                     })
                 );
                 filterDocLanguageSelect.addEventListener(
                     "change",
-                    displayFilterDoc
+                    changeFilterDoc
                 );
 
                 toTop.addEventListener("click", () => {
@@ -1025,6 +1076,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         true
                     );
                 });
+
+                for (const id in buttonShowSwitches) {
+                    Object.entries(buttonShowSwitches[id]["events"]).forEach(
+                        ([eventName, func]) => {
+                            document
+                                .getElementById(id)
+                                .addEventListener(eventName, func);
+                        }
+                    );
+                }
             });
         })
         .catch((error) => console.error(error.message));

@@ -12,7 +12,7 @@
 }
 
 #tag-definition::-webkit-scrollbar,
-#all-tags-show-switch-container-title::-webkit-scrollbar {
+.custom-title::-webkit-scrollbar {
     display: none;
 }
 
@@ -81,14 +81,13 @@ body {
     font-size: 0.9em;
 }
 
-#all-tags-show-switch-container {
+.button-show-switch-container {
     cursor: pointer;
     display: inline-block;
     white-space: nowrap;
 }
 
-#tag-definition,
-#all-tags-show-switch-container-title {
+.custom-title {
     position: absolute;
     background-color: #333;
     color: white;
@@ -215,14 +214,15 @@ body {
 .modal-menu {
     height: 50px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     justify-content: flex-start;
     border-bottom: 1px solid #ccc;
     padding: 0px 20px;
 }
 
-.github-link {
-    margin-left: auto;
+.link {
+    margin-left: 10px;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid #ccc;

@@ -77,9 +77,15 @@
 
     <body>
         <div id="tagmark-table"></div>
-        <div id="tag-definition"></div>
-        <div id="all-tags-show-switch-container-title">
+        <div id="tag-definition" class="custom-title"></div>
+        <div id="all-tags-show-switch-container-title" class="custom-title">
             Click to show all tags...
+        </div>
+        <div
+            id="tagmark-tag-doc-show-switch-container-title"
+            class="custom-title"
+        >
+            Click to show TagMark Tags Doc...
         </div>
 
         <div id="all-tags-overlay" class="overlay">
@@ -142,20 +148,20 @@
                         </fieldset>
                     </div>
                     <span
-                        class="github-link"
-                        onclick="window.open('data/tagmarks.jsonl')"
+                        class="link"
+                        onclick="window.open('./data/tagmarks.jsonl')"
                         title="TagMark UI Data"
                     >
                         <i class="fa-solid fa-link fa-beat-fade"></i>
-                        <span class="github-link-text">tagmarks.jsonl</span>
+                        <span class="link-text">tagmarks.jsonl</span>
                     </span>
                     <span
-                        class="github-link"
-                        onclick="window.open('data/tags.json')"
+                        class="link"
+                        onclick="window.open('./data/tags.json')"
                         title="Tags Information"
                     >
                         <i class="fa-solid fa-link fa-beat-fade"></i>
-                        <span class="github-link-text">tags.json</span>
+                        <span class="link-text">tags.json</span>
                     </span>
                 </div>
                 <div class="modal-body">
@@ -183,18 +189,47 @@
                         <option value="zh_CN">Chinese(Simple)</option>
                     </select>
                     <span
-                        class="github-link"
+                        class="link"
                         onclick="window.open('https://github.com/pwnfan/tagmark-ui/tree/main/docs')"
                     >
                         <i class="fa-brands fa-github fa-beat-fade"></i>
-                        <span class="github-link-text">Docs on Github</span>
+                        <span class="link-text">Docs on Github</span>
                     </span>
                 </div>
 
                 <div class="modal-body">
-                    <div id="filter-doc" class="body-container">
-                        <!-- add content here -->
+                    <div id="filter-doc" class="body-container"></div>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+
+        <div id="tagmark-tag-doc-overlay" class="overlay">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="header-container">
+                        <h2>TagMark Tag Doc</h2>
+                        <button class="close-btn">&times;</button>
                     </div>
+                </div>
+                <div class="modal-menu">
+                    <span
+                        class="link"
+                        onclick="window.open('https://github.com/pwnfan/tagmark')"
+                    >
+                        <i class="fa-brands fa-github fa-beat-fade"></i>
+                        <span class="link-text">TagMark Tag Doc Reference</span>
+                    </span>
+                    <span
+                        class="link"
+                        onclick="window.open('./docs/tag-doc.md')"
+                    >
+                        <i class="fa-solid fa-link fa-beat-fade"></i>
+                        <span class="link-text">Doc Source Code</span>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <div id="tagmark-tag-doc" class="body-container"></div>
                     <br /><br />
                 </div>
             </div>
