@@ -23,6 +23,7 @@ const tagmarkTagDocUrl = "docs/tag-doc.md";
 const customizedHeaderFilterPlaceholder =
     "Press CTRL/CMD and click here for help...";
 
+var table;
 var tabulatorData = Array();
 var tagsInfo;
 var maxTagCount;
@@ -887,7 +888,7 @@ function onTableBuiltInits(){
             filterFiled,
             filterValue,
         ] of queryParams.entries()) {
-            this.setHeaderFilterValue(filterFiled, filterValue);
+            table.setHeaderFilterValue(filterFiled, filterValue);
         }
     }
     
