@@ -42,7 +42,7 @@ var docs = {
     },
 };
 
-var buttonShowSwitches = {
+var overlaySwitchButtons = {
     "all-tags-show-switch-container": {
         buttonSpanClasses: ["fa-solid", "fa-tags", "fa-beat-fade"],
         titleDivId: "all-tags-show-switch-container-title",
@@ -52,8 +52,8 @@ var buttonShowSwitches = {
                     .getElementById("all-tags-overlay")
                     .classList.toggle("active");
             },
-            mouseover: handleButtonShowSwitchContainerMouseover,
-            mouseout: handleButtonShowSwitchContainerMouseout,
+            mouseover: handleOverlayShowSwitchButtonMouseover,
+            mouseout: handleOverlayShowSwitchButtonMouseout,
         },
     },
     "tagmark-tag-doc-show-switch-container": {
@@ -61,8 +61,8 @@ var buttonShowSwitches = {
         titleDivId: "tagmark-tag-doc-show-switch-container-title",
         events: {
             click: displayTagMarkTagDoc,
-            mouseover: handleButtonShowSwitchContainerMouseover,
-            mouseout: handleButtonShowSwitchContainerMouseout,
+            mouseover: handleOverlayShowSwitchButtonMouseover,
+            mouseout: handleOverlayShowSwitchButtonMouseout,
         },
     },
 };
@@ -220,11 +220,10 @@ function customHeaderFilter(headerValue, rowValue, rowData, filterParams) {
     }
 
     function extractKeyword(headerValuePart) {
-        /*
-         * This function takes a string headerValuePart as its argument and extracts the text between the
-         * first opening parenthesis '(', and the last closing parenthesis ')' in the string. The
-         * extracted text is then returned as the output of the function.
-         */
+         // This function takes a string headerValuePart as its argument and extracts the text between the
+         // first opening parenthesis '(', and the last closing parenthesis ')' in the string. The
+         // extracted text is then returned as the output of the function.
+         
 
         // Find the index of the first opening parenthesis
         let startIndex = 0;
@@ -408,23 +407,23 @@ function createTable() {
             titleFormatter: function (cell, formatterParams) {
                 let title = cell.getValue();
 
-                for (const id in buttonShowSwitches) {
-                    buttonShowSwitches[id]["spanElement"] =
+                for (const id in overlaySwitchButtons) {
+                    overlaySwitchButtons[id]["spanElement"] =
                         document.createElement("span");
-                    buttonShowSwitches[id]["spanElement"].id = id;
-                    buttonShowSwitches[id]["spanElement"].classList.add(
+                    overlaySwitchButtons[id]["spanElement"].id = id;
+                    overlaySwitchButtons[id]["spanElement"].classList.add(
                         "button-show-switch-container"
                     );
                     let showSwitch = document.createElement("i");
-                    buttonShowSwitches[id]["buttonSpanClasses"].forEach(
+                    overlaySwitchButtons[id]["buttonSpanClasses"].forEach(
                         (className) => {
                             showSwitch.classList.add(className);
                         }
                     );
-                    buttonShowSwitches[id]["spanElement"].appendChild(
+                    overlaySwitchButtons[id]["spanElement"].appendChild(
                         showSwitch
                     );
-                    title += ` ${buttonShowSwitches[id]["spanElement"].outerHTML}`; // <span id="all-tags-show-switch-container"><i class="fa-solid fa-tags fa-beat"></i></span>;
+                    title += ` ${overlaySwitchButtons[id]["spanElement"].outerHTML}`; // <span id="all-tags-show-switch-container"><i class="fa-solid fa-tags fa-beat"></i></span>;
                 }
 
                 return title;
@@ -715,9 +714,9 @@ function addTagIntoHeaderFilter(event) {
     }, 3000);
 }
 
-function handleButtonShowSwitchContainerMouseover(event) {
+function handleOverlayShowSwitchButtonMouseover(event) {
     let titleDiv = document.getElementById(
-        buttonShowSwitches[event.currentTarget.id].titleDivId
+        overlaySwitchButtons[event.currentTarget.id].titleDivId
     );
     let boundingRect = event.currentTarget.getBoundingClientRect();
     titleDiv.style.top = boundingRect.bottom + window.scrollY + "px";
@@ -727,12 +726,13 @@ function handleButtonShowSwitchContainerMouseover(event) {
     titleDiv.style.display = "block";
 }
 
-function handleButtonShowSwitchContainerMouseout(event) {
+function handleOverlayShowSwitchButtonMouseout(event) {
     let titleDiv = document.getElementById(
-        buttonShowSwitches[event.currentTarget.id].titleDivId
+        overlaySwitchButtons[event.currentTarget.id].titleDivId
     );
     titleDiv.style.display = "none";
 }
+
 
 function addTags(
     tags,
@@ -816,6 +816,7 @@ function addTags(
     return tagsDiv;
 }
 
+
 function changeFilterDoc() {
     let filterDocLanguageSelect = document.getElementById(
         "filter-doc-language-select"
@@ -848,6 +849,7 @@ function changeFilterDoc() {
     }
 }
 
+
 function displayTagMarkTagDoc() {
     document
         .getElementById("tagmark-tag-doc-overlay")
@@ -877,6 +879,181 @@ function displayTagMarkTagDoc() {
     }
 }
 
+
+function onTableBuiltInits(){
+    function setHeaderFilterValueAccordingToUrlParams(){
+        let queryParams = new URLSearchParams(window.location.search);
+        for (const [
+            filterFiled,
+            filterValue,
+        ] of queryParams.entries()) {
+            this.setHeaderFilterValue(filterFiled, filterValue);
+        }
+    }
+    
+    function setPageFooterStats() {
+        let bookmarkCountSpan = document.getElementById("bookmark-count");
+        bookmarkCountSpan.innerText = tabulatorData.length;
+        let githubBookmarkCountSpan = document.getElementById(
+            "github-bookmark-count"
+        );
+        githubBookmarkCountSpan.innerText = githubItemCount;
+        let tagCountSpan = document.getElementById("tag-count");
+        tagCountSpan.innerText = Object.keys(tagsInfo).length;
+    }
+    
+    function initAllTagsOverlay() {
+        let allTagsDiv = document.getElementById("all-tags-div");
+    
+        allTagsDiv.appendChild(
+            addTags(
+                Object.keys(tagsInfo).filter(
+                    (tag) =>
+                        tagsInfo[tag].hasOwnProperty("count") &&
+                        tagsInfo[tag].count > 0
+                ),
+                true,
+                "formatted_name",
+                "count"
+            )
+        );
+    
+        let allTagsFieldsets = document
+            .getElementById("all-tags-menu")
+            .getElementsByTagName("fieldset");
+        for (const fieldset of allTagsFieldsets) {
+            fieldset.addEventListener("change", (event) => {
+                const sortFieldset = document.getElementById(
+                    "all-tags-sort-fieldset"
+                );
+                const showFieldset = document.getElementById(
+                    "all-tags-show-fieldset"
+                );
+    
+                const sortInputs = sortFieldset.querySelectorAll(
+                    'input[name="tags-sort"]'
+                );
+                const showInputs = showFieldset.querySelectorAll(
+                    'input[name="tags-show-name"]'
+                );
+    
+                let sort;
+                let show;
+    
+                sortInputs.forEach((input) => {
+                    if (input.checked) {
+                        sort = input.value;
+                    }
+                });
+    
+                showInputs.forEach((input) => {
+                    if (input.checked) {
+                        show = input.value;
+                    }
+                });
+    
+                allTagsDiv.innerHTML = "";
+                allTagsDiv.appendChild(
+                    addTags(
+                        Object.keys(tagsInfo).filter(
+                            (tag) =>
+                                tagsInfo[tag].hasOwnProperty("count") &&
+                                tagsInfo[tag].count > 0
+                        ),
+                        true,
+                        show,
+                        sort
+                    )
+                );
+            });
+        }
+    }
+    
+    function initHeaderFilterInputShowDocEvents() {
+        let filterDocOverlay = document.getElementById("filter-doc-overlay");
+    
+        let allHeaderFilterInput = document.querySelectorAll(
+            ".tabulator-header-filter>input"
+        );
+        let filterDocLanguageSelect = document.getElementById(
+            "filter-doc-language-select"
+        );
+        allHeaderFilterInput.forEach((input) =>
+            input.addEventListener("mousedown", function (event) {
+                if (
+                    // left button clicked and CTRL/COMMAND key pressed
+                    event.button === 0 &&
+                    (event.ctrlKey || event.metaKey)
+                ) {
+                    event.preventDefault();
+                    filterDocOverlay.classList.toggle("active");
+                    changeFilterDoc();
+                }
+            })
+        );
+        filterDocLanguageSelect.addEventListener("change", changeFilterDoc);
+    }
+    
+    function initToTopAndToBottomButtons(){
+        let toTop = document.getElementById("to-top");
+        let toBottom = document.getElementById("to-bottom");
+        toTop.addEventListener("click", () => {
+            table.scrollToRow(table.getRowFromPosition(1), "top", true);
+        });
+        toBottom.addEventListener("click", () => {
+            table.scrollToRow(
+                table.getRowFromPosition(
+                    Math.min(
+                        table.getDataCount("active"),
+                        table.getPageSize()
+                    )
+                ),
+                "top",
+                true
+            );
+        });
+    }
+    
+    function initOverlayCloseButtonEvents(){
+        document
+        .querySelectorAll(".overlay .close-btn")
+        .forEach((closeBtn) => {
+            closeBtn.addEventListener("click", (event) => {
+                let overlayDiv = event.currentTarget.parentNode;
+                while (overlayDiv !== null) {
+                    if (overlayDiv.classList.contains("overlay")) {
+                        // Found the ancestor with the class "overlay"
+                        break;
+                    }
+                    overlayDiv = overlayDiv.parentNode;
+                }
+                overlayDiv.classList.toggle("active");
+            });
+        });
+    }
+    
+    function initOverlaySwitchButtonEvents(){
+        for (const id in overlaySwitchButtons) {
+            Object.entries(overlaySwitchButtons[id]["events"]).forEach(
+                ([eventName, func]) => {
+                    document
+                        .getElementById(id)
+                        .addEventListener(eventName, func);
+                }
+            );
+        }
+    }
+
+    setHeaderFilterValueAccordingToUrlParams();
+    setPageFooterStats();
+    initAllTagsOverlay();
+    initHeaderFilterInputShowDocEvents();
+    initToTopAndToBottomButtons();
+    initOverlayCloseButtonEvents();
+    initOverlaySwitchButtonEvents();
+}
+
+
 // Dynamically load the script regardless of the user's choice
 function loadStatisticsScript() {
     const script = document.createElement("script");
@@ -887,206 +1064,51 @@ function loadStatisticsScript() {
     document.head.appendChild(script);
 }
 
-window.addEventListener("load", function () {
-    let ifLoadStatisticsScript = Cookies.get("ifLoadStatisticsScript");
 
-    if (ifLoadStatisticsScript === undefined) {
-        Swal.fire({
-            title: "Privacy Confirm",
-            text: "Do you want to load the script (powered by busuanzi) for showing page view statistics in the page bottom, which will include your visit?",
-            icon: "warning",
-            showCancelButton: true,
-            color: "white",
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Yes",
-            cancelButtonText: "No",
-        }).then((result) => {
-            ifLoadStatisticsScript = result.isConfirmed;
-            Cookies.set("ifLoadStatisticsScript", ifLoadStatisticsScript, {
-                expires: 7,
-                path: "",
+function showPvUserConfirm(){
+    window.addEventListener("load", function () {
+        let ifLoadStatisticsScript = Cookies.get("ifLoadStatisticsScript");
+    
+        if (ifLoadStatisticsScript === undefined) {
+            Swal.fire({
+                title: "Privacy Confirm",
+                text: "Do you want to load the script (powered by busuanzi) for showing page view statistics in the page bottom, which will include your visit?",
+                icon: "warning",
+                showCancelButton: true,
+                color: "white",
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes",
+                cancelButtonText: "No",
+            }).then((result) => {
+                ifLoadStatisticsScript = result.isConfirmed;
+                Cookies.set("ifLoadStatisticsScript", ifLoadStatisticsScript, {
+                    expires: 7,
+                    path: "",
+                });
+                if (ifLoadStatisticsScript) {
+                    loadStatisticsScript();
+                }
             });
-            if (ifLoadStatisticsScript) {
-                loadStatisticsScript();
-            }
-        });
-    } else {
-        // convert into Boolean
-        ifLoadStatisticsScript = JSON.parse(ifLoadStatisticsScript);
-    }
+        } else {
+            // convert into Boolean
+            ifLoadStatisticsScript = JSON.parse(ifLoadStatisticsScript);
+        }
+    
+        if (ifLoadStatisticsScript) {
+            loadStatisticsScript();
+        }
+    });
+}
 
-    if (ifLoadStatisticsScript) {
-        loadStatisticsScript();
-    }
-});
+showPvUserConfirm();
 
 // Wait for DOM to load and then fetch and initialize data, create table, bind events
 document.addEventListener("DOMContentLoaded", () => {
     initData()
         .then(() => {
             table = createTable();
-            table.on("tableBuilt", function () {
-                // set header filter value according to the url params
-                let queryParams = new URLSearchParams(window.location.search);
-                for (const [
-                    filterFiled,
-                    filterValue,
-                ] of queryParams.entries()) {
-                    this.setHeaderFilterValue(filterFiled, filterValue);
-                }
-
-                // set statistics
-                let bookmarkCountSpan =
-                    document.getElementById("bookmark-count");
-                bookmarkCountSpan.innerText = tabulatorData.length;
-                let githubBookmarkCountSpan = document.getElementById(
-                    "github-bookmark-count"
-                );
-                githubBookmarkCountSpan.innerText = githubItemCount;
-                let tagCountSpan = document.getElementById("tag-count");
-                tagCountSpan.innerText = Object.keys(tagsInfo).length;
-
-                // add events
-                let allTagsDiv = document.getElementById("all-tags-div");
-
-                let allTagsFiledsets = document
-                    .getElementById("all-tags-menu")
-                    .getElementsByTagName("fieldset");
-
-                let filterDocOverlay =
-                    document.getElementById("filter-doc-overlay");
-
-                let allHeaderFilterInput = document.querySelectorAll(
-                    ".tabulator-header-filter>input"
-                );
-                let filterDocLanguageSelect = document.getElementById(
-                    "filter-doc-language-select"
-                );
-
-                let toTop = document.getElementById("to-top");
-                let toBottom = document.getElementById("to-bottom");
-
-                allTagsDiv.appendChild(
-                    addTags(
-                        Object.keys(tagsInfo).filter(
-                            (tag) =>
-                                tagsInfo[tag].hasOwnProperty("count") &&
-                                tagsInfo[tag].count > 0
-                        ),
-                        true,
-                        "formatted_name",
-                        "count"
-                    )
-                );
-
-                document
-                    .querySelectorAll(".overlay .close-btn")
-                    .forEach((closeBtn) => {
-                        closeBtn.addEventListener("click", (event) => {
-                            let overlayDiv = event.currentTarget.parentNode;
-                            while (overlayDiv !== null) {
-                                if (overlayDiv.classList.contains("overlay")) {
-                                    // Found the ancestor with the class "overlay"
-                                    break;
-                                }
-                                overlayDiv = overlayDiv.parentNode;
-                            }
-                            overlayDiv.classList.toggle("active");
-                        });
-                    });
-
-                for (const fieldset of allTagsFiledsets) {
-                    fieldset.addEventListener("change", (event) => {
-                        const sortFieldset = document.getElementById(
-                            "all-tags-sort-fieldset"
-                        );
-                        const showFieldset = document.getElementById(
-                            "all-tags-show-fieldset"
-                        );
-
-                        const sortInputs = sortFieldset.querySelectorAll(
-                            'input[name="tags-sort"]'
-                        );
-                        const showInputs = showFieldset.querySelectorAll(
-                            'input[name="tags-show-name"]'
-                        );
-
-                        let sort;
-                        let show;
-
-                        sortInputs.forEach((input) => {
-                            if (input.checked) {
-                                sort = input.value;
-                            }
-                        });
-
-                        showInputs.forEach((input) => {
-                            if (input.checked) {
-                                show = input.value;
-                            }
-                        });
-
-                        allTagsDiv.innerHTML = "";
-                        allTagsDiv.appendChild(
-                            addTags(
-                                Object.keys(tagsInfo).filter(
-                                    (tag) =>
-                                        tagsInfo[tag].hasOwnProperty("count") &&
-                                        tagsInfo[tag].count > 0
-                                ),
-                                true,
-                                show,
-                                sort
-                            )
-                        );
-                    });
-                }
-
-                allHeaderFilterInput.forEach((input) =>
-                    input.addEventListener("mousedown", function (event) {
-                        if (
-                            // left button clicked and CTRL/COMMAND key pressed
-                            event.button === 0 &&
-                            (event.ctrlKey || event.metaKey)
-                        ) {
-                            event.preventDefault();
-                            filterDocOverlay.classList.toggle("active");
-                            changeFilterDoc();
-                        }
-                    })
-                );
-                filterDocLanguageSelect.addEventListener(
-                    "change",
-                    changeFilterDoc
-                );
-
-                toTop.addEventListener("click", () => {
-                    table.scrollToRow(table.getRowFromPosition(1), "top", true);
-                });
-                toBottom.addEventListener("click", () => {
-                    table.scrollToRow(
-                        table.getRowFromPosition(
-                            Math.min(
-                                table.getDataCount("active"),
-                                table.getPageSize()
-                            )
-                        ),
-                        "top",
-                        true
-                    );
-                });
-
-                for (const id in buttonShowSwitches) {
-                    Object.entries(buttonShowSwitches[id]["events"]).forEach(
-                        ([eventName, func]) => {
-                            document
-                                .getElementById(id)
-                                .addEventListener(eventName, func);
-                        }
-                    );
-                }
-            });
+            table.on("tableBuilt", onTableBuiltInits);
         })
         .catch((error) => console.error(error.message));
 });
