@@ -221,10 +221,9 @@ function customHeaderFilter(headerValue, rowValue, rowData, filterParams) {
     }
 
     function extractKeyword(headerValuePart) {
-         // This function takes a string headerValuePart as its argument and extracts the text between the
-         // first opening parenthesis '(', and the last closing parenthesis ')' in the string. The
-         // extracted text is then returned as the output of the function.
-         
+        // This function takes a string headerValuePart as its argument and extracts the text between the
+        // first opening parenthesis '(', and the last closing parenthesis ')' in the string. The
+        // extracted text is then returned as the output of the function.
 
         // Find the index of the first opening parenthesis
         let startIndex = 0;
@@ -734,7 +733,6 @@ function handleOverlayShowSwitchButtonMouseout(event) {
     titleDiv.style.display = "none";
 }
 
-
 function addTags(
     tags,
     withCount = false,
@@ -817,7 +815,6 @@ function addTags(
     return tagsDiv;
 }
 
-
 function changeFilterDoc() {
     let filterDocLanguageSelect = document.getElementById(
         "filter-doc-language-select"
@@ -850,7 +847,6 @@ function changeFilterDoc() {
     }
 }
 
-
 function displayTagMarkTagDoc() {
     document
         .getElementById("tagmark-tag-doc-overlay")
@@ -880,18 +876,14 @@ function displayTagMarkTagDoc() {
     }
 }
 
-
-function onTableBuiltInits(){
-    function setHeaderFilterValueAccordingToUrlParams(){
+function onTableBuiltInits() {
+    function setHeaderFilterValueAccordingToUrlParams() {
         let queryParams = new URLSearchParams(window.location.search);
-        for (const [
-            filterFiled,
-            filterValue,
-        ] of queryParams.entries()) {
+        for (const [filterFiled, filterValue] of queryParams.entries()) {
             table.setHeaderFilterValue(filterFiled, filterValue);
         }
     }
-    
+
     function setPageFooterStats() {
         let bookmarkCountSpan = document.getElementById("bookmark-count");
         bookmarkCountSpan.innerText = tabulatorData.length;
@@ -902,10 +894,10 @@ function onTableBuiltInits(){
         let tagCountSpan = document.getElementById("tag-count");
         tagCountSpan.innerText = Object.keys(tagsInfo).length;
     }
-    
+
     function initAllTagsOverlay() {
         let allTagsDiv = document.getElementById("all-tags-div");
-    
+
         allTagsDiv.appendChild(
             addTags(
                 Object.keys(tagsInfo).filter(
@@ -918,7 +910,7 @@ function onTableBuiltInits(){
                 "count"
             )
         );
-    
+
         let allTagsFieldsets = document
             .getElementById("all-tags-menu")
             .getElementsByTagName("fieldset");
@@ -930,29 +922,29 @@ function onTableBuiltInits(){
                 const showFieldset = document.getElementById(
                     "all-tags-show-fieldset"
                 );
-    
+
                 const sortInputs = sortFieldset.querySelectorAll(
                     'input[name="tags-sort"]'
                 );
                 const showInputs = showFieldset.querySelectorAll(
                     'input[name="tags-show-name"]'
                 );
-    
+
                 let sort;
                 let show;
-    
+
                 sortInputs.forEach((input) => {
                     if (input.checked) {
                         sort = input.value;
                     }
                 });
-    
+
                 showInputs.forEach((input) => {
                     if (input.checked) {
                         show = input.value;
                     }
                 });
-    
+
                 allTagsDiv.innerHTML = "";
                 allTagsDiv.appendChild(
                     addTags(
@@ -969,10 +961,10 @@ function onTableBuiltInits(){
             });
         }
     }
-    
+
     function initHeaderFilterInputShowDocEvents() {
         let filterDocOverlay = document.getElementById("filter-doc-overlay");
-    
+
         let allHeaderFilterInput = document.querySelectorAll(
             ".tabulator-header-filter>input"
         );
@@ -994,8 +986,8 @@ function onTableBuiltInits(){
         );
         filterDocLanguageSelect.addEventListener("change", changeFilterDoc);
     }
-    
-    function initToTopAndToBottomButtons(){
+
+    function initToTopAndToBottomButtons() {
         let toTop = document.getElementById("to-top");
         let toBottom = document.getElementById("to-bottom");
         toTop.addEventListener("click", () => {
@@ -1004,21 +996,16 @@ function onTableBuiltInits(){
         toBottom.addEventListener("click", () => {
             table.scrollToRow(
                 table.getRowFromPosition(
-                    Math.min(
-                        table.getDataCount("active"),
-                        table.getPageSize()
-                    )
+                    Math.min(table.getDataCount("active"), table.getPageSize())
                 ),
                 "top",
                 true
             );
         });
     }
-    
-    function initOverlayCloseButtonEvents(){
-        document
-        .querySelectorAll(".overlay .close-btn")
-        .forEach((closeBtn) => {
+
+    function initOverlayCloseButtonEvents() {
+        document.querySelectorAll(".overlay .close-btn").forEach((closeBtn) => {
             closeBtn.addEventListener("click", (event) => {
                 let overlayDiv = event.currentTarget.parentNode;
                 while (overlayDiv !== null) {
@@ -1032,8 +1019,8 @@ function onTableBuiltInits(){
             });
         });
     }
-    
-    function initOverlaySwitchButtonEvents(){
+
+    function initOverlaySwitchButtonEvents() {
         for (const id in overlaySwitchButtons) {
             Object.entries(overlaySwitchButtons[id]["events"]).forEach(
                 ([eventName, func]) => {
@@ -1054,7 +1041,6 @@ function onTableBuiltInits(){
     initOverlaySwitchButtonEvents();
 }
 
-
 // Dynamically load the script regardless of the user's choice
 function loadStatisticsScript() {
     const script = document.createElement("script");
@@ -1065,11 +1051,10 @@ function loadStatisticsScript() {
     document.head.appendChild(script);
 }
 
-
-function showPvUserConfirm(){
+function showPvUserConfirm() {
     window.addEventListener("load", function () {
         let ifLoadStatisticsScript = Cookies.get("ifLoadStatisticsScript");
-    
+
         if (ifLoadStatisticsScript === undefined) {
             Swal.fire({
                 title: "Privacy Confirm",
@@ -1095,7 +1080,7 @@ function showPvUserConfirm(){
             // convert into Boolean
             ifLoadStatisticsScript = JSON.parse(ifLoadStatisticsScript);
         }
-    
+
         if (ifLoadStatisticsScript) {
             loadStatisticsScript();
         }
