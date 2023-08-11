@@ -28,6 +28,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
   - [2.5. Finance, Economics, Commerce](#25-finance-economics-commerce)
   - [2.6. Other Topics](#26-other-topics)
 - [3. About TagMark](#3-about-tagmark)
+- [4. Credits](#4-credits)
 
 
 ## 1. Notice
@@ -1161,13 +1162,31 @@ including "cybersecruity" and "development":
 
 ## 3. About TagMark
 
-TagMark is a tag based bookmark solution I created for IT or Science practitioners who:
+TagMark is a tag-based bookmark solution I created for:
 
-* have a lot of bookmarks and want to organise them well, and want to easily retrieve and share them with others
-* often work with Github and star many repositories
+* Those who have a multitude of bookmarks and want to efficiently organize, easily retrieve, and share them with others.
+* Individuals who frequently work with GitHub, have starred numerous repositories, yet struggle with how to efficiently retrieve and effectively utilize this vast amount of information.
 
 TagMark related resources:
 
-* tagmark-py
-* tagmark-ui
-* my-tagmarks (this repo)
+* projects:
+  * [tagmark-py](https://github.com/pwnfan/tagmark-py)
+    * exporting tagged bookmarked data from other third party services, e.g. diigo
+    * converting other bookmark formats into Tagmark format, i.e `tagmarks.jsonl`
+    * checking every tag has a been defined, i.e. checking tag consistency in `tagmarks.jsonl` and `tags.json`
+    * getting tag definitions automatically with ChatGPT, i.e setting the values of the key `definition` in `tags.json`
+    * making document from a template containing tag related syntaxes, i.e making `tag-doc.md`
+  * [tagmark-ui](https://github.com/pwnfan/tagmark-ui)
+    * a web page showing `tagmarks.jsonl`, `tags.json` and related docs
+  * [my-tagmarks (this repo)](https://github.com/pwnfan/my-tagmarks)
+    * my own bookmarks data stored as TagMark data `tagmarks.jsonl` and `tags.json`
+    * a Github Pages repo serving `tagmark-ui` and showing all my bookmarks
+    * a Github README including curated topics (i.e. tags) from my personal bookmarks
+* [video: TagMark Introduction and User Guide]()
+
+## 4. Credits
+
+* All the original authors of the content related to my bookmarks
+* Some tools and resources are no longer maintained or outdated so they were not included in `my-tagmarks` data, but they once provided me with significant help, for which I am truly grateful
+* [HackGit (@hack_git)](https://twitter.com/hack_git): Continuously sharing fantastic open-source security tools
+* [sec-wiki weekly](https://www.sec-wiki.com/weekly): Consistently providing updates every week on security-related news, technology, and open-source tools
