@@ -1,5 +1,13 @@
 # PwnFan's TagMark Cheat Sheet
 
+[![Deploy Github Pages](https://github.com/pwnfan/my-tagmarks/actions/workflows/github_pages.yml/badge.svg)](https://github.com/pwnfan/my-tagmarks/actions/workflows/github_pages.yml)
+[![Sync tagmark-ui](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tagmark-ui.yml/badge.svg)](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tagmark-ui.yml)
+[![Update Tag Doc](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tag-doc.yml/badge.svg)](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tag-doc.yml)
+[![Update TagMark Data](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tagmark-data.yml/badge.svg)](https://github.com/pwnfan/my-tagmarks/actions/workflows/update-tagmark-data.yml)
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/pwnfan?label=follow)](https://twitter.com/intent/follow?screen_name=pwnfan)
+[![Twitter URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Dhttps%3A%2F%2Fgithub.com%2Fpwnfan%2Fmy-tagmarks)](https://twitter.com/intent/tweet?text=https://github.com/pwnfan/my-tagmarks) 
+
 Curated topics (i.e. tags) from my personal bookmarks. All topics are formatted as query links linked to a tag based bookmark manager page made with [TagMark](#3-about-tagmark).
 
 **Disclaimer: All the cybersecurity tools and techniques mentioned in this repository are for sharing purposes only. Please refrain from using them for illegal activities, as the consequences will be your own responsibility.**
