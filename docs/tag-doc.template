@@ -2,6 +2,8 @@
 
 Curated topics (i.e. tags) from my personal bookmarks. All topics are formatted as query links linked to a tag based bookmark manager page made with [TagMark](#3-about-tagmark).
 
+**Disclaimer: All the cybersecurity tools and techniques mentioned in this repository are for sharing purposes only. Please refrain from using them for illegal activities, as the consequences will be your own responsibility.**
+
 My bookmarks mainly focus on `cybersecurity` and related `development` things. Here are the ToC:
 
 - [1. Notice](#1-notice)
@@ -1182,7 +1184,9 @@ TagMark related resources:
     * my own bookmarks data stored as TagMark data `tagmarks.jsonl` and `tags.json`
     * a Github Pages repo serving `tagmark-ui` and showing all my bookmarks
     * a Github README including curated topics (i.e. tags) from my personal bookmarks
-* [video: TagMark Introduction and User Guide]()
+* video: TagMark Introduction and User Guide
+  
+[![TagMark - Introduction and User Guide](https://img.youtube.com/vi/0F5bkU90Tmc/0.jpg)](https://youtu.be/0F5bkU90Tmc)
 
 ## 4. Credits
 
