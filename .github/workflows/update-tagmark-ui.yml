@@ -1,4 +1,4 @@
-name: Update tagmark-ui
+name: Sync tagmark-ui
 
 on:
   repository_dispatch:
@@ -15,7 +15,7 @@ env:
   TAGMARK_UI_DIR: tagmark-ui
 
 jobs:
-  update:
+  sync:
     runs-on: ubuntu-latest
     name: Update TagMark UI
     steps:
