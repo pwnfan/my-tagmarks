@@ -108,7 +108,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [thesis](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+thesis) `Total 10 (Github 4)`
 * [tips](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+tips) `Total 40 (Github 12)`
 * [tool](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+tool) `Total 939 (Github 824)`
-* [vocabulary](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+vacabulary) `Total 0 (Github 0)`
+* [vocabulary](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+vocabulary) `Total 2 (Github 0)`
 * [video](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+video) `Total 4 (Github 3)`
 * [vulnerability definition](https://pwnfan.github.io/my-tagmarks?tags=vul-definition) `Total 2 (Github 0)`
 * [wiki](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+wiki) `Total 138 (Github 83)`
@@ -949,7 +949,7 @@ most without "cybersecurity":
 * [thesis](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+thesis) `Total 1 (Github 0)`
 * [tips](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+tips) `Total 5 (Github 2)`
 * [tool](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+tool) `Total 132 (Github 101)`
-* [vacabulary](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+vacabulary) `Total 0 (Github 0)`
+* [vocabulary](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+vocabulary) `Total 4 (Github 1)`
 * [wiki](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+wiki) `Total 14 (Github 10)`
 
 
