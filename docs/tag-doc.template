@@ -108,7 +108,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [thesis]{{f+c:sec AND thesis}}
 * [tips]{{f+c:sec AND tips}}
 * [tool]{{f+c:sec AND tool}}
-* [vocabulary]{{f+c:sec AND vacabulary}}
+* [vocabulary]{{f+c:sec AND vocabulary}}
 * [video]{{f+c:sec AND video}}
 * {{t+f+c:vul-definition}}
 * [wiki]{{f+c:sec AND wiki}}
@@ -949,7 +949,7 @@ most without "cybersecurity":
 * [thesis]{{f+c:dev AND NOT sec AND thesis}}
 * [tips]{{f+c:dev AND NOT sec AND tips}}
 * [tool]{{f+c:dev AND NOT sec AND tool}}
-* [vacabulary]{{f+c:dev AND NOT sec AND vacabulary}}
+* [vocabulary]{{f+c:dev AND NOT sec AND vocabulary}}
 * [wiki]{{f+c:dev AND NOT sec AND wiki}}
 
 
