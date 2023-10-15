@@ -95,6 +95,14 @@
         "gpt_prompt_context": "cybersecurity",
         "prefer_format": "{full_name} (aka {alias})"
     },
+    "afl++": {
+        "abbr": null,
+        "alias": null,
+        "definition": "AFL++ is a superior fork to Google's AFL - more speed, more and better mutations, more and better instrumentation, custom module support, etc.\n\nThe fuzzer afl++ is afl with community patches, qemu 5.1 upgrade, collision-free coverage, enhanced laf-intel & redqueen, AFLfast++ power schedules, MOpt mutators, unicorn_mode, and a lot more!",
+        "full_name": "AFL++",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "aggregator": {
         "abbr": null,
         "alias": null,
@@ -126,6 +134,14 @@
         "full_name": "Aircrack-ng",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
+    },
+    "aix": {
+        "abbr": "AIX",
+        "alias": null,
+        "definition": "AIX stands for Advanced Interactive eXecutive, and it is a proprietary Unix-based operating system developed by IBM (International Business Machines Corporation). AIX is primarily designed for IBM's hardware platforms, including their POWER systems (formerly known as RS/6000). It is known for its reliability, scalability, and robustness, making it a popular choice for enterprise and server environments.\n\nKey features and characteristics of AIX include:\n\n1. Unix-Based: AIX is based on the Unix operating system, which means it adheres to Unix standards and provides a Unix-like command-line interface.\n\n2. Scalability: AIX is designed to run on a wide range of IBM hardware, from small servers to large, high-end systems, making it suitable for various computing needs.\n\n3. Reliability: AIX is known for its robustness and stability. It includes features like workload partitions (WPARs) and live application mobility, which enhance system reliability and availability.\n\n4. Security: AIX includes various security features to protect data and systems, including role-based access control (RBAC), encryption, and auditing capabilities.\n\n5. Virtualization: AIX offers virtualization technologies, such as IBM's PowerVM, to create and manage virtualized environments on IBM hardware.\n\n6. Support for High-Performance Computing (HPC): AIX is commonly used in high-performance computing environments due to its support for parallel processing and advanced hardware features.\n\n7. Compatibility: It provides compatibility with various industry standards and open-source software, which allows AIX systems to work with a wide range of applications and tools.\n\n8. Performance Monitoring and Tuning: AIX provides extensive tools for performance monitoring and system tuning, which can help administrators optimize system performance.\n\nAIX has gone through several versions and updates over the years, with each new release introducing improvements in performance, security, and functionality. It remains a popular choice for businesses that rely on IBM's hardware platforms and require a stable and secure operating system for their enterprise-level applications and services.",
+        "full_name": "Advanced Interactive eXecutive",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
     },
     "akamai": {
         "abbr": "Akamai",
@@ -351,6 +367,14 @@
         "gpt_prompt_context": "cybersecurity",
         "prefer_format": "{abbr} ({full_name})"
     },
+    "asn": {
+        "abbr": "ASN",
+        "alias": null,
+        "definition": "In networking, ASN stands for \"Autonomous System Number.\" An Autonomous System (AS) is a collection of IP networks and routers under the control of a single organization or entity that presents a common routing policy to the internet. ASN is a unique identifier assigned to an Autonomous System, and it plays a crucial role in the Border Gateway Protocol (BGP), which is the core routing protocol of the internet.\n\nThe ASN is used to:\n\n1. Identify Autonomous Systems: ASNs are used to distinguish one Autonomous System from another in the BGP routing tables and the global internet routing system.\n\n2. Facilitate Routing: BGP uses ASNs to make routing decisions. When routers exchange routing information using BGP, they use ASNs to determine the best path to reach a particular IP address or network.\n\n3. Control Routing Policies: ASNs are associated with routing policies. Autonomous Systems can set their own routing policies, such as which routes they will accept or announce, to influence how traffic flows in and out of their networks.\n\n4. Provide Route Aggregation: ASNs are essential for route aggregation, a process in which multiple IP prefixes are summarized into a single route advertisement, helping to reduce the size of the global routing table and improve routing efficiency.\n\nASNs are allocated and managed by regional internet registries (RIRs) under the authority of the Internet Assigned Numbers Authority (IANA). Network operators or organizations that connect to the internet and have their own IP address space typically request and are assigned an ASN to identify their Autonomous System. These ASNs are then used in BGP configurations to control the routing of traffic between networks on the internet.",
+        "full_name": "Autonomous System Number",
+        "gpt_prompt_context": "networking",
+        "prefer_format": "{abbr} ({full_name})"
+    },
     "asp": {
         "abbr": "ASP",
         "alias": null,
@@ -527,6 +551,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "bard": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Bard is a new tool that you can use to explore creative ideas & explain things simply. It’s a Google AI experiment that can generate text, translate languages, write different kinds of creative content & more.\n\n## Bard isn’t human\n\nIt doesn’t have its own thoughts or feelings, even though it might sound like a human. Remember:\n\nBard can’t replace important people in your life, like family, friends, teachers, or doctors\nBard can’t do your work for you\nBard can’t make important life decisions for you\n\n## How Bard works\n\n### The simple answer\n\nWhen you enter a prompt into Bard, it replies with a response using the information it already knows or fetches from other sources, like other Google services.\n\n### The technical answer\n\nBard is a large language model\n\n* The language model learns by “reading” trillions of words that help it pick up on patterns that make up language, which allows it to pick up on and reply to your questions in common language patterns\n* It’s always learning, which means it also learns from your prompts, responses and feedback\n* It’s an experiment, and it will make mistakes\n\n## Ways to use Bard\n\nHere are some prompt examples you can try out:\n\n* “Explain projectile motion using everyday examples”\n* “Which came first: the chicken or the egg?”\n* “Help me brainstorm a title for my short story”\n\n## Want to know more?\n\nGet to know the tech behind Bard through this essential reading list\n\n* [Google’s breakthrough technology for conversation, LaMDAOpens in a new window](https://blog.google/technology/ai/lamda/)\n* [Google’s PaLM 2 modelOpens in a new window](https://ai.google/discover/palm2)\n* [Transformer: A Novel Neural Network Architecture for Language Understanding](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)",
+        "full_name": "Google Bard",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "bas": {
         "abbr": "BAS",
         "alias": null,
@@ -621,6 +653,14 @@
         "definition": "Bitcoin is a decentralized digital currency that was created in 2009 by an anonymous person or group of people using the pseudonym Satoshi Nakamoto. It is the first and most well-known cryptocurrency, operating on a peer-to-peer network without the need for a central authority or intermediary.\n\nHere are key points about Bitcoin:\n\n1. Decentralized and Peer-to-Peer: Bitcoin operates on a decentralized network, meaning it is not controlled by any central bank or government. Transactions are conducted directly between users without the need for intermediaries like banks.\n\n2. Cryptocurrency: Bitcoin is a digital currency that uses cryptographic techniques to secure transactions and control the creation of new units. It relies on a technology called blockchain, which is a distributed ledger that records all transactions in a transparent and immutable manner.\n\n3. Limited Supply: Bitcoin has a finite supply, with a maximum limit set at 21 million bitcoins. This scarcity is built into the system to prevent inflation and maintain the value of the currency over time. New bitcoins are created through a process called mining, where powerful computers solve complex mathematical problems.\n\n4. Blockchain Technology: The underlying technology behind Bitcoin is blockchain. It is a decentralized and transparent ledger that records all Bitcoin transactions. Each block in the chain contains a list of transactions, and once added, it cannot be altered, providing security and immutability.\n\n5. Wallets and Addresses: Bitcoin is stored in digital wallets, which are software applications or hardware devices that enable users to securely store and manage their bitcoins. Each wallet is associated with a unique address, a long string of characters, which is used to send and receive bitcoins.\n\n6. Anonymity and Pseudonymity: Bitcoin transactions are pseudonymous, as they are linked to Bitcoin addresses rather than real-world identities. However, the public nature of the blockchain means that transactions can be traced, and additional measures must be taken to ensure privacy and anonymity.\n\n7. Volatility and Speculation: Bitcoin's price is known for its volatility, often experiencing significant fluctuations over short periods. This volatility has made Bitcoin an attractive asset for traders and investors but also poses risks for those looking for stability in a currency.\n\n8. Use Cases: Bitcoin can be used for various purposes, including online purchases, money transfers, investment, and as a store of value. It has gained acceptance by merchants and organizations worldwide as a form of payment, and its popularity has led to the emergence of other cryptocurrencies and blockchain-based applications.\n\nIt's important to note that the concepts and technology behind Bitcoin can be complex, and it's recommended to further research and understand the risks and considerations associated with its use before engaging with it.",
         "full_name": "Bitcoin",
         "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "bitlocker": {
+        "abbr": null,
+        "alias": null,
+        "definition": "BitLocker is a full-disk encryption feature in Microsoft Windows operating systems, designed to protect the data stored on your computer's hard drive or other storage devices. It is primarily used to enhance the security of your data by encrypting the entire disk, making it more challenging for unauthorized users to access or steal your data.\n\nKey features and aspects of BitLocker include:\n\n1. **Full Disk Encryption**: BitLocker encrypts the entire disk, including the operating system, system files, and user data. This ensures comprehensive data protection.\n\n2. **Pre-Boot Authentication**: Before your computer boots into the operating system, BitLocker requires a user to provide authentication, such as a PIN, password, or a USB key, ensuring that only authorized users can access the data.\n\n3. **Secure Startup**: BitLocker can work in conjunction with the Trusted Platform Module (TPM), a hardware component that helps ensure the integrity of the system during boot. This enhances the security of the encryption process.\n\n4. **Recovery Key**: BitLocker provides a recovery key in case you forget your PIN or encounter issues during startup. It's essential to keep this key safe, as it can be used to recover your data.\n\n5. **Group Policy Support**: BitLocker can be managed and configured through Group Policy in enterprise environments, allowing administrators to control encryption settings across multiple computers.\n\n6. **BitLocker to Go**: This feature allows you to encrypt removable drives, such as USB flash drives and external hard drives, making it easy to protect data when you need to transport it.\n\n7. **Integration with Microsoft Account**: BitLocker can be tied to a Microsoft account, making it easier to recover your data if you ever forget your PIN or lose access to your device.\n\nBitLocker is available in various editions of Windows, including Windows 10 and Windows 11. It provides a robust layer of security for your data, especially on laptops and other portable devices that may be at a higher risk of being lost or stolen. However, it's essential to manage recovery keys carefully, as losing access to them can result in data loss in the event of issues with your device or forgetting your PIN/password.",
+        "full_name": "BitLocker",
+        "gpt_prompt_context": "Windows",
         "prefer_format": "{full_name}"
     },
     "black-box": {
@@ -780,6 +820,14 @@
         "alias": null,
         "definition": "As of my last update in September 2021, there was no certification specifically called \"Burp Suite Certified Practitioner\" (BSCP). It's possible that new certifications or changes have been introduced after that time.\n\nBurp Suite is a popular cybersecurity tool developed by PortSwigger. It is widely used by security professionals and penetration testers to assess the security of web applications. The tool is known for its comprehensive web vulnerability scanning capabilities, intercepting proxy, and web application security testing features.\n\nPortSwigger does offer a certification program called \"PortSwigger Web Security Academy Certification.\" This program provides various levels of certifications to demonstrate proficiency in using Burp Suite and understanding web application security concepts.\n\nThe certifications available as of my last update were:\n\n1. **PortSwigger Web Security Academy Certification (Burp Suite Essentials)**: This certification demonstrates that an individual has completed the essential training and is proficient in using Burp Suite for web application security assessments.\n\n2. **PortSwigger Web Security Academy Certification (Burp Suite Mastery)**: This certification indicates a higher level of proficiency in using Burp Suite, covering more advanced topics and complex scenarios in web application security testing.\n\nTo find the most up-to-date information about Burp Suite certifications or any new certifications that might have been introduced, it's best to visit the official PortSwigger website or their Web Security Academy. There, you can access the latest certification offerings and details about the certification process.",
         "full_name": "Burp Suite Certified Practitioner",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
+    "bsd": {
+        "abbr": "BSD",
+        "alias": null,
+        "definition": "BSD, which stands for \"Berkeley Software Distribution,\" is a Unix-like operating system and a free and open-source software project that originated from the University of California, Berkeley. The BSD operating system family is known for its advanced networking capabilities, security features, and its influence on other Unix-like operating systems, including Linux.\n\nThe history of BSD can be traced back to the early 1970s when the Unix operating system was first developed at Bell Labs. The University of California, Berkeley, started developing their version of Unix, known as the Berkeley Software Distribution, which included many improvements and enhancements. These improvements led to several distinct BSD operating system versions, with the most notable ones being:\n\n1. **4.2BSD**: Released in 1983, it was one of the earliest versions of BSD and introduced many significant improvements, including virtual memory support.\n\n2. **4.3BSD**: This release, in 1986, brought enhanced networking capabilities and features, laying the foundation for the TCP/IP networking stack that is now fundamental to the internet.\n\n3. **FreeBSD**: FreeBSD is one of the most well-known and widely used descendants of the original BSD operating system. It is a free and open-source Unix-like operating system that is known for its performance and security features. FreeBSD continues to be actively developed and is used in a variety of applications, including servers and embedded systems.\n\n4. **OpenBSD**: OpenBSD is another BSD variant that emphasizes security and clean, secure code. It is well-regarded for its focus on security features and has been used in situations where security is paramount, such as firewalls.\n\n5. **NetBSD**: NetBSD is a portable operating system known for its ability to run on a wide range of hardware platforms, making it suitable for embedded systems and other specialized uses.\n\nBSD operating systems have had a significant influence on the development of Unix and Unix-like systems, including Linux. Many elements of the BSD operating systems have been incorporated into various other Unix-based and Unix-like operating systems over the years.\n\nThe BSD license is known for its permissive open-source licensing terms, which allow for both open-source and proprietary use of the code, making it a valuable resource for developers and organizations.",
+        "full_name": "Berkeley Software Distribution",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
@@ -1063,6 +1111,22 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name} ({abbr})"
     },
+    "certification": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Certification refers to the confirmation of certain characteristics of an object, person, or organization. This confirmation is often, but not always, provided by some form of external review, education, assessment, or audit. Accreditation is a specific organization's process of certification.",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
+    },
+    "certipy": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/ly4k/Certipy\n\nCertipy is an offensive tool for enumerating and abusing Active Directory Certificate Services (AD CS).",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
+    },
     "cgi": {
         "abbr": "CGI",
         "alias": null,
@@ -1287,6 +1351,14 @@
         "gpt_prompt_context": "software development and cybersecurity",
         "prefer_format": "{full_name}"
     },
+    "code-assistant": {
+        "abbr": null,
+        "alias": null,
+        "definition": "A code assistant is a software tool that uses artificial intelligence (AI) to help developers write code faster and more accurately. It does this either by generating code based on prompts or suggesting code for auto-completion as you write code in real time.\n\nCode assistants can help with a variety of tasks, including:\n\n* **Code generation:** Code assistants can generate code from scratch, based on a simple description of what you want the code to do. This can be helpful for writing code that you're not familiar with, or for quickly prototyping new ideas.\n* **Auto-completion:** Code assistants can suggest code as you type, based on the context of your code and your previous coding history. This can help you to write code more quickly and accurately, and to avoid errors.\n* **Code review:** Code assistants can review your code and suggest improvements, such as refactoring opportunities or potential bugs. This can help you to write better code that is easier to maintain and less likely to have errors.\n\nCode assistants are still under development, but they have the potential to revolutionize the way that code is written. By helping developers to write code faster and more accurately, code assistants can free up developers to focus on more creative and strategic tasks.\n\nHere are some examples of how code assistants can be used:\n\n* A developer can use a code assistant to generate a basic function or class, and then customize it to meet their specific needs.\n* A developer can use a code assistant to auto-complete common code snippets, such as loops, conditional statements, and function calls.\n* A developer can use a code assistant to review their code for potential errors and suggest improvements.\n\nCode assistants are a valuable tool for developers of all skill levels. They can help to improve productivity, accuracy, and code quality.",
+        "full_name": "code assistant",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "code-audit": {
         "abbr": null,
         "alias": null,
@@ -1316,6 +1388,14 @@
         "alias": null,
         "definition": "Code formatting refers to the practice of organizing and structuring source code in a consistent and visually pleasing manner. It involves applying specific rules and guidelines to ensure code readability, maintainability, and consistency across the codebase.\n\nHere are some key aspects of code formatting in software development:\n\n1. Indentation: Proper indentation is used to visually represent the hierarchy and nesting of code blocks. It helps developers understand the code's structure and improves readability. Common indentation styles include using spaces or tabs and defining the number of spaces or tab widths.\n\n2. Line Length: Code formatting guidelines often specify a maximum line length to ensure that code lines do not become excessively long. Limiting line length improves code readability, especially when viewed in different environments or on smaller screens.\n\n3. Whitespace: Effective use of whitespace, such as blank lines and spacing around operators and keywords, enhances code readability. It separates code blocks, improves visual organization, and highlights logical sections.\n\n4. Naming Conventions: Consistent naming conventions for variables, functions, classes, and other code elements improve code comprehension. Guidelines may recommend using camelCase, PascalCase, or snake_case for different elements, as well as providing meaningful and descriptive names.\n\n5. Code Alignment: Aligning code elements, such as assignment operators or method parameters, can make code more visually consistent and easier to scan. It helps developers quickly identify related parts of the code.\n\n6. Comments: Properly placed and formatted comments help explain the code's intent, purpose, and functionality. Consistent use of comment styles and ensuring comments are up to date improve code understandability.\n\n7. Code Styling: Consistent code styling, such as consistent use of brackets, spacing around operators, and capitalization, enhances code readability and maintainability. Code formatting guidelines may specify preferred styles or adopt established style guides like those defined by language communities.\n\nCode formatting can be enforced manually by developers following established guidelines or using automated tools known as code formatters or linters. Code formatters automatically apply formatting rules to the codebase, while linters check for code style violations and provide suggestions or automatic fixes.\n\nConsistent code formatting is crucial for collaborative development, as it allows team members to easily understand and work with each other's code. It improves code review efficiency, reduces potential bugs due to code misunderstandings, and contributes to overall code quality and maintainability.",
         "full_name": "code formatting",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "code-generator": {
+        "abbr": null,
+        "alias": null,
+        "definition": "A code generator is a software tool that automatically creates computer source code from a higher-level representation, such as a design specification, a graphical model, or a natural language description. Code generators can be used to generate code for a variety of programming languages, including Java, Python, C++, and C#.\n\nCode generators are often used to generate code for boilerplate tasks, such as creating classes, interfaces, and methods. This can free up developers to focus on more complex tasks, such as designing the architecture of their application and writing business logic.\n\nCode generators can also be used to generate code from graphical models, such as UML diagrams. This can be helpful for generating code for complex applications, where it can be difficult to translate a design specification into code manually.\n\nIn recent years, there has been a growing interest in using natural language processing (NLP) to generate code. NLP-based code generators can generate code from natural language descriptions, such as \"Write a function that takes two numbers and returns their sum.\" This can make code generation more accessible to developers who are not familiar with programming languages.\n\nHere are some examples of how code generators can be used:\n\n* A web developer can use a code generator to generate the basic structure of a new web application, including the HTML, CSS, and JavaScript code.\n* A mobile app developer can use a code generator to generate the basic structure of a new mobile app, including the UI code and the code for interacting with the device's hardware.\n* A data scientist can use a code generator to generate the code for training and deploying a machine learning model.\n\nCode generators can be a valuable tool for developers of all skill levels. They can help to improve productivity, accuracy, and code quality.\n\nHere are some of the benefits of using code generators:\n\n* **Increased productivity:** Code generators can help developers to write code more quickly by automating repetitive tasks.\n* **Improved accuracy:** Code generators can help to reduce the number of errors in code by generating code that is syntactically and semantically correct.\n* **Enhanced code quality:** Code generators can help developers to write code that is better organized, more maintainable, and more reusable.\n\nOverall, code generators are a powerful tool that can help developers to write code more efficiently and effectively.",
+        "full_name": "code generator",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
@@ -1679,6 +1759,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "curl": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Curl, often stylized as \"cURL,\" is a command-line tool and library for transferring data with URLs. It is a versatile and widely used tool for making network requests to retrieve or send data using various protocols, including HTTP, HTTPS, FTP, SCP, SFTP, LDAP, and many others. Curl supports a wide range of options and features, making it a popular choice for tasks like downloading files, testing APIs, and automating web-related activities from the command line.\n\nHere are some key features and uses of Curl:\n\n1. **Data Transfer**: Curl allows you to retrieve data from a remote server, send data to a server, or perform a variety of data transfer operations.\n\n2. **Protocols**: It supports a wide range of network protocols, making it a versatile tool for interacting with different types of servers and services.\n\n3. **HTTP Requests**: Curl can send HTTP requests, which is commonly used for web-related tasks such as downloading web pages, interacting with REST APIs, and more.\n\n4. **HTTPS Support**: Curl includes SSL/TLS support, making it possible to securely communicate with servers over HTTPS.\n\n5. **File Transfers**: It can be used to upload and download files to and from FTP, SFTP, and SCP servers.\n\n6. **Custom Headers**: You can specify custom headers in your requests, allowing for precise control over your HTTP requests.\n\n7. **Cookies**: Curl can manage cookies, enabling it to maintain state across multiple requests, similar to a web browser.\n\n8. **Authentication**: It supports various authentication methods, including basic authentication, OAuth, and more.\n\n9. **Data Manipulation**: Curl can be used to send and receive data, making it suitable for tasks like form submissions and REST API testing.\n\n10. **Command-Line Interface**: It is primarily used from the command line, making it easy to script and automate network-related tasks.\n\nCurl is available for various operating systems, including Linux, macOS, and Windows, and it is often pre-installed or readily available in package repositories. Many programming languages also have bindings or libraries that allow developers to use Curl in their code to perform network requests programmatically.\n\nCurl is a powerful and flexible tool that is widely used by developers, system administrators, and others who need to interact with web services and transfer data over networks from the command line.",
+        "full_name": "cURL",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "custom-404": {
         "abbr": null,
         "alias": null,
@@ -1831,6 +1919,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
+    "dcsync": {
+        "abbr": null,
+        "alias": null,
+        "definition": "DCSync is a technique used in cybersecurity and computer security, specifically related to Microsoft Windows Active Directory (AD) environments. It is not a tool or software itself but a method used by attackers to obtain sensitive information from a Windows AD domain controller (DC). DCSync is a form of privilege escalation and credential theft, and it can be used to compromise an AD environment's security.\n\nHere's how DCSync works:\n\n1. **Active Directory Domain Controller**: In a Windows AD environment, the domain controller is a server responsible for authenticating users and managing access to network resources. It stores sensitive information, including user credentials and other security-related data.\n\n2. **Replication**: Active Directory controllers replicate data between them to ensure consistency across the network. This replication process is necessary for maintaining the directory's integrity.\n\n3. **DCSync Attack**: The DCSync attack is when an attacker, who has already gained high-level access to a Windows system (e.g., through administrative privileges or other vulnerabilities), impersonates a domain controller and requests sensitive data from other domain controllers using the Directory Replication Service Remote Protocol (DRS-R).\n\n4. **Data Extraction**: The attacker can use DCSync to request specific data, such as user password hashes, Kerberos ticket-granting ticket (TGT) secrets, and other sensitive information stored on the domain controller.\n\n5. **Credential Theft**: Once the attacker successfully obtains this information, they can use it for various malicious purposes, including gaining unauthorized access to other systems, escalating privileges, and conducting lateral movement within the network.\n\nIt's important to note that DCSync is a post-exploitation technique, meaning that an attacker needs to have already compromised a Windows system and gained administrative or equivalent access before using it. Preventing DCSync attacks involves implementing strong security measures to prevent unauthorized access and lateral movement within the network, including robust access controls, security monitoring, and timely patching of vulnerabilities.\n\nSecurity professionals and administrators should be aware of the potential risks associated with DCSync attacks and take steps to secure their Active Directory environments. Additionally, detecting and responding to such attacks is crucial for minimizing the potential damage.",
+        "full_name": "DCSync",
+        "gpt_prompt_context": "cybersecurity",
+        "prefer_format": "{full_name}"
+    },
     "ddos": {
         "abbr": "DDoS",
         "alias": null,
@@ -1838,6 +1934,14 @@
         "full_name": "Distributed Denial of Service",
         "gpt_prompt_context": "cybersecurity",
         "prefer_format": "{abbr}"
+    },
+    "debian": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Debian is a popular and influential free and open-source operating system and Linux distribution. It is known for its stability, adherence to the principles of free software, and its commitment to providing a reliable and robust computing environment. Debian is maintained by a community of volunteer developers and contributors from around the world.\n\nKey features and characteristics of Debian include:\n\n1. **Free and Open Source**: Debian is committed to the principles of free software, meaning that it includes only open-source software and adheres to licenses that promote free distribution, modification, and sharing of software.\n\n2. **Stability**: Debian is renowned for its stability. It has a rigorous testing process, and each release goes through multiple stages of development and quality assurance before becoming a stable release.\n\n3. **Package Management**: Debian uses the Advanced Package Tool (APT) for package management, making it easy to install, update, and remove software packages. It has a vast repository of thousands of software packages available for installation.\n\n4. **Multiple Architectures**: Debian supports a wide range of hardware architectures, including x86, x86_64, ARM, MIPS, and more, making it versatile for various types of hardware.\n\n5. **Variants**: Debian has multiple distributions or variants, including Debian Stable (the most reliable and stable version), Debian Testing (a pre-stable version), and Debian Unstable (a continuously evolving version). These allow users to choose the level of stability they require.\n\n6. **Large Community**: Debian has a large and active community of developers, maintainers, and users who contribute to its development, documentation, and support.\n\n7. **Security Updates**: The Debian Security Team regularly provides updates and patches to address security vulnerabilities, ensuring the security of Debian-based systems.\n\n8. **Customizability**: Debian offers a high degree of customization and flexibility. Users can choose different desktop environments, software stacks, and configurations to suit their needs.\n\n9. **Derivative Distributions**: Many other popular Linux distributions, such as Ubuntu, Kali Linux, and Raspbian (for Raspberry Pi), are based on Debian, taking advantage of its solid foundation.\n\nDebian is often used in server environments, as well as on desktop and laptop computers. It is appreciated for its reliability and extensive software repository. Additionally, it serves as the basis for many other Linux distributions, making it an essential and influential project in the open-source software ecosystem.",
+        "full_name": "Debian",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
     },
     "debug": {
         "abbr": null,
@@ -1929,7 +2033,7 @@
     },
     "delete-account": {
         "abbr": null,
-        "alias": "account termination / acccount ancellation / account closure",
+        "alias": "account termination / account cancellation / account closure",
         "definition": "delete account(s) signed up on the Internet, usually for the sake of security and privacy concern",
         "full_name": "account deletion",
         "gpt_prompt_context": null,
@@ -2239,6 +2343,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "dns-server": {
+        "abbr": null,
+        "alias": null,
+        "definition": "A DNS (Domain Name System) server is a crucial component of the internet and network infrastructure. It is responsible for translating human-readable domain names into IP addresses and vice versa, allowing computers to locate and communicate with each other over the internet.\n\nHere's how a DNS server works and its primary functions:\n\n1. **Domain Name Resolution**: When you enter a website's domain name (e.g., www.example.com) into your web browser, your computer needs to find the corresponding IP address to establish a connection with the web server hosting that site. DNS servers are responsible for this translation.\n\n2. **Recursive and Authoritative Servers**: DNS servers come in two main types: recursive and authoritative. Recursive DNS servers, often operated by internet service providers (ISPs) or public DNS providers like Google or Cloudflare, help users find the IP addresses of websites by making requests to authoritative DNS servers. Authoritative DNS servers are responsible for providing the official records (DNS zone files) for specific domain names.\n\n3. **Caching**: DNS servers often cache previously resolved domain names and their associated IP addresses. This caching helps reduce the time it takes to look up frequently visited websites and improves the efficiency of the DNS resolution process.\n\n4. **Hierarchical Structure**: The DNS system has a hierarchical structure, with a root domain at the top, followed by top-level domains (TLDs), second-level domains (SLDs), and subdomains. Different DNS servers handle requests at various levels of this hierarchy.\n\n5. **Redundancy**: DNS servers are distributed worldwide and have redundancy built in. This helps ensure the resilience and availability of the DNS system even in the face of server failures or network issues.\n\n6. **Load Balancing**: DNS servers can also be used for load balancing. By distributing traffic to multiple IP addresses associated with a single domain, they can evenly distribute the load among various servers to improve performance and availability.\n\nDNS is fundamental to the operation of the internet, allowing users to access websites, send emails, and connect to various online services by simply entering domain names instead of numeric IP addresses. DNS servers play a critical role in making this system work smoothly and efficiently.",
+        "full_name": "DNS server",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "dns-spf": {
         "abbr": "DNS SPF record",
         "alias": null,
@@ -2310,6 +2422,22 @@
         "full_name": "document-oriented database",
         "gpt_prompt_context": null,
         "prefer_format": "{alias} (aka {full_name})"
+    },
+    "dod-srg": {
+        "abbr": "DoD SRG",
+        "alias": null,
+        "definition": "The Department of Defense Security Requirements Guide (DoD SRG) is a set of cybersecurity requirements that all DoD control systems and cloud computing environments must meet. The DoD SRG is based on the NIST Cybersecurity Framework (CSF) and the DoD Risk Management Framework (RMF).\n\nThe DoD SRG provides a standardized approach to managing cybersecurity risks for DoD control systems and cloud computing environments. It helps to ensure that DoD systems are protected from cyberattacks and that DoD data is secure.\n\nThe DoD SRG is divided into two parts:\n\n* **Control Systems Security Requirements Guide (SRG)**: The Control Systems SRG provides requirements for securing DoD control systems. Control systems are used to control industrial processes, such as power grids, water treatment systems, and manufacturing facilities.\n* **Cloud Computing Security Requirements Guide (SRG)**: The Cloud Computing SRG provides requirements for securing DoD cloud computing environments. Cloud computing environments provide DoD with access to computing resources, such as storage, networking, and processing power, on demand over the internet.\n\nThe DoD SRG is a valuable resource for DoD organizations that are responsible for securing control systems and cloud computing environments. It provides a comprehensive set of requirements and guidance that can help organizations to protect their systems and data from cyberattacks.\n\nHere are some of the benefits of using the DoD SRG:\n\n* **Reduced risk:** The DoD SRG helps to reduce the risk of cyberattacks by providing a standardized approach to managing cybersecurity risks.\n* **Improved compliance:** The DoD SRG helps DoD organizations to comply with DoD cybersecurity requirements.\n* **Increased efficiency:** The DoD SRG can help DoD organizations to improve the efficiency of their cybersecurity programs.\n\nOverall, the DoD SRG is a valuable tool for DoD organizations that are responsible for securing control systems and cloud computing environments. It can help organizations to reduce risk, improve compliance, and increase efficiency.",
+        "full_name": "Department of Defense Security Requirements Guide",
+        "gpt_prompt_context": "cybersecurity",
+        "prefer_format": "{abbr} ({full_name})"
+    },
+    "dod-stig": {
+        "abbr": "DoD STIG",
+        "alias": null,
+        "definition": "The Department of Defense Security Technical Implementation Guide (DoD STIG) is a security configuration guide for information systems used by the Department of Defense (DoD). STIGs are developed and published by the Defense Information Systems Agency (DISA) and are used to implement security controls on DoD information systems.\n\nSTIGs are based on National Institute of Standards and Technology (NIST) Special Publication 800-53 (SP 800-53), which provides security controls for information systems. STIGs also incorporate additional security requirements that are specific to the DoD.\n\nSTIGs are divided into two parts:\n\n* **Security Controls:** The Security Controls section of a STIG provides a list of the security controls that must be implemented on the information system.\n* **Implementation Guidance:** The Implementation Guidance section of a STIG provides guidance on how to implement the security controls.\n\nSTIGs are updated on a regular basis to reflect changes in the threat landscape and to incorporate new security controls.\n\nDoD organizations are required to implement the STIGs that apply to their information systems. This helps to ensure that DoD information systems are protected from cyberattacks.\n\nHere are some of the benefits of using DoD STIGs:\n\n* **Reduced risk:** DoD STIGs help to reduce the risk of cyberattacks by providing a standardized approach to configuring DoD information systems.\n* **Improved compliance:** DoD STIGs help DoD organizations to comply with DoD cybersecurity requirements.\n* **Increased efficiency:** DoD STIGs can help DoD organizations to improve the efficiency of their cybersecurity programs.\n\nOverall, DoD STIGs are a valuable tool for DoD organizations that are responsible for securing information systems. They can help organizations to reduce risk, improve compliance, and increase efficiency.",
+        "full_name": "Department of Defense Security Technical Implementation Guide",
+        "gpt_prompt_context": "cybersecurity",
+        "prefer_format": "{abbr} ({full_name})"
     },
     "dom": {
         "abbr": "DOM",
@@ -2663,6 +2791,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "etw": {
+        "abbr": "ETW",
+        "alias": null,
+        "definition": "ETW, or Event Tracing for Windows, is a high-performance, low-overhead event tracing mechanism built into the Microsoft Windows operating system. It provides a comprehensive and extensible framework for instrumenting and analyzing the behavior of software and hardware components within the Windows environment. ETW is used for diagnostic and profiling purposes and is commonly used by software developers, system administrators, and performance analysts to monitor and troubleshoot Windows-based systems.\n\nKey features and aspects of ETW include:\n\n1. **Event Collection**: ETW allows the collection of events from various sources, including applications, system components, device drivers, and more.\n\n2. **High Performance**: ETW is designed to be low-overhead, so it can capture a vast number of events without significantly impacting system performance.\n\n3. **Structured Data**: Events in ETW are often structured, meaning they include specific data fields that can be used for analysis and correlation. These events are also time-stamped.\n\n4. **Session-Based**: ETW supports the creation of event tracing sessions, which can be customized to capture specific events or providers.\n\n5. **Providers**: Providers are entities that generate events. Windows itself has numerous built-in providers, and developers can create custom providers for their applications and services.\n\n6. **Tracing Tools**: Windows includes several tools for working with ETW data, such as Event Viewer and Performance Monitor. Developers can also use the Windows Performance Toolkit (WPT) and other third-party tracing tools.\n\n7. **Real-Time Monitoring**: ETW supports real-time event monitoring, enabling users to observe events as they occur.\n\n8. **Analysis and Troubleshooting**: ETW data is valuable for diagnosing performance issues, tracking down errors, and understanding how different components of the Windows operating system and software interact.\n\nETW is not limited to monitoring software activities; it can also capture hardware events, kernel events, and other system-level information. It is a powerful tool for performance profiling, debugging, and system monitoring in Windows environments.\n\nDevelopers often use ETW to create custom logs for their applications, allowing them to track the operation of their software and gain insights into its behavior in real-world scenarios. System administrators and support teams can leverage ETW to diagnose system problems and optimize performance.",
+        "full_name": "Event Tracing for Windows",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
     "evaluation": {
         "abbr": null,
         "alias": null,
@@ -2975,6 +3111,22 @@
         "gpt_prompt_context": null,
         "prefer_format": "{tag}"
     },
+    "fortinet": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Fortinet is a global cybersecurity company that specializes in providing a wide range of network security solutions and services to businesses, organizations, and government entities. Fortinet is known for its integrated and comprehensive security products, which help protect networks, data, and applications from a variety of cyber threats, including malware, viruses, hackers, and other security risks.\n\nKey components of Fortinet's offerings include:\n\n1. **Firewalls**: Fortinet is well-known for its next-generation firewall (NGFW) technology. NGFWs go beyond traditional firewalls by providing features like intrusion prevention, application control, and advanced threat protection.\n\n2. **Unified Threat Management (UTM)**: Fortinet offers UTM solutions that integrate various security functions into a single appliance, simplifying security management and reducing the number of devices required.\n\n3. **Secure SD-WAN**: With the increasing use of software-defined wide area networking (SD-WAN), Fortinet provides solutions that combine network connectivity with security to ensure that SD-WAN networks are protected from threats.\n\n4. **Security Information and Event Management (SIEM)**: Fortinet offers SIEM solutions that allow organizations to monitor and manage security events in real time, helping to detect and respond to security incidents.\n\n5. **Secure Access**: Fortinet provides solutions for secure access, including secure remote access, network access control, and secure wireless access.\n\n6. **Cloud Security**: As more organizations move to the cloud, Fortinet offers cloud security solutions to protect cloud-based workloads and data.\n\n7. **Endpoint Security**: Fortinet provides endpoint security solutions to protect individual devices (such as computers and mobile devices) from malware and other threats.\n\n8. **Threat Intelligence**: Fortinet offers threat intelligence services and tools to help organizations stay informed about the latest cyber threats and vulnerabilities.\n\nFortinet's products and services are used by a wide range of organizations, including small and medium-sized businesses, large enterprises, service providers, and government agencies. The company's security solutions are designed to provide a holistic approach to cybersecurity, protecting both network infrastructure and the data that flows through it. Fortinet's products are known for their scalability, ease of use, and the ability to provide a high level of security in complex and evolving network environments.",
+        "full_name": "Fortinet",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "fortinet-ssl-vpn": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Fortinet SSL VPN, also known as FortiClient SSL VPN, is a component of Fortinet's network security and remote access solutions. It is designed to provide secure remote access to an organization's network resources for remote users, telecommuters, and mobile workers. SSL VPN, which stands for Secure Sockets Layer Virtual Private Network, is a method of creating a secure and encrypted connection between a user's device and a corporate network over the internet.\n\nHere are the key features and aspects of Fortinet SSL VPN:\n\n1. **Secure Remote Access**: Fortinet SSL VPN allows users to securely connect to an organization's network from remote locations over the internet. It ensures that data transmitted between the user's device and the corporate network is encrypted and protected.\n\n2. **Authentication**: Fortinet SSL VPN supports various methods of user authentication, such as username and password, two-factor authentication (2FA), and digital certificates, ensuring that only authorized users can access the network.\n\n3. **Web-Based Access**: It often provides web-based access to network resources, making it easy for users to connect without needing to install additional software. Users typically access the VPN service through a web portal.\n\n4. **Client Software**: FortiClient is a VPN client software provided by Fortinet, which offers additional features and compatibility with a wide range of devices and operating systems. Users can install FortiClient to access the SSL VPN service and, in some cases, gain more advanced features like endpoint security.\n\n5. **Network Segmentation**: Fortinet SSL VPN allows for the segmentation of network resources, so users can access only the resources they need for their specific role, enhancing security and access control.\n\n6. **Granular Access Control**: Administrators can define access policies that determine what specific users or user groups can access within the network. This allows for fine-grained control over who can access what resources.\n\n7. **Security Features**: Fortinet's SSL VPN solutions often include security features like anti-virus scanning, intrusion prevention, and web filtering to further protect remote connections.\n\n8. **Monitoring and Logging**: SSL VPN solutions, including Fortinet's, provide monitoring and logging capabilities, which help administrators track user activity, detect anomalies, and troubleshoot issues.\n\nFortinet SSL VPN is widely used by organizations to provide secure remote access to corporate resources, and it's particularly valuable for remote workers, telecommuters, and mobile employees who need to connect to the organization's network from outside the office. The use of SSL for encryption and authentication ensures that data and communications are protected from potential security threats while in transit over the internet.",
+        "full_name": "Fortinet SSL VPN",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "forum": {
         "abbr": null,
         "alias": null,
@@ -3167,6 +3319,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "github-actions-act": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/nektos/act\nA tool for running GitHub Actions locally",
+        "full_name": "act",
+        "gpt_prompt_context": "Github Actions",
+        "prefer_format": "{full_name} ({gpt_prompt_context})"
+    },
     "github-pages": {
         "abbr": null,
         "alias": null,
@@ -3358,6 +3518,14 @@
         "full_name": "suggestions feature",
         "gpt_prompt_context": "Apollo GraphQL platform",
         "prefer_format": "{gpt_prompt_context} {full_name}"
+    },
+    "grep": {
+        "abbr": null,
+        "alias": null,
+        "definition": "`grep` is a command-line text-search utility commonly found in Unix-based and Unix-like operating systems, including Linux. Its name is derived from the ed (editor) command \"g/re/p,\" which means \"global/regular expression/print.\" `grep` is used to search for specific text patterns within files and can be an invaluable tool for text processing, data extraction, and system administration tasks.\n\nKey features and usage of `grep` include:\n\n1. **Pattern Search**: `grep` searches for patterns in text data, allowing users to find lines or segments of text that match specific criteria.\n\n2. **Regular Expressions**: `grep` supports the use of regular expressions (regex) for pattern matching. This provides powerful and flexible search capabilities, allowing users to define complex search patterns.\n\n3. **File Search**: `grep` can search for patterns within one or more files, and it can also recursively search through directories.\n\n4. **Standard Input**: `grep` can read input from standard input (e.g., piped data) or from files specified on the command line.\n\n5. **Output Matching Lines**: By default, `grep` displays the lines that match the specified pattern. Users can choose to print the line numbers or other context information for matched lines.\n\n6. **Case Insensitive Search**: `grep` can perform case-insensitive searches, allowing it to match patterns regardless of letter casing.\n\n7. **Inverse Search**: Users can invert the search by using the `-v` option, which displays lines that do not match the pattern.\n\n8. **Counting Matches**: `grep` can count the number of matches in a file or set of files without displaying the actual matches.\n\n9. **Recursive Search**: With the `-r` option, `grep` can recursively search through directories and their subdirectories.\n\nHere's an example of how to use `grep` to search for a specific pattern in a file:\n\n```bash\ngrep \"pattern\" filename\n```\n\nThis command will search for \"pattern\" in the file named \"filename\" and display any lines that contain the specified pattern.\n\n`grep` is an essential tool for performing text searches, data extraction, and log analysis in Unix-based systems. Its ability to use regular expressions makes it a versatile and powerful tool for a wide range of text-processing tasks.",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
     },
     "grey-box": {
         "abbr": null,
@@ -3855,6 +4023,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "instagram": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Instagram is a social networking service owned by Meta Platforms that allows users to share photos and videos. It was created by Kevin Systrom and Mike Krieger and launched in October 2010. Instagram is available on mobile devices and on the web.\n\nTo use Instagram, users must create an account and then follow other users whose photos and videos they want to see. Users can also upload their own photos and videos and share them with their followers. Instagram users can also add filters and effects to their photos and videos.\n\nInstagram is a popular social networking service with over 2 billion active users. It is used by people of all ages and from all over the world. Instagram is a popular platform for sharing personal photos and videos, but it is also used by businesses to promote their products and services.\n\nHere are some of the features of Instagram:\n\n* **Photo and video sharing:** Instagram users can share photos and videos with their followers.\n* **Filters and effects:** Instagram users can add filters and effects to their photos and videos.\n* **Hashtags:** Instagram users can use hashtags to categorize their photos and videos and to make them easier to find.\n* **Stories:** Instagram Stories are short videos and photos that disappear after 24 hours.\n* **Live video:** Instagram Live allows users to broadcast live videos to their followers.\n* **Direct messages:** Instagram users can send direct messages to other users.\n\nInstagram is a powerful social networking tool that can be used for a variety of purposes. It is a great way to stay connected with friends and family, to learn about new things, and to promote yourself or your business.",
+        "full_name": "Instagram",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "interview": {
         "abbr": null,
         "alias": null,
@@ -4222,6 +4398,14 @@
         "full_name": "Kerberos",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
+    },
+    "kerberos-tgs": {
+        "abbr": "TGS",
+        "alias": null,
+        "definition": "In Kerberos, TGS stands for \"Ticket Granting Service\". The Ticket Granting Service is one of the key components of the Kerberos authentication system, which is designed to provide secure authentication for users and services in a networked environment.\n\nThe TGS plays a crucial role in the Kerberos authentication process, which typically involves the following steps:\n\n1. **Authentication**: When a user wants to access a network resource, they authenticate themselves to the Authentication Server (AS) by providing their credentials (e.g., username and password).\n\n2. **Initial Ticket**: The AS verifies the user's credentials and issues a Ticket Granting Ticket (TGT) if the authentication is successful. The TGT is encrypted and can be used to request further authentication services without repeatedly entering the user's password.\n\n3. **Requesting Service Tickets**: When the user wants to access a specific network service (e.g., a file server or email server), they present their TGT to the Ticket Granting Service (TGS). The TGS checks the TGT's authenticity.\n\n4. **Service Ticket**: If the TGT is valid, the TGS issues a Service Ticket for the requested service. This service ticket is encrypted and can be presented to the service for access.\n\n5. **Access to Services**: The user presents the Service Ticket to the network service they want to access. The service verifies the ticket, and if it's valid, the user is granted access without needing to enter their password again.\n\nThe TGS is responsible for verifying the TGT, ensuring that it hasn't expired or been tampered with, and then issuing the Service Ticket that allows access to the specific network service. This process enhances security and minimizes the need to transmit sensitive credentials (like passwords) over the network, as authentication is based on tickets and encrypted keys. The use of TGS and TGT in Kerberos helps protect against various forms of network attacks and eavesdropping.",
+        "full_name": "Ticket Granting Service",
+        "gpt_prompt_context": "Kerberos",
+        "prefer_format": "{gpt_prompt_context} {abbr} ({full_name})"
     },
     "kernel": {
         "abbr": null,
@@ -4603,7 +4787,7 @@
         "abbr": null,
         "alias": null,
         "definition": "scan in a massive scale",
-        "full_name": "massiave-scale scan",
+        "full_name": "massive-scale scan",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
@@ -4638,6 +4822,14 @@
         "full_name": "McAfee",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
+    },
+    "memory": {
+        "abbr": null,
+        "alias": null,
+        "definition": "In the context of an operating system, \"memory\" typically refers to the physical and virtual memory used by a computer system to store and manage data, programs, and other information. Memory is a fundamental component of a computer and plays a crucial role in the system's operation. There are several types of memory in a computer, including:\n\n1. **RAM (Random Access Memory)**: RAM is the primary memory used by a computer's operating system and applications. It provides fast, temporary storage for data and program instructions that are actively being used. When you open a program or file, it is loaded into RAM to be quickly accessible by the CPU. RAM is volatile, meaning its contents are lost when the computer is powered off.\n\n2. **ROM (Read-Only Memory)**: ROM is non-volatile memory that contains firmware or software that is permanently written and cannot be modified. It typically includes the system's BIOS (Basic Input/Output System), which is responsible for booting the computer.\n\n3. **Virtual Memory**: Virtual memory is a memory management technique used by the operating system to simulate additional RAM when the physical RAM is insufficient. It uses a combination of RAM and a portion of the computer's hard drive or SSD to temporarily store data that would typically be held in RAM. This allows the system to handle more applications and data than the physical RAM alone would support.\n\n4. **Secondary Storage**: Secondary storage, like hard drives and solid-state drives, provides long-term, non-volatile storage for data, programs, and the operating system. While not directly a part of system memory, the operating system uses secondary storage to load programs and data into RAM when needed.\n\n5. **Cache Memory**: Cache memory is a small, high-speed memory located closer to the CPU. It is used to store frequently accessed data and instructions to speed up the CPU's operation.\n\n6. **Registers**: Registers are the fastest and smallest type of memory directly inside the CPU. They are used for storing data that the CPU is currently processing.\n\nThe operating system plays a central role in managing memory resources, including allocating memory to running processes, ensuring data is loaded into RAM as needed, and swapping data between RAM and virtual memory when necessary. Effective memory management is essential for system performance and stability.\n\nIn summary, memory in an operating system encompasses RAM, virtual memory, secondary storage, and other types of memory that work together to provide a computer system with the resources it needs to store and manipulate data and execute programs",
+        "full_name": null,
+        "gpt_prompt_context": "operating system",
+        "prefer_format": "{tag}"
     },
     "memory-injection": {
         "abbr": null,
@@ -4676,6 +4868,14 @@
         "alias": null,
         "definition": "Microsoft is a multinational technology corporation that develops, manufactures, licenses, supports, and sells a wide range of software, hardware, and services. Founded by Bill Gates and Paul Allen in 1975, Microsoft has grown to become one of the largest and most influential technology companies in the world.\n\nMicrosoft is best known for its flagship operating system, Microsoft Windows, which is widely used on personal computers, laptops, and servers. Windows has evolved through multiple versions over the years, including Windows XP, Windows 7, Windows 8, and the latest iteration, Windows 10.\n\nIn addition to operating systems, Microsoft offers a diverse portfolio of software products and services, including:\n\n1. Microsoft Office Suite: A collection of productivity applications such as Word, Excel, PowerPoint, and Outlook, used for creating documents, spreadsheets, presentations, and managing emails and calendars.\n\n2. Azure Cloud Services: Microsoft Azure is a cloud computing platform that provides a wide range of services, including virtual machines, storage, databases, AI and machine learning, analytics, and more, enabling businesses to build, deploy, and manage applications and services in the cloud.\n\n3. Microsoft 365: A subscription-based service that includes Office applications, cloud storage, email hosting, and collaboration tools such as SharePoint and Teams, designed for businesses and organizations.\n\n4. Developer Tools: Microsoft offers various tools and frameworks for software development, including Visual Studio, .NET Framework, and Azure DevOps, which support the creation of applications for different platforms and technologies.\n\n5. Xbox: Microsoft's gaming division, known for the Xbox consoles and Xbox Live online gaming service.\n\nMicrosoft has also made significant investments in emerging technologies such as artificial intelligence (AI), machine learning, mixed reality (MR), and the Internet of Things (IoT), aiming to innovate and drive digital transformation across industries.\n\nOver the years, Microsoft has had a significant impact on the technology industry, shaping the personal computing landscape and driving advancements in software development, productivity, and cloud computing. The company's mission is to empower individuals and organizations to achieve more through the use of technology.",
         "full_name": "Microsoft",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "microsoft-sentinel": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Microsoft Sentinel is a cloud-native security information and event management (SIEM) platform that delivers intelligent security analytics and threat intelligence across the enterprise. It helps organizations to detect, investigate, and respond to cyberattacks more effectively.\n\nMicrosoft Sentinel aggregates data from a wide range of sources, including on-premises and cloud systems, security solutions, and threat intelligence feeds. It then uses machine learning and artificial intelligence to analyze this data for threats and anomalies.\n\nMicrosoft Sentinel provides a variety of features to help organizations to manage their security risks, including:\n\n* **Threat detection:** Microsoft Sentinel uses machine learning and artificial intelligence to detect threats and anomalies in security data. It provides a variety of pre-built detections and also allows organizations to create their own custom detections.\n* **Threat investigation:** Microsoft Sentinel provides a variety of tools to help organizations investigate threats, including interactive dashboards, timelines, and reports. It also integrates with other security solutions, such as Microsoft Defender for Endpoint, to provide a more complete view of threats.\n* **Threat response:** Microsoft Sentinel provides a variety of tools to help organizations respond to threats, including incident management workflows, playbooks, and automation. It also integrates with other security solutions, such as Microsoft Defender for Endpoint, to automate response actions.\n\nMicrosoft Sentinel is a powerful SIEM platform that can help organizations of all sizes to improve their security posture. It is a key part of Microsoft's security stack and is used by many organizations around the world.\n\nHere are some of the benefits of using Microsoft Sentinel:\n\n* **Improved security posture:** Microsoft Sentinel can help organizations to improve their security posture by detecting, investigating, and responding to cyberattacks more effectively.\n* **Reduced risk of data breaches:** Microsoft Sentinel can help organizations to reduce the risk of data breaches by detecting and responding to threats more quickly.\n* **Improved compliance:** Microsoft Sentinel can help organizations to comply with security regulations by providing a comprehensive audit trail of security events.\n* **Reduced costs:** Microsoft Sentinel can help organizations to reduce the costs associated with security by automating security tasks and by reducing the time it takes to investigate and respond to threats.\n\nOverall, Microsoft Sentinel is a valuable tool for organizations of all sizes that are looking to improve their security posture.",
+        "full_name": "Microsoft Sentinel",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
@@ -4767,6 +4967,14 @@
         "gpt_prompt_context": "technology and telecommunications",
         "prefer_format": "{tag}"
     },
+    "moby": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/moby/moby\n\nMoby is an open-source project created by Docker to enable and accelerate software containerization.\n\nIt provides a \"Lego set\" of toolkit components, the framework for assembling them into custom container-based systems, and a place for all container enthusiasts and professionals to experiment and exchange ideas. Components include container build tools, a container registry, orchestration tools, a runtime and more, and these can be used as building blocks in conjunction with other tools and projects.",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
+    },
     "modelica": {
         "abbr": null,
         "alias": null,
@@ -4847,6 +5055,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "ms-wsp": {
+        "abbr": "MS-WSP",
+        "alias": null,
+        "definition": "MS-WSP (Windows Search Protocol) is a remote procedure call (RPC) protocol that allows a client to communicate with a server hosting a Windows Search service (WSS) to issue queries. MS-WSP is used by Windows Search clients, such as the Windows search bar and Cortana, to query the Windows Search index and return search results to the user.\n\nMS-WSP provides a variety of features, including:\n\n* **Remote querying:** MS-WSP allows clients to query the Windows Search index on a remote server. This is useful for scenarios where the user's search query needs to be executed against a large or distributed index.\n* **Filtering and sorting:** MS-WSP allows clients to filter and sort the search results returned by the server. This allows clients to provide users with a more customized search experience.\n* **Property retrieval:** MS-WSP allows clients to retrieve the values of specific properties for the search results. This allows clients to display additional information about the search results to the user.\n\nMS-WSP is a powerful protocol that can be used to provide users with a fast and efficient search experience. It is used by a variety of Windows Search clients, including the Windows search bar, Cortana, and Microsoft Edge.\n\nHere are some of the benefits of using MS-WSP:\n\n* **Improved performance:** MS-WSP can help to improve the performance of search queries by allowing clients to query a remote server with a large or distributed index.\n* **Enhanced functionality:** MS-WSP provides clients with a variety of features, such as filtering, sorting, and property retrieval, which can enhance the search experience for users.\n* **Reduced complexity:** MS-WSP simplifies the development of search clients by providing a standard interface for querying the Windows Search index.\n\nOverall, MS-WSP is a valuable tool for developers who want to create search clients that can provide users with a fast, efficient, and customizable search experience.",
+        "full_name": "Windows Search Protocol",
+        "gpt_prompt_context": null,
+        "prefer_format": "{alias} ({full_name})"
+    },
     "msf": {
         "abbr": "MSF",
         "alias": null,
@@ -4902,6 +5118,14 @@
         "full_name": "MySQL",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
+    },
+    "naabu": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/projectdiscovery/naabu\n\nNaabu is a port scanning tool written in Go that allows you to enumerate valid ports for hosts in a fast and reliable manner. It is a really simple tool that does fast SYN/CONNECT/UDP scans on the host/list of hosts and lists all ports that return a reply.",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
     },
     "nat": {
         "abbr": "NAT",
@@ -4991,6 +5215,14 @@
         "gpt_prompt_context": "programming language",
         "prefer_format": "{full_name} ({gpt_prompt_context})"
     },
+    "nimscan": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/elddy/NimScan\n\nReally fast port scanner (With filtered option - Windows support only)",
+        "full_name": "NimScan",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "nix": {
         "abbr": null,
         "alias": null,
@@ -5031,6 +5263,22 @@
         "gpt_prompt_context": "software development",
         "prefer_format": "{abbr}"
     },
+    "notification": {
+        "abbr": null,
+        "alias": null,
+        "definition": "In software development, a \"notification\" is a message or signal generated by an application or system to inform users, other software components, or external systems about an event or update. Notifications are used to convey important information, events, or changes and are a fundamental part of user experience and system functionality in many software applications.\n\nNotifications can take various forms, depending on the context and purpose, including:\n\n1. **User Notifications**: These are notifications designed for end-users and are often presented through a graphical user interface. Examples include pop-up messages, banners, toasts, system tray icons, and sound alerts. User notifications can convey information such as new emails, incoming messages, software updates, or calendar reminders.\n\n2. **Push Notifications**: These are messages sent from a server or remote system to a user's device or application. They are commonly used in mobile apps and web applications to provide real-time updates or alerts, such as news updates, social media interactions, or changes to subscribed content.\n\n3. **System Notifications**: These notifications are used by the operating system or system-level software to inform users about critical system events or issues. Examples include low battery warnings, security alerts, and update notifications.\n\n4. **Event Notifications**: In software, event notifications are used to inform other parts of the system or application about specific events or changes in the application's state. For example, an application might send an event notification when a user clicks a button or when a data update is complete.\n\n5. **Email Notifications**: Many software applications, especially web services and online platforms, send email notifications to inform users about account activities, updates, or interactions with the service.\n\n6. **Logging and Error Notifications**: Developers often use logging and error notifications to record and report issues and errors in applications. These notifications help developers identify and diagnose problems.\n\n7. **Custom Notifications**: In some cases, software developers implement custom notifications tailored to the specific needs of their applications. These can include in-app notifications, chat notifications, and more.\n\nThe implementation of notifications in software typically involves defining when and how notifications should be generated, specifying their content and appearance, and determining the target audience or recipient. Many modern operating systems and development frameworks provide APIs and tools for creating and managing notifications to enhance user experience and interaction with software applications.",
+        "full_name": null,
+        "gpt_prompt_context": "software developement",
+        "prefer_format": "{abbr} (in {gpt_prompt_context})"
+    },
+    "novnc": {
+        "abbr": "noVNC",
+        "alias": null,
+        "definition": "noVNC, short for \"HTML5 VNC client\", is an open-source web-based VNC (Virtual Network Computing) client implemented in HTML5, JavaScript, and WebSockets. VNC is a remote desktop protocol that allows users to control and interact with a remote computer or server over a network connection. noVNC is designed to enable VNC connectivity directly from a web browser, eliminating the need for a separate VNC viewer application to be installed on the client device.\n\nKey features and characteristics of noVNC include:\n\n1. **Web-Based Access**: noVNC provides a web-based interface that allows users to access remote computers or virtual machines from a web browser without the need for additional software installations.\n\n2. **Platform Independence**: Since noVNC is built using standard web technologies like HTML5 and JavaScript, it is platform-independent and can run on various operating systems and devices.\n\n3. **Support for VNC Servers**: noVNC is compatible with a wide range of VNC servers, making it a versatile choice for accessing remote systems regardless of the VNC server software in use.\n\n4. **WebSocket Support**: noVNC uses WebSockets to establish and maintain the connection between the web browser and the remote server. WebSockets provide real-time communication and a responsive user experience.\n\n5. **Keyboard and Mouse Input**: Users can send keyboard and mouse input to the remote system through the web-based interface, effectively controlling the remote desktop.\n\n6. **Clipboard Integration**: noVNC often includes clipboard integration, allowing users to copy and paste text and files between the local system and the remote system.\n\n7. **Customization**: noVNC can be customized and integrated into various web applications and services. It may be used for remote support, server management, and more.\n\n8. **Security**: noVNC connections can be secured by implementing encryption, such as using HTTPS for the web interface and secure VNC server settings.\n\nnoVNC is particularly useful for system administrators, remote support technicians, and anyone who needs to access and manage remote computers or virtual machines from different client devices, including laptops, desktops, tablets, and smartphones. By offering a web-based VNC client, noVNC simplifies the process of remote desktop access and enhances flexibility and convenience for users. It is often used in conjunction with popular VNC servers like TigerVNC, TightVNC, and RealVNC.",
+        "full_name": "HTML5 VNC client",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
     "npm": {
         "abbr": "NPM",
         "alias": null,
@@ -5044,6 +5292,14 @@
         "alias": null,
         "definition": "The Nmap Scripting Engine (NSE) is a powerful feature of the Nmap network scanning tool. It allows users to write and execute custom scripts to automate tasks, perform advanced network scanning, and gather additional information about target hosts.\n\nThe NSE enables users to extend the functionality of Nmap by creating scripts in various programming languages, such as Lua. These scripts can be used to perform a wide range of tasks, including service version detection, vulnerability scanning, brute-forcing, banner grabbing, and more.\n\nThe NSE scripts can interact with the network and target hosts by sending specific packets, analyzing responses, and extracting information. They can leverage Nmap's underlying scanning and probing techniques to gather data or perform specialized tasks.\n\nThe NSE provides a comprehensive library of pre-existing scripts that cover a wide range of network protocols, services, and security checks. These scripts are continuously updated and maintained by the Nmap community, making it easier for users to perform specific scanning and testing tasks without the need for extensive scripting knowledge.\n\nSome common use cases of NSE scripts include:\n\n1. Service and Version Detection: NSE scripts can provide additional information about the detected services, including detailed version numbers, software names, and other related details.\n\n2. Vulnerability Scanning: NSE scripts can perform specific vulnerability checks against known vulnerabilities, helping to identify potential security weaknesses in target systems.\n\n3. Network Enumeration: NSE scripts can gather information about network hosts, such as DNS records, IP geolocation, SNMP data, and more.\n\n4. Brute-Forcing and Password Cracking: NSE scripts can automate brute-force attacks or password guessing against various services or protocols to test the strength of authentication mechanisms.\n\nThe NSE adds significant flexibility and extensibility to Nmap, allowing users to customize their scanning and testing methodologies to suit specific requirements. However, it's important to use NSE scripts responsibly and with proper authorization, as unauthorized or aggressive scanning can violate network security policies and legal regulations.",
         "full_name": "Nmap Scripting Engine",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
+    "ntds": {
+        "abbr": "NTDS",
+        "alias": null,
+        "definition": "NTDS stands for \"NT Directory Services\", and it is a component of Microsoft's Windows operating systems, specifically associated with Active Directory (AD). NTDS is responsible for the storage and management of directory data and is a fundamental part of Windows NT-based systems, including Windows 2000, Windows Server 2003, Windows Server 2008, and their successors.\n\nActive Directory is a directory service that stores information about objects in a network, such as user accounts, computer accounts, printers, and other network resources. NTDS is the database that underlies Active Directory, and it provides features and services such as:\n\n1. **User Account Management**: NTDS stores user account information, including usernames, passwords, group memberships, and other attributes.\n\n2. **Group Policy**: It maintains Group Policy objects, which define settings and configurations for users and computers within an organization.\n\n3. **Resource Tracking**: NTDS tracks information about network resources, making it easier for users to find and access shared resources.\n\n4. **Authentication and Authorization**: It handles authentication requests and authorizes access to network resources based on user and group permissions.\n\n5. **Replication**: NTDS supports the replication of directory data across domain controllers in a Windows domain, ensuring consistency and fault tolerance.\n\n6. **Security**: NTDS implements security features such as access control lists (ACLs) to control who can access and modify directory data.\n\n7. **Schema Management**: It maintains the schema of the directory, defining the types of objects that can be stored and their attributes.\n\n8. **Directory Integration**: Active Directory integrates with various network services and applications, such as DNS, LDAP, and Kerberos, to provide a comprehensive directory service for Windows-based networks.\n\nActive Directory, and by extension NTDS, is crucial for centralized management, security, and authentication in Windows network environments. It is used by system administrators to control and secure network resources, manage user accounts, and enforce policies across the network. The architecture and capabilities of Active Directory have evolved with each version of Windows Server, making it a powerful tool for modern network management.",
+        "full_name": "Windows NT Directory Services",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
@@ -5207,6 +5463,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{tag}"
     },
+    "offsec": {
+        "abbr": "OffSec",
+        "alias": null,
+        "definition": "Offensive Security is an American international company working in information security, penetration testing and digital forensics. Operating from around 2007, the company created open source projects, advanced security courses, the ExploitDB vulnerability database, and the Kali Linux distribution.",
+        "full_name": "Offensive Security",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
     "offsec-proving-grounds": {
         "abbr": null,
         "alias": null,
@@ -5238,6 +5502,14 @@
         "full_name": "OllyDbg",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
+    },
+    "one-liner": {
+        "abbr": null,
+        "alias": null,
+        "definition": "In the context of software development and computer programming, a \"one-liner\" typically refers to a concise and often single line of code that accomplishes a specific task or function. One-liners are known for their brevity and efficiency, as they aim to achieve a particular programming goal in as few lines of code as possible.\n\nOne-liners are commonly used for various purposes, including:\n\n1. **Quick Tasks**: One-liners are handy for performing quick and simple tasks, such as text manipulation, data processing, or calculations.\n\n2. **Code Golf**: In the realm of competitive programming and code golfing, programmers challenge themselves to solve problems using the shortest possible code. This often leads to the creation of creative and highly compact one-liners.\n\n3. **Scripting**: In scripting and automation, one-liners can be used to simplify and streamline tasks that would otherwise require more extensive code.\n\n4. **Command-Line Tools**: Many command-line utilities and tools are designed to be used as one-liners to perform specific tasks efficiently.\n\n5. **Debugging and Testing**: One-liners can be helpful for quickly testing and debugging specific code snippets or functions.\n\n6. **Code Readability**: While one-liners can be concise, they should not sacrifice readability. Well-written one-liners are often clear and self-explanatory.\n\nHere's an example of a one-liner in Python that calculates the sum of all even numbers from 1 to 10:\n\n```python\nresult = sum(x for x in range(1, 11) if x % 2 == 0)\n```\n\nThis one-liner uses a generator expression within the `sum()` function to achieve the desired result in a single line of code.\n\nWhile one-liners can be powerful tools in programming, it's essential to strike a balance between brevity and readability. Code should be clear and maintainable, and one-liners should be used judiciously to enhance code efficiency and simplicity rather than sacrificing clarity.",
+        "full_name": null,
+        "gpt_prompt_context": "software development and computer programming",
+        "prefer_format": "{tag}"
     },
     "onedrive": {
         "abbr": null,
@@ -5423,6 +5695,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
+    "osee": {
+        "abbr": "OSEE",
+        "alias": null,
+        "definition": "The Offensive Security Exploitation Expert (OSEE) certification is the most advanced exploit development certification offered by Offensive Security. It is designed to assess the skills and knowledge of security professionals who are responsible for developing and using exploits to attack systems and networks.\n\nThe OSEE exam is a 72-hour practical exam that requires candidates to develop and exploit vulnerabilities on a variety of target systems. The exam is designed to be challenging and requires candidates to have a deep understanding of exploit development techniques.\n\nTo qualify for the OSEE exam, candidates must have successfully completed the Offensive Security Offensive Security Certified Professional (OSCP) and Offensive Security Wireless Attacks (OSW) certifications.\n\nThe OSEE certification is a valuable credential for security professionals who want to demonstrate their expertise in exploit development. It is also a valuable credential for security professionals who work in offensive security roles, such as penetration testers and red team operators.\n\nHere are some of the benefits of having the OSEE certification:\n\n* **Demonstrated expertise:** The OSEE certification demonstrates to employers and clients that you have the skills and knowledge necessary to develop and use exploits to attack systems and networks.\n* **Increased earning potential:** Security professionals with the OSEE certification typically earn more than security professionals without the certification.\n* **Career advancement:** The OSEE certification can help you to advance your career in offensive security.\n\nIf you are interested in a career in offensive security and you want to demonstrate your expertise in exploit development, then the OSEE certification is a valuable credential to pursue.",
+        "full_name": "OffSec Exploitation Expert",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
     "osep": {
         "abbr": "OSEP",
         "alias": null,
@@ -5575,6 +5855,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "pascal": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Pascal is a high-level programming language created by Swiss computer scientist Niklaus Wirth in the late 1960s. It was named after the French mathematician and philosopher Blaise Pascal. Pascal is known for its simplicity, strong typing, and structured programming features. It was designed to be a reliable, efficient, and easy-to-learn language for educational and professional programming.\n\nKey features and characteristics of Pascal include:\n\n1. **Strong Typing**: Pascal enforces strong data typing, which means that data types must be explicitly defined and adhered to. This helps prevent type-related errors at compile time.\n\n2. **Structured Programming**: Pascal was one of the earliest programming languages to promote structured programming principles. It supports concepts like procedures and functions, enabling code modularity and reusability.\n\n3. **Readable Syntax**: Pascal's syntax is designed to be highly readable, making it accessible for both novice and experienced programmers. It uses reserved words like `begin`, `end`, and `if` to structure code.\n\n4. **Static Scoping**: Pascal uses static scoping, which means that variables and symbols are resolved at compile time rather than runtime. This enhances code predictability and reliability.\n\n5. **Portability**: Pascal was created with portability in mind. Programs written in Pascal can be easily transferred and executed on different platforms, assuming the availability of a compatible Pascal compiler.\n\n6. **Standardized**: There have been various standardized versions of Pascal, including ISO Pascal, which attempted to establish a standard for the language.\n\n7. **Lack of Pointers**: Early versions of Pascal had limitations, such as a lack of pointer types, which could be both an advantage and a limitation depending on the context.\n\nPascal has been influential in the history of programming languages, and it laid the foundation for the development of other languages, including Modula-2, Ada, and Delphi. Delphi, in particular, is a popular development environment and language that evolved from Pascal and is used for building Windows applications.\n\nWhile Pascal is not as widely used in modern software development as some other languages, its principles and structured programming concepts continue to influence the design of programming languages and serve as a basis for teaching fundamental programming skills.",
+        "full_name": "Pascal",
+        "gpt_prompt_context": "programming language",
+        "prefer_format": "{full_name}"
+    },
     "passive": {
         "abbr": null,
         "alias": null,
@@ -5710,6 +5998,14 @@
         "full_name": "physical hacking",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name} (aka {alias})"
+    },
+    "pic": {
+        "abbr": "PIC",
+        "alias": null,
+        "definition": "Position-Independent Code (PIC) is a programming concept and technique used in software development, primarily in the context of shared libraries and executables. PIC is designed to ensure that a program's code can be loaded and executed at any memory address, regardless of where it is located in memory. This is particularly important for code that is shared between multiple processes or libraries in a dynamic linking environment.\n\nKey characteristics of Position-Independent Code (PIC) include:\n\n1. **Dynamic Linking**: In systems with dynamic linking (common in many modern operating systems), programs and libraries are loaded into memory at runtime. PIC ensures that code can be loaded and executed at any memory location without modification.\n\n2. **Address Independence**: PIC code does not rely on specific memory addresses for data or instructions. Instead, it uses relative addressing and runtime calculations to access variables and functions. This makes it suitable for shared libraries, which can be loaded at different memory addresses for each process using them.\n\n3. **Shared Libraries**: PIC is commonly used in shared libraries (also known as dynamic link libraries or shared objects) that multiple programs can use simultaneously. Without PIC, these libraries would need to be loaded at specific memory addresses, which could lead to conflicts.\n\n4. **Relocation**: When PIC code is loaded into memory, the system or dynamic linker can perform address relocation if necessary, adjusting the code's memory references to match its actual location in memory. This ensures that multiple instances of the same library do not interfere with each other.\n\n5. **Code Size and Performance**: PIC code is often slightly less efficient than non-PIC code because it involves additional instructions for address calculation. However, the performance impact is usually minimal and is often outweighed by the benefits of code sharing and flexibility.\n\n6. **Security**: PIC code can also enhance system security by making it more challenging for attackers to predict memory locations and exploit vulnerabilities.\n\nIn practical terms, developers can create PIC code by following specific compiler and linker options or flags when building shared libraries or executables. These options instruct the toolchain to generate code that adheres to PIC principles. The specifics of how to create PIC code may vary depending on the programming language, development tools, and platform being used.\n\nPIC is essential for the effective use of shared libraries in modern operating systems and plays a significant role in ensuring the stability and security of software systems.",
+        "full_name": "Position-Independent Code",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
     },
     "platform": {
         "abbr": null,
@@ -5879,6 +6175,22 @@
         "gpt_prompt_context": "software development",
         "prefer_format": "{full_name} (aka {alias})"
     },
+    "process-hollowing": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Process hollowing is a technique used by malware and malicious actors to disguise their activities and evade detection by security software and analysts. It involves creating a new process in a suspended state and then replacing the code and data within that process with the code of the malicious payload. This results in a legitimate-looking process executing the malicious code, which can help the malware avoid detection and analysis.\n\nHere's an overview of the process hollowing technique:\n\n1. **Create a Suspended Process**: The attacker starts by creating a new process, often a legitimate one that is less likely to raise suspicion. This process is created in a suspended state, meaning it's not actively running.\n\n2. **Replace the Process Image**: The attacker replaces the code and data in the suspended process with the malicious code or payload. This typically involves overwriting the memory space of the legitimate process with the malicious code.\n\n3. **Modify Memory Permissions**: The attacker may adjust memory permissions within the process to ensure that the malicious code can execute. This can involve marking certain memory regions as executable.\n\n4. **Resume the Process**: After the malicious code is injected, the attacker resumes the execution of the process. From the outside, it appears as though the legitimate process is running, but it is actually executing the malicious payload.\n\n5. **Execution**: The malicious payload, now running within the hollowed-out process, can carry out various malicious activities, such as data theft, system exploitation, or network communication with a command and control server.\n\nProcess hollowing is a stealthy technique because it leverages legitimate processes to execute malicious code, making it more challenging for security tools to detect the malware. To counteract process hollowing, security software often needs to employ behavior-based analysis and memory monitoring techniques to detect unusual activity within processes or changes in memory permissions.\n\nProcess hollowing is a variant of code injection techniques and is often used in advanced persistent threats (APTs) and other forms of sophisticated malware. It is important for security professionals to be aware of this technique and to use advanced threat detection and prevention mechanisms to counteract it.",
+        "full_name": "process hollowing",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "process-injection": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Process injection is a malicious technique used by cybercriminals and malware to insert or inject code into the address space of a running process on a computer. This allows the injected code to run within the context of the legitimate process, effectively hiding its presence and evading detection by security software. Process injection is often used in advanced malware and rootkits to achieve various malicious objectives.\n\nThere are different methods of process injection, including:\n\n1. **DLL Injection**: In this method, malicious code is injected into a target process by loading a malicious dynamic-link library (DLL) into the process's address space. The injected code then becomes part of the process and can be executed within that context.\n\n2. **Code Injection**: Code injection involves directly injecting machine code or shellcode into the target process, typically within a buffer or memory region. This code is then executed within the context of the process.\n\n3. **Thread Injection**: In thread injection, the attacker creates a new thread within the target process and runs the malicious code within that thread. This can be less conspicuous than injecting code directly into the process.\n\n4. **Process Hollowing**: As mentioned in a previous response, process hollowing involves creating a new process in a suspended state, replacing its code and data with malicious code, and then resuming the process.\n\n5. **Atom Bombing**: Atom bombing is a more advanced technique that manipulates Windows Atom tables, which are used for inter-process communication. Malicious code is injected into a target process using these tables.\n\nProcess injection is used for various malicious purposes, including:\n\n- Evading antivirus and security software by running malicious code within a legitimate process.\n- Gaining persistence by injecting code into a system or application process, ensuring that the malware is executed each time the system restarts.\n- Privilege escalation, where malicious code is injected into a higher-privileged process to gain access to sensitive resources.\n- Data theft and exfiltration, as attackers can manipulate a process to access and steal sensitive data.\n- Hiding malicious activity by running malicious code in a process that is less likely to raise suspicion.\n\nTo defend against process injection, security software often uses behavior-based analysis to detect unusual activity within processes, as well as monitoring memory regions and process threads. Patching and updating software to fix vulnerabilities that can be exploited for process injection is also essential in reducing the risk.",
+        "full_name": "process injection",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "procmon": {
         "abbr": "ProcMon",
         "alias": null,
@@ -5958,6 +6270,14 @@
         "full_name": "Progressive Web App",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
+    },
+    "pwndoc": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/pwndoc/pwndoc\n\nPwnDoc is a pentest reporting application making it simple and easy to write your findings and generate a customizable Docx report.\nThe main goal is to have more time to Pwn and less time to Doc by mutualizing data like vulnerabilities between users.",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
     },
     "pypi": {
         "abbr": "PyPI",
@@ -6118,6 +6438,14 @@
         "full_name": null,
         "gpt_prompt_context": null,
         "prefer_format": "{tag}"
+    },
+    "readme": {
+        "abbr": null,
+        "alias": null,
+        "definition": "A \"README\" is a common type of document or file that is typically included with software projects and serves as an important component of the project's documentation. The name \"README\" is derived from the idea that it contains essential information that should be \"read me\" first when someone is using or working with the software.\n\nThe primary purpose of a README file is to provide users, developers, and other stakeholders with critical information about the software project. This information can include:\n\n1. **Project Overview**: A brief introduction to the software, explaining its purpose and goals.\n\n2. **Installation Instructions**: Step-by-step instructions on how to install and set up the software. This may include information about system requirements and dependencies.\n\n3. **Configuration**: Details about how to configure the software, including any settings or options that can be customized.\n\n4. **Usage**: Instructions on how to use the software, including examples and use cases.\n\n5. **Documentation Links**: Links to more extensive documentation, user guides, or manuals if they exist separately.\n\n6. **License Information**: Information about the software's licensing terms and any restrictions on use, modification, or distribution.\n\n7. **Contributing Guidelines**: If the software is open source or collaborative, guidelines for how others can contribute to the project.\n\n8. **Changelog**: A history of changes made to the software, including version numbers, release dates, and descriptions of updates or fixes.\n\n9. **Contact Information**: Information on how to get in touch with the developers or maintainers for support or questions.\n\n10. **Acknowledgments**: Credits and acknowledgments to individuals or projects that contributed to the software.\n\nThe README file is often written in plain text, Markdown, or another lightweight markup language to ensure it is easily readable and can be viewed in a variety of text editors and online platforms like GitHub.\n\nA well-crafted README is valuable for both users and developers. Users can quickly get started with the software, while developers can understand how the software works, its architecture, and how to contribute or troubleshoot issues. It is considered good practice to maintain an up-to-date README file in software projects to facilitate ease of use and collaboration.",
+        "full_name": "README",
+        "gpt_prompt_context": "software document",
+        "prefer_format": "{full_name}"
     },
     "recon": {
         "abbr": null,
@@ -6423,6 +6751,14 @@
         "gpt_prompt_context": "programming language",
         "prefer_format": "{full_name}"
     },
+    "rust-scan": {
+        "abbr": null,
+        "alias": null,
+        "definition": "https://github.com/RustScan/RustScan\n\nThe Modern Port Scanner. Find ports quickly (3 seconds at its fastest). Run scripts through our scripting engine (Python, Lua, Shell supported).",
+        "full_name": "RustScan",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "saas": {
         "abbr": "SaaS",
         "alias": null,
@@ -6590,6 +6926,22 @@
         "full_name": "Software Development Kit Manager",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr}"
+    },
+    "search-dork": {
+        "abbr": "dork",
+        "alias": null,
+        "definition": "\"Search dork,\" often referred to simply as \"dork,\" is a term used in the context of internet searching, particularly in the realm of cybersecurity and information security. It refers to specialized search queries or advanced search operators that are used by security professionals, hackers, and researchers to discover specific information on the internet. These queries are designed to pinpoint potentially sensitive or vulnerable data that might be unintentionally exposed on websites, servers, or online resources.\n\nSearch dorks are often used in what is known as \"Google dorking\" or \"Google hacking,\" where these specialized search queries are entered into search engines like Google to uncover data, vulnerabilities, or sensitive information. While some of this information might be publicly accessible, the intent behind search dorks is to identify data that should not be readily available to the public.\n\nHere are a few examples of search dorks:\n\n1. **intitle:\"Index of\" \"passwords.txt\"**: This search query looks for web pages that have \"Index of\" in their title and contain a file named \"passwords.txt,\" which might contain sensitive information.\n\n2. **filetype:pdf site:example.com confidential**: This query searches for PDF files on the website \"example.com\" that contain the word \"confidential.\"\n\n3. **inurl:/wp-admin/ intext:\"Log in\"**: This dork is often used to find WordPress login pages, which can be a target for hackers.\n\n4. **intext:\"Powered by vBulletin\" inurl:/admincp/**: This query is used to find websites that are powered by the vBulletin forum software and might have an exposed administrative control panel.\n\n5. **site:linkedin.com intitle:\"John Doe\"**: This query helps find LinkedIn profiles of individuals with the name \"John Doe\" on the LinkedIn website.\n\nIt's important to note that while search dorks can be used for legitimate security research and auditing, they can also be used for malicious purposes, such as finding vulnerable systems, sensitive data, or potential attack vectors. Therefore, the responsible and ethical use of search dorks is essential, and unauthorized or malicious use is illegal and unethical. Cybersecurity professionals use these techniques to identify and secure vulnerabilities, not to exploit them.",
+        "full_name": "searach dork",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "search-engine": {
+        "abbr": null,
+        "alias": null,
+        "definition": "A search engine is a computer program or online service that allows users to search for and retrieve information from a vast database of web content, such as websites, documents, images, videos, and more. The primary purpose of a search engine is to help users find specific information or resources on the internet quickly and efficiently.\n\nHere are the key components and features of a search engine:\n\n1. **Web Crawling**: Search engines use automated web crawlers (also known as spiders or bots) to traverse the internet and index the content of web pages. These crawlers visit websites, follow links, and collect information from the web.\n\n2. **Indexing**: The information collected by web crawlers is processed and organized into a database, often referred to as an index. This index allows for fast and efficient searching of web content.\n\n3. **Search Query**: Users enter search queries, which are typically keywords or phrases, into the search engine's search box. The search engine then attempts to find the most relevant results based on these queries.\n\n4. **Ranking Algorithm**: Search engines use complex algorithms to determine the relevance of web pages to a given search query. These algorithms consider factors like keyword relevance, quality of content, page authority, user engagement, and more to rank search results.\n\n5. **Search Results Page**: The search engine displays a list of search results on a search results page (SERP). Each result typically includes a title, snippet, and link to the web page.\n\n6. **Filtering and Sorting**: Users can often filter and sort search results by various criteria, such as date, relevance, or geographic location.\n\n7. **Crawling and Updating**: Search engines regularly re-crawl web content to keep their indexes up to date. This ensures that users receive the most current information in search results.\n\n8. **Multimedia Search**: In addition to text-based search, many search engines support multimedia searches for images, videos, and audio content.\n\n9. **Advertising**: Search engines often display sponsored or paid results at the top or side of search results pages, allowing businesses to promote their products and services.\n\n10. **Privacy and Security**: Some search engines prioritize user privacy and security by not tracking user behavior or by using encryption to protect search queries and results.\n\nProminent examples of search engines include Google, Bing, Yahoo, and DuckDuckGo. Each search engine may have unique features, algorithms, and search indexes, but they all aim to help users find relevant information on the internet quickly and easily. Search engines are integral to the way people access and navigate the vast amount of content available online.",
+        "full_name": "search engine",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
     },
     "sec": {
         "abbr": "sec",
@@ -7020,6 +7372,14 @@
         "alias": null,
         "definition": "Secure Sockets Layer (SSL) is a cryptographic protocol designed to provide secure communication over a computer network, most commonly used for securing web traffic. SSL has been succeeded by Transport Layer Security (TLS), but the term SSL is often still used to refer to both protocols.\n\nSSL/TLS protocols establish a secure and encrypted connection between a client (such as a web browser) and a server (such as a web server). This secure connection ensures the confidentiality, integrity, and authenticity of data transmitted between the client and server.\n\nSSL/TLS uses a combination of asymmetric and symmetric encryption algorithms to achieve its security goals. The process typically involves the following steps:\n\n1. Handshake: The client and server perform a handshake process to negotiate the encryption algorithms and exchange cryptographic keys.\n\n2. Key Exchange: The client and server exchange encryption keys, which are used to encrypt and decrypt data during the session.\n\n3. Data Encryption: Once the secure connection is established, SSL/TLS encrypts the data exchanged between the client and server using symmetric encryption algorithms. This ensures that the data remains confidential and cannot be easily intercepted or understood by unauthorized parties.\n\n4. Data Integrity: SSL/TLS also provides mechanisms to ensure the integrity of the data. This is achieved through the use of cryptographic hash functions that generate message digests or digital signatures to detect any tampering or modification of the data during transmission.\n\n5. Certificate Validation: SSL/TLS utilizes digital certificates to verify the authenticity of the server. The client verifies the server's certificate to ensure that it is issued by a trusted certificate authority (CA) and that the server is the legitimate owner of the certificate.\n\nBy using SSL/TLS, sensitive information such as login credentials, financial transactions, and personal data can be securely transmitted over the internet, protecting against eavesdropping, data tampering, and impersonation attacks.",
         "full_name": "Secure Sockets Layer",
+        "gpt_prompt_context": null,
+        "prefer_format": "{abbr} ({full_name})"
+    },
+    "sspi": {
+        "abbr": "SSPI",
+        "alias": null,
+        "definition": "The Security Support Provider Interface (SSPI) is a Microsoft Windows API (Application Programming Interface) that provides a framework for secure authentication and communication. It is primarily used for building secure networked applications and services, especially in the context of Windows-based environments.\n\nSSPI serves as an abstraction layer that allows applications to interact with various security providers, such as NTLM (Windows NT LAN Manager), Kerberos, and other authentication and encryption mechanisms, without needing to know the specific details of each protocol. This abstraction simplifies the process of implementing security features in Windows applications.\n\nKey features and components of SSPI include:\n\n1. **Security Providers**: SSPI enables applications to work with multiple security providers or protocols, which can include authentication, encryption, and integrity services. Each provider is represented as a Security Support Provider (SSP).\n\n2. **Security Context**: SSPI manages the establishment of a security context between a client and server. The security context defines the security settings, including authentication, encryption, and integrity options, for the communication between the two parties.\n\n3. **Single Sign-On (SSO)**: SSPI can be used to implement Single Sign-On solutions in Windows environments, allowing users to log in once and access multiple networked resources without repeatedly entering credentials.\n\n4. **GSS-API Compatibility**: SSPI is compatible with the Generic Security Service Application Program Interface (GSS-API), allowing for interoperability with non-Windows systems and applications.\n\n5. **Authentication and Authorization**: SSPI helps manage user authentication and authorization, ensuring that only authenticated users have access to protected resources.\n\n6. **Secure Communication**: SSPI can be used to secure communication channels, providing data encryption and integrity checks to protect data in transit.\n\nSSPI is commonly used in the development of Windows-based applications, especially those that need to interact with Windows domains, Active Directory, and other Windows security features. It is often utilized in the implementation of network protocols, secure remote procedure calls (RPC), and other client-server communication systems.\n\nOne of the most well-known security providers that SSPI supports is the Kerberos authentication protocol, which is widely used in Windows-based network environments for secure authentication and single sign-on. Developers typically work with SSPI through programming languages like C/C++ or by using relevant Windows libraries and tools to integrate security features into their applications.",
+        "full_name": "Security Support Provider Interface",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
@@ -7495,6 +7855,14 @@
         "gpt_prompt_context": "cyberattacks",
         "prefer_format": "{tag}"
     },
+    "twitter": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Twitter is a widely recognized social media platform and online microblogging service that enables users to post and read short messages called \"tweets.\" These tweets can be up to 280 characters in length (formerly 140 characters before an expansion) and can include text, images, videos, links, and various types of multimedia content.\n\nKey features and aspects of Twitter include:\n\n1. **Tweeting**: Users can create tweets to share their thoughts, opinions, updates, and other content with their followers. Tweets can be public, visible to anyone, or protected, visible only to approved followers.\n\n2. **Followers and Following**: Users can follow other Twitter accounts to receive updates from those accounts on their own timelines. Accounts that are followed are referred to as \"following.\"\n\n3. **Retweets**: Users can share tweets from others by retweeting them, effectively re-sharing the content with their own followers.\n\n4. **Likes**: Users can express their approval or appreciation for tweets by \"liking\" them, indicated by a heart-shaped icon.\n\n5. **Hashtags**: Users can add hashtags (#) to their tweets to categorize and make their content discoverable by others interested in that topic.\n\n6. **Mentions**: Users can mention other Twitter users in their tweets by using the \"@\" symbol followed by the username (e.g., @username). This notifies the mentioned user and links to their profile.\n\n7. **Trending Topics**: Twitter displays trending topics and hashtags on the platform, providing insight into popular discussions and events in real-time.\n\n8. **Direct Messages**: Users can send private messages to other users, allowing for one-on-one or group conversations.\n\n9. **Lists**: Users can create lists to organize accounts they follow, making it easier to filter content and engage with specific groups of users.\n\n10. **Verified Accounts**: Some accounts, typically of public figures, brands, or notable individuals, are \"verified\" with a blue checkmark to confirm their authenticity.\n\n11. **Media Sharing**: Twitter supports the sharing of images, videos, animated GIFs, and other multimedia content directly within tweets.\n\n12. **Twitter Cards**: Twitter Cards are used to enrich tweets with additional information, such as articles, app download links, product details, and more.\n\nTwitter is widely used for a variety of purposes, including personal expression, news dissemination, marketing, customer service, networking, and connecting with communities of interest. Its real-time nature and concise format make it a platform that provides quick updates and insights into current events and trending topics. Twitter has a significant impact on public discourse, and its influence extends to a global audience.",
+        "full_name": "Twitter",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "typescript": {
         "abbr": null,
         "alias": null,
@@ -7631,14 +7999,6 @@
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
     },
-    "vocabulary": {
-        "abbr": null,
-        "alias": null,
-        "definition": "Vocabulary",
-        "full_name": null,
-        "gpt_prompt_context": null,
-        "prefer_format": "{tag}"
-    },
     "var-name": {
         "abbr": null,
         "alias": null,
@@ -7767,6 +8127,14 @@
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
+    "vmware-esxi": {
+        "abbr": null,
+        "alias": null,
+        "definition": "VMware ESXi, often simply referred to as \"ESXi\", is a bare-metal hypervisor and a core component of VMware's virtualization platform. It is designed for virtualization and cloud computing, allowing multiple virtual machines (VMs) to run on a single physical server or host. ESXi is known for its performance, reliability, and security and is widely used in data centers and enterprise environments.\n\nKey features and characteristics of VMware ESXi include:\n\n1. **Hypervisor**: ESXi is a type-1 or bare-metal hypervisor, which means it runs directly on the physical hardware of a server without the need for a separate operating system. This allows for high levels of performance and resource efficiency.\n\n2. **Virtualization**: ESXi allows the creation and management of virtual machines. Virtualization enables multiple isolated VMs to run on a single physical server, each with its own operating system and applications.\n\n3. **Resource Management**: ESXi provides advanced resource management and allocation, ensuring that VMs receive their fair share of CPU, memory, storage, and network resources.\n\n4. **vSphere Compatibility**: ESXi is part of the VMware vSphere platform, which includes vCenter Server for centralized management and additional features like vMotion (live migration), High Availability (HA), and Distributed Resource Scheduler (DRS).\n\n5. **Security**: ESXi includes security features such as lockdown mode, which restricts access to the hypervisor, and Secure Boot to prevent unauthorized or compromised code from running on the host.\n\n6. **Monitoring and Management**: ESXi provides extensive monitoring and management capabilities through the vCenter Server, including performance monitoring, alerting, and reporting.\n\n7. **High Availability**: VMware HA can be used to ensure the availability of VMs by automatically restarting them on other hosts in the event of a host failure.\n\n8. **Integration**: ESXi is compatible with a wide range of operating systems and supports various guest operating systems, making it suitable for running diverse workloads.\n\n9. **Licensing**: VMware ESXi is available in several licensing editions, ranging from free (with limited features) to more advanced paid versions that offer additional capabilities.\n\n10. **Virtual Networking**: ESXi includes virtual networking features, allowing administrators to create and manage virtual switches, routers, and networks.\n\n11. **Data Center Consolidation**: ESXi is commonly used for server consolidation projects, where multiple physical servers are replaced by a smaller number of virtualized hosts.\n\nVMware ESXi is an essential technology for modern data center and cloud environments, providing the foundation for virtualization, flexibility, and efficient resource utilization. It is used by organizations to optimize their IT infrastructure, reduce hardware costs, improve scalability, and simplify server management.",
+        "full_name": "VMware ESXi",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
     "vnc": {
         "abbr": "VNC",
         "alias": null,
@@ -7774,6 +8142,14 @@
         "full_name": "Virtual Network Computing",
         "gpt_prompt_context": null,
         "prefer_format": "{abbr} ({full_name})"
+    },
+    "vocabulary": {
+        "abbr": null,
+        "alias": null,
+        "definition": "Vocabulary",
+        "full_name": null,
+        "gpt_prompt_context": null,
+        "prefer_format": "{tag}"
     },
     "vps": {
         "abbr": "VPS",
@@ -8140,6 +8516,14 @@
         "alias": null,
         "definition": "As of my last update in September 2021, Win-KeX is a feature introduced in Windows 10 version 2004 (May 2020 Update) and later. It stands for \"Windows Kali Desktop Experience\" and is a collaborative project between Microsoft and the developers of Kali Linux, a popular penetration testing and ethical hacking distribution.\n\nWin-KeX allows users to run a full Linux distribution, specifically Kali Linux, alongside their Windows operating system. It provides a seamless integration of a Linux desktop environment within Windows, giving users access to a variety of Linux tools and utilities without the need for a separate virtual machine or dual-boot setup.\n\nWith Win-KeX, users can use Kali Linux directly from the Windows Subsystem for Linux 2 (WSL 2) environment, providing faster performance and improved compatibility compared to its predecessor, WSL 1. This integration allows developers, security researchers, and enthusiasts to utilize Kali Linux's powerful tools while still having the convenience of their primary Windows OS for day-to-day tasks.\n\nKeep in mind that software and features may have evolved or changed since my last update, so I recommend checking the official Microsoft and Kali Linux websites or other reputable sources for the latest information on Win-KeX.",
         "full_name": "Win-KeX",
+        "gpt_prompt_context": null,
+        "prefer_format": "{full_name}"
+    },
+    "window-resize": {
+        "abbr": null,
+        "alias": null,
+        "definition": "resize the size of a (UI) window",
+        "full_name": "window resize",
         "gpt_prompt_context": null,
         "prefer_format": "{full_name}"
     },
