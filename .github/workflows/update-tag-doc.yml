@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'docs/tag-doc.template'
+      - 'data/tagmarks.jsonl'
+      - 'data/tags.json'
   
   workflow_dispatch:
 
