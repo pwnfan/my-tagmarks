@@ -1,12 +1,11 @@
 # TagMark Filters
 
-- [TagMark Filters](#tagmark-filters)
-  - [如何确定 Filter 类型](#如何确定-filter-类型)
-    - [Advanced Filter](#advanced-filter)
-    - [\>= Filter](#-filter)
-  - [辅助输入 tag](#辅助输入-tag)
-  - [通过 URL GET 参数使用 filter](#通过-url-get-参数使用-filter)
-  - [参考链接](#参考链接)
+- [如何确定 Filter 类型](#如何确定-filter-类型)
+  - [Advanced Filter](#advanced-filter)
+  - [\>= Filter](#-filter)
+- [辅助输入 tag](#辅助输入-tag)
+- [通过 URL GET 参数使用 filter](#通过-url-get-参数使用-filter)
+- [参考链接](#参考链接)
 
 ## 如何确定 Filter 类型
 
@@ -46,7 +45,7 @@ Advanced Filter 中定义了如下的关键字（运算符）:
 
 ## 通过 URL GET 参数使用 filter
 
-tagmark-ui 通过纯前端 Javascript 实现了 通过GET参数对filter的调用。因此，之前的过滤器示例可以通过 [https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)](https://pwnfan.github.io/tagmark/?tags=sec%20AND%20recon%20AND%20(Python%20OR%20Golang)) (此链接的真实URL是我的 blog 中的 tagmark 页面 - pwnfan)
+tagmark-ui 通过纯前端 Javascript 实现了 通过GET参数对filter的调用。因此，之前的过滤器示例可以通过 [https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+recon+AND+(Python+OR+Golang)) (此链接的真实URL是我的 blog 中的 tagmark 页面 - pwnfan)
 
 这个功能是为了便于和他人分享特定经过过滤后的 URL 子集使用的，比如包含某些指定标签的 URL。
 
@@ -68,7 +67,7 @@ tagmark-ui 通过纯前端 Javascript 实现了 通过GET参数对filter的调�
 - `Date Added`: `time_added`
 - `Comment`: `comment`
 
-另外补充一下，GET参数里多个 key 也是允许的，比如 [https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)&github_repo_info.count_star=3000](https://pwnfan.github.io/tagmark/?tags=sec%20AND%20recon%20AND%20(Python%20OR%20Golang)&github_repo_info.count_star=3000) (此链接的真实URL是我的 blog 中的 tagmark 页面 - pwnfan)，这在之前的 tags 过滤条件的基础上，又加了一个 `Github 的 Star数 >= 3000` 的过滤条件。
+另外补充一下，GET参数里多个 key 也是允许的，比如 [https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)&github_repo_info.count_star=3000](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+recon+AND+(Python+OR+Golang)&github_repo_info.count_star=3000) (此链接的真实URL是我的 blog 中的 tagmark 页面 - pwnfan)，这在之前的 tags 过滤条件的基础上，又加了一个 `Github 的 Star数 >= 3000` 的过滤条件。
 
 最后，可能会有人担心这种 GET 参数的安全性，因为它没有使用后端代码而是通过纯前端代码实现的，一般最容易想到的纯前端实现方法就是使用Javascript 获取到 GET 参数，然后调用 eval 函数调用过滤函数进行过滤。确实我一开始也是这么做的，我知道使用 eval 会引入反射型 XSS，但是很久都无法找到既能规避这个安全问题又能实现这个纯前端 Filter 的方法。我对前端开发不是很熟，所以之后又花了很久才找到好的解决方法，现在好像已经可以规避这类通过 GET 参数传入恶意 Javascript 代码的攻击。如果你发现我的实现方式仍然存在安全问题，请及时告知我，非常感谢。
 

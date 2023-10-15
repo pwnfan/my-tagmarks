@@ -1,12 +1,11 @@
 # TagMark フィルター
 
-- [TagMark フィルター](#tagmark-フィルター)
-  - [フィルターの種類を決定する方法](#フィルターの種類を決定する方法)
-    - [アドバンストフィルター](#アドバンストフィルター)
-    - [\>= フィルター](#-フィルター)
-  - [タグの快速入力](#タグの快速入力)
-  - [URL GET パラメータを介したフィルターの使用](#url-get-パラメータを介したフィルターの使用)
-  - [参考リンク](#参考リンク)
+- [フィルターの種類を決定する方法](#フィルターの種類を決定する方法)
+  - [アドバンストフィルター](#アドバンストフィルター)
+  - [\>= フィルター](#-フィルター)
+- [タグの快速入力](#タグの快速入力)
+- [URL GET パラメータを介したフィルターの使用](#url-get-パラメータを介したフィルターの使用)
+- [参考リンク](#参考リンク)
 
 ## フィルターの種類を決定する方法
 
@@ -45,7 +44,7 @@
 
 ## URL GET パラメータを介したフィルターの使用
 
-tagmark-uiは、純粋なフロントエンドJavaScriptを介してフィルターの呼び出しを実装しました。したがって、前のフィルター例の結果は[https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)](https://pwnfan.github.io/tagmark/?tags=sec%20AND%20recon%20AND%20(Python%20OR%20Golang))（このリンクの実際のURLは私のブログ - pwnfan のタグマークページです）を介してアクセスできます。
+tagmark-uiは、純粋なフロントエンドJavaScriptを介してフィルターの呼び出しを実装しました。したがって、前のフィルター例の結果は[https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+recon+AND+(Python+OR+Golang))（このリンクの実際のURLは私のブログ - pwnfan のタグマークページです）を介してアクセスできます。
 
 この機能は、特定の指定されたタグを含むURLなど、他の人と特定のフィルターされたURLサブセットを簡単に共有するためのものです。
 
@@ -67,7 +66,7 @@ tagmark-uiは、純粋なフロントエンドJavaScriptを介してフィルタ
 - `Date Added`: `time_added`
 - `Comment`: `comment`
 
-さらに、GETパラメータで複数のキーを使用することもできます。例えば[https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)&github_repo_info.count_star=3000](https://pwnfan.github.io/tagmark/?tags=sec%20AND%20recon%20AND%20(Python%20OR%20Golang)&github_repo_info.count_star=3000)（このリンクの実際のURLは私のブログ - pwnfan の tagmark ページです）は、元のタグフィルタ条件に加えて「Github Star 数 >= 3000」のフィルタ条件を追加します。
+さらに、GETパラメータで複数のキーを使用することもできます。例えば[https://your.site/tagmark/?tags=sec AND recon AND (Python OR Golang)&github_repo_info.count_star=3000](https://pwnfan.github.io/my-tagmarks/?tags=sec+AND+recon+AND+(Python+OR+Golang)&github_repo_info.count_star=3000)（このリンクの実際のURLは私のブログ - pwnfan の tagmark ページです）は、元のタグフィルタ条件に加えて「Github Star 数 >= 3000」のフィルタ条件を追加します。
 
 最後に、このGETパラメータのセキュリティに関して、人々は心配するかもしれません。なぜなら、バックエンドコードを使用せずに純粋なフロントエンドコードで実装されているからです。この純粋なフロントエンドで実装するための最も簡単な方法は、Javascriptを使用してGETパラメータを取得し、eval関数を呼び出してフィルタ関数を呼び出すことです。実際、これが私が最初に行ったことです。evalを使用すると反射型XSSが発生することを知っていますが、このセキュリティの問題を回避しながら、この純粋なフロントエンドのフィルタを実装する方法をずっと見つけることができませんでした。私はフロントエンド開発に上手くないので、良い解決策を見つけるのに長い時間がかかりました。今のところ、GETパラメータを介したこのような攻撃を回避することができるようです。もし私の実装にまだセキュリティ上の問題があると感じた場合は、お早めにお知らせください。ありがとうございます。
 
