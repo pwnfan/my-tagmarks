@@ -122,6 +122,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [API]{{f+c:sec AND api}}
   * [API key]{{f+c:sec AND api-key}}
 * {{t+f+c:apt}}
+* [ASN (Autonomous System Number)]{{f+c:sec AND asn}}
 * {{t+f+c:assessment}}
 * {{t+f+c:attack-surface}}
 * {{t+f+c:audit}}
@@ -129,6 +130,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [automation]{{f+c:sec AND automation}}
 * {{t+f+c:av-evasion}}
 * {{t+f+c:backdoor}}
+* [BitLocker]{{f+c:sec AND red-team AND bitlocker}}
 * {{t+f+c:bloodhound}}
 * {{t+f+c:bootkit}}
 * {{t+f+c:brute-force}}
@@ -169,6 +171,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:data-exfiltration}}
 * {{t+f+c:data-infiltration}}
 * [data set (data collection)]{{f+c:sec AND data-set}}
+* [DCSync]{{f+c:sec AND dcsync}}
 * {{t+f+c:decompile}}
 * {{t+f+c:defence-evasion}}
 * {{t+f+c:defence-kill}}
@@ -187,6 +190,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:enum-risk}}
 * {{t+f+c:enum-url}}
 * {{t+f+c:enum-user}}
+* [ETW (Event Tracing for Windows)]{{f+c:sec AND red-team AND etw}}
 * {{t+f+c:exp-search}}
 * {{t+f+c:fake-service}}
 * {{t+f+c:file-signature}}
@@ -212,10 +216,12 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:indicator-removal}}
 * [infrastructure setup]{{f+c:sec AND infra-setup}}
 * [infrastructure]{{f+c:sec AND infra}}
+* [Instagram]{{f+c:sec AND instagram}}
 * [intranet]{{f+c:sec AND intranet}}
 * [java]{{f+c:sec AND java}}
 * [javascript]{{f+c:sec AND javascript}}
 * {{t+f+c:kerberos}}
+* {{t+f+c:kerberos-tgs}}
 * [kernel]{{f+c:sec AND kernel}}
 * {{t+f+c:keylogger}}
 * {{t+f+c:lateral-movement}}
@@ -228,6 +234,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [log]{{f+c:sec AND log}}
 * {{t+f+c:lsass}}
 * {{t+f+c:malware}}
+* [memory]{{f+c:sec AND red-team AND memory}}
 * [mapping]{{f+c:sec AND mapping}}
 * {{t+f+c:massive-scan}}
 * [Apache Maven]{{f+c:sec AND maven}}
@@ -238,6 +245,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:misconfig}}
 * {{t+f+c:mitm}}
 * {{t+f+c:mitre-att&ck}}
+* [Windows Search Protocol]{{f+c:sec AND red-team AND ms-wsp}}
 * {{t+f+c:msf}}
   * {{t+f+c:msf-meterpreter}}
   * {{t+f+c:msfvenom}}
@@ -248,6 +256,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:nmap}}
   * {{t+f+c:nse}}
 * [Node.js]{{f+c:sec AND node.js}}
+* [NTDS (Windows NT Directory Services)]{{f+c: sec AND red-team AND ntds}}
 * {{t+f+c:nuclei}}
 * {{t+f+c:oa}}
   * {{t+f+c:oa-seeyon}}
@@ -268,6 +277,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:persistence}}
 * {{t+f+c:phishing}}
 * [phone number]{{f+c:sec AND phone}}
+* [PIC (Position-Independent Code)]{{f+c:sec AND red-team AND pic}}
 * {{t+f+c:physical-hacking}}
 * {{t+f+c:poison}}
 * {{t+f+c:post-exploitation}}
@@ -276,6 +286,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:ppl}}
 * {{t+f+c:privilege-escalation-horizontal}}
 * {{t+f+c:privilege-escalation}}
+* {{t+f+c:process-hollowing}}
 * {{t+f+c:proxy-pool}}
 * {{t+f+c:proxy}}
 * {{t+f+c:quake}}
@@ -298,6 +309,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:scan-backup}}
 * {{t+f+c:scan-port}}
 * {{t+f+c:scan-vul}}
+* [search dork]{{f+c:sec AND search-dork}}
+* [search engine]{{f+c:sec AND search-engine}}
 * [screenshot]{{f+c:sec AND screenshot}}
 * {{t+f+c:sensitive-info}}
 * [serverless]{{f+c:sec AND serverless}}
@@ -311,6 +324,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [source code]{{f+c:sec AND source-code}}
 * {{t+f+c:sqlmap}}
   * {{t+f+c:sqlmap-tamper}}
+* [SSPI (Security Support Provider Interface)]{{f+c:sec AND red-team AND sspi}}
 * [static analysis]{{f+c:sec AND static-analysis}}
 * [subdomain]{{f+c:sec AND subdomain}}
 * [software supplier]{{f+c:sec AND supplier}}
@@ -326,6 +340,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:trojan}}
 * {{t+f+c:ttp}}
 * {{t+f+c:tunnel}}
+* {{t+f+c:twitter}}
 * {{t+f+c:uac}}
 * {{t+f+c:user-agent}}
 * [username]{{f+c:sec AND username}}
@@ -405,6 +420,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:devsecops}}
 * {{t+f+c:digital-forensics}}
 * {{t+f+c:dlp}}
+* {{t+f+c:dod-srg}}
+* {{t+f+c:dod-stig}}
 * {{t+f+c:drps}}
 * {{t+f+c:dynamic-analysis}}
 * {{t+f+c:easm}}
@@ -453,6 +470,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [mapping (in computer vision and data visualization)](http://localhost:8000/?tags=mapping) `Total 3 (Github 3)`
 * {{t+f+c:massive-scan}}
 * [Apache Maven]{{f+c:sec AND maven}}
+* [memory]{{f+c:sec AND blue-team AND memory}}
+* [Microsoft Sentinel]{{f+c:sec AND blue-team AND microsoft-sentinel}}
 * [midware]{{f+c:sec and midware}}
 * {{t+f+c:misconfig}}
 * {{t+f+c:mitre-att&ck}}
@@ -499,6 +518,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:soar}}
 * {{t+f+c:soc}}
 * [source code]{{f+c:sec AND source-code}}
+* [SSPI (Security Support Provider Interface)]{{f+c:sec AND blue-team AND sspi}}
 * [static analysis]{{f+c:sec AND static-analysis}}
 * {{t+f+c:stix}}
 * [subdomain]{{f+c:sec AND subdomain}}
@@ -607,6 +627,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [CakePHP]{{f+c:sec AND cakephp}}
 * [CMS]{{f+c:sec AND cms}}
 * [database]{{f+c:sec AND database}}
+* [Debian]{{f+c:sec AND debian}}
 * [Django (Python)]{{f+c:sec AND django}}
 * [Drupal (PHP)]{{f+c:sec AND drupal}}
 * [Electron]{{f+c:sec AND electron}}
@@ -705,6 +726,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 
 #### 2.1.7. Protocol (Service, Standard) Security
 
+* [ASN (Autonomous System Number)]{{f+c:sec AND asn}}
+* [DCSync]{{f+c:sec AND dcsync}}
 * [DNS (Domain Name System)]{{f+c:sec AND dns}}
 * [domain]{{f+c:sec AND domain}}
 * [FTP (File Transfer Protocol)]{{f+c:sec AND ftp}}
@@ -766,6 +789,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [firmware analysis]{{f+c:sec AND firmware-analysis}}
 * [firmware emulation (hardware emulation)]{{f+c:sec AND firmware-emulation}}
 * [firmware]{{f+c:sec AND firmware}}
+* [Fortinet]{{f+c:sec AND fortinet}}
 * [HackRF]{{f+c:sec AND hackrf}}
 * [hardware / device]{{f+c:sec AND hardware}}
 * [HID (Human Interface Devices)]{{f+c:sec AND hid}}
@@ -811,6 +835,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 #### 2.1.12. Security Certification, Career
 
 * {{t+f+c:bscp}}
+* [certification]{{f+c:sec AND certification}}
 * [career development]{{f+c:sec AND career}}
 * {{t+f+c:health}}
 * [job interview]{{f+c:sec AND job-interview}}
@@ -819,6 +844,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * {{t+f+c:osce3}}
 * {{t+f+c:oscp}}
 * {{t+f+c:osed}}
+* {{t+f+c:osee}}
 * {{t+f+c:osep}}
 * {{t+f+c:oswe}}
 * {{t+f+c:skill-tree}}
@@ -878,6 +904,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [Kali Linux]{{f+c:sec AND kali}}
 * [Microsoft]{{f+c:sec AND microsoft}}
 * [MMDB (MaxMind DB)]{{f+c:sec AND mmdb}}
+* [one-liner]{{f+c:sec AND one-liner}}
 * [Public Opinion Analysis]{{f+c:sec AND opinion-analysis}}
 * [Public Opinion Monitoring]{{f+c:sec AND opinion-monitoring}}
 * [URL parsing]{{f+c:sec AND parse-url}}
@@ -951,6 +978,7 @@ most without "cybersecurity":
 * [tool]{{f+c:dev AND NOT sec AND tool}}
 * [vocabulary]{{f+c:dev AND NOT sec AND vocabulary}}
 * [wiki]{{f+c:dev AND NOT sec AND wiki}}
+* {{t+f+c:window-resize}}
 
 
 #### 2.2.2. Subtopics
@@ -968,9 +996,11 @@ without "cybersecurity":
 * [Cloud Native]{{f+c:dev AND NOT sec AND cloud-native}}
 * [Cloud (Computing)]{{f+c:dev AND NOT sec AND cloud}}
 * [code analysis]{{f+c:dev AND NOT sec AND code-analysis}}
+* [code assistant]{{f+c:dev AND NOT sec AND code-assistant}}
 * [code complexity]{{f+c:dev AND NOT sec AND code-complexity}}
 * [code example (code snippet)]{{f+c:dev AND NOT sec AND code-example}}
 * [code formatting]{{f+c:dev AND NOT sec AND code-format}}
+* [code generator]{{f+c:dev AND NOT sec AND code-generator}}
 * [code optimization]{{f+c:dev AND NOT sec AND code-optimization}}
 * [code playground (aka online code editor / coding sandbox)]{{f+c:dev AND NOT sec AND code-playground}}
 * [code quality]{{f+c:dev AND NOT sec AND code-quality}}
@@ -991,6 +1021,7 @@ without "cybersecurity":
 * [DevSecOps]{{f+c:dev AND devsecops}}
 * [ASCII art diagram]{{f+c:dev AND NOT sec AND diagram-ascii}}
 * [ER diagram (Entity-Relationship diagram)]{{f+c:dev AND NOT sec AND diagram-er}}
+* [DNS server]{{f+c:dev AND NOT sec AND dns-server}}
 * [flowchart]{{f+c:dev AND NOT sec AND diagram-flowchart}}
 * [Mermaid]{{f+c:dev AND NOT sec AND diagram-mermaid}}
 * [UML (Unified Modeling Language)]{{f+c:dev AND NOT sec AND diagram-uml}}
@@ -1026,6 +1057,7 @@ without "cybersecurity":
 * [NAT (Network Address Translation)]{{f+c:dev AND NOT sec AND nat}}
 * [network]{{f+c:dev AND NOT sec AND network}}
 * [Nginx]{{f+c:dev AND NOT sec AND nginx}}
+* [notification]{{f+c:dev AND NOT sec AND notification}}
 * [operations]{{f+c:dev AND NOT sec AND operations}}
 * [ORM (Object-Relational Mapping)]{{f+c:dev AND NOT sec AND orm}}
 * [PaaS (Platform as a Service)]{{f+c:dev AND NOT sec AND paas}}
@@ -1046,6 +1078,7 @@ without "cybersecurity":
 * [Pytest]{{f+c:dev AND NOT sec AND pytest}}
 * [typing (in Python)]{{f+c:dev AND NOT sec AND python-typing}}
 * [Python]{{f+c:dev AND NOT sec AND python}}
+* [README]{{f+c:dev AND NOT sec AND readme}}
 * [Redis]{{f+c:dev AND NOT sec AND redis}}
 * [rich text]{{f+c:dev AND NOT sec AND rich-text}}
 * [RPA (Robotic Process Automation)]{{f+c:dev AND NOT sec AND rpa}}
@@ -1084,6 +1117,7 @@ without "cybersecurity":
 including "cybersecruity" and "development":
 
 * {{t+f+c:ai}}
+* {{t+f+c:bard}}
 * {{t+f+c:chatbot}}
 * {{t+f+c:computer-vision}}
 * {{t+f+c:corpus}}
