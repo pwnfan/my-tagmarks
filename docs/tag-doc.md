@@ -122,6 +122,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [API](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+api) `Total 19 (Github 14)`
   * [API key](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+api-key) `Total 5 (Github 5)`
 * [APT (Advanced Persistent Threat)](https://pwnfan.github.io/my-tagmarks?tags=apt) `Total 5 (Github 3)`
+* [ASN (Autonomous System Number)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+asn) `Total 1 (Github 1)`
 * [assessment](https://pwnfan.github.io/my-tagmarks?tags=assessment) `Total 2 (Github 2)`
 * [attack surface](https://pwnfan.github.io/my-tagmarks?tags=attack-surface) `Total 80 (Github 73)`
 * [audit](https://pwnfan.github.io/my-tagmarks?tags=audit) `Total 41 (Github 36)`
@@ -129,6 +130,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [automation](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+automation) `Total 12 (Github 11)`
 * [AV evasion (AV bypass)](https://pwnfan.github.io/my-tagmarks?tags=av-evasion) `Total 70 (Github 62)`
 * [backdoor](https://pwnfan.github.io/my-tagmarks?tags=backdoor) `Total 21 (Github 20)`
+* [BitLocker](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+bitlocker) `Total 1 (Github 1)`
 * [BloodHound](https://pwnfan.github.io/my-tagmarks?tags=bloodhound) `Total 5 (Github 5)`
 * [bootkit](https://pwnfan.github.io/my-tagmarks?tags=bootkit) `Total 1 (Github 1)`
 * [brute force](https://pwnfan.github.io/my-tagmarks?tags=brute-force) `Total 65 (Github 62)`
@@ -169,6 +171,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [data exfiltration](https://pwnfan.github.io/my-tagmarks?tags=data-exfiltration) `Total 11 (Github 10)`
 * [data infiltration](https://pwnfan.github.io/my-tagmarks?tags=data-infiltration) `Total 3 (Github 2)`
 * [data set (data collection)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+data-set) `Total 21 (Github 10)`
+* [DCSync](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+dcsync) `Total 1 (Github 1)`
 * [decompile](https://pwnfan.github.io/my-tagmarks?tags=decompile) `Total 11 (Github 10)`
 * [defense evasion](https://pwnfan.github.io/my-tagmarks?tags=defence-evasion) `Total 91 (Github 84)`
 * [defence kill (kill protection / disable defence / kill protection)](https://pwnfan.github.io/my-tagmarks?tags=defence-kill) `Total 3 (Github 2)`
@@ -187,6 +190,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [risk enumeration](https://pwnfan.github.io/my-tagmarks?tags=enum-risk) `Total 27 (Github 26)`
 * [URL enumeration (aka URL brute force / dir brute force)](https://pwnfan.github.io/my-tagmarks?tags=enum-url) `Total 13 (Github 13)`
 * [user enumeration (aka account enumeration)](https://pwnfan.github.io/my-tagmarks?tags=enum-user) `Total 3 (Github 3)`
+* [ETW (Event Tracing for Windows)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+etw) `Total 1 (Github 1)`
 * [exploit search](https://pwnfan.github.io/my-tagmarks?tags=exp-search) `Total 6 (Github 2)`
 * [fake service](https://pwnfan.github.io/my-tagmarks?tags=fake-service) `Total 8 (Github 8)`
 * [file signature (aka file header / file magic number)](https://pwnfan.github.io/my-tagmarks?tags=file-signature) `Total 2 (Github 2)`
@@ -212,10 +216,12 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [indicator removal](https://pwnfan.github.io/my-tagmarks?tags=indicator-removal) `Total 1 (Github 1)`
 * [infrastructure setup](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+infra-setup) `Total 8 (Github 6)`
 * [infrastructure](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+infra) `Total 2 (Github 2)`
+* [Instagram](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+instagram) `Total 1 (Github 1)`
 * [intranet](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+intranet) `Total 13 (Github 12)`
 * [java](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+java) `Total 130 (Github 118)`
 * [javascript](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+javascript) `Total 39 (Github 34)`
 * [Kerberos](https://pwnfan.github.io/my-tagmarks?tags=kerberos) `Total 7 (Github 7)`
+* [Kerberos TGS (Ticket Granting Service)](https://pwnfan.github.io/my-tagmarks?tags=kerberos-tgs) `Total 1 (Github 1)`
 * [kernel](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+kernel) `Total 17 (Github 14)`
 * [keylogger](https://pwnfan.github.io/my-tagmarks?tags=keylogger) `Total 2 (Github 2)`
 * [lateral movement](https://pwnfan.github.io/my-tagmarks?tags=lateral-movement) `Total 18 (Github 16)`
@@ -228,6 +234,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [log](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+log) `Total 13 (Github 10)`
 * [LSASS (Local Security Authority Subsystem Service)](https://pwnfan.github.io/my-tagmarks?tags=lsass) `Total 2 (Github 2)`
 * [malware](https://pwnfan.github.io/my-tagmarks?tags=malware) `Total 25 (Github 16)`
+* [memory](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+memory) `Total 0 (Github 0)`
 * [mapping](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+mapping) `Total 3 (Github 3)`
 * [massive-scale scan](https://pwnfan.github.io/my-tagmarks?tags=massive-scan) `Total 4 (Github 4)`
 * [Apache Maven](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+maven) `Total 3 (Github 2)`
@@ -238,6 +245,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [misconfiguration](https://pwnfan.github.io/my-tagmarks?tags=misconfig) `Total 18 (Github 18)`
 * [MITM (Man-in-the-Middle)](https://pwnfan.github.io/my-tagmarks?tags=mitm) `Total 11 (Github 11)`
 * [MITRE ATT&CK](https://pwnfan.github.io/my-tagmarks?tags=mitre-att%26ck) `Total 15 (Github 12)`
+* [Windows Search Protocol](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+ms-wsp) `Total 1 (Github 1)`
 * [MSF (Metasploit Framework)](https://pwnfan.github.io/my-tagmarks?tags=msf) `Total 7 (Github 7)`
   * [MSF Meterpreter](https://pwnfan.github.io/my-tagmarks?tags=msf-meterpreter) `Total 1 (Github 1)`
   * [MSFvenom](https://pwnfan.github.io/my-tagmarks?tags=msfvenom) `Total 1 (Github 1)`
@@ -248,6 +256,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [Nmap](https://pwnfan.github.io/my-tagmarks?tags=nmap) `Total 15 (Github 13)`
   * [NSE (Nmap Scripting Engine)](https://pwnfan.github.io/my-tagmarks?tags=nse) `Total 6 (Github 6)`
 * [Node.js](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+node.js) `Total 19 (Github 19)`
+* [NTDS (Windows NT Directory Services)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+ntds) `Total 1 (Github 1)`
 * [Nuclei](https://pwnfan.github.io/my-tagmarks?tags=nuclei) `Total 11 (Github 11)`
 * [OA (office automation)](https://pwnfan.github.io/my-tagmarks?tags=oa) `Total 9 (Github 7)`
   * [Seeyon OA (致远OA)](https://pwnfan.github.io/my-tagmarks?tags=oa-seeyon) `Total 3 (Github 3)`
@@ -268,6 +277,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [persistence](https://pwnfan.github.io/my-tagmarks?tags=persistence) `Total 10 (Github 9)`
 * [phishing](https://pwnfan.github.io/my-tagmarks?tags=phishing) `Total 35 (Github 32)`
 * [phone number](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+phone) `Total 9 (Github 4)`
+* [PIC (Position-Independent Code)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+pic) `Total 1 (Github 1)`
 * [physical hacking (aka physical penetration testing / physical security testing)](https://pwnfan.github.io/my-tagmarks?tags=physical-hacking) `Total 4 (Github 3)`
 * [poison](https://pwnfan.github.io/my-tagmarks?tags=poison) `Total 1 (Github 1)`
 * [post-exploitation](https://pwnfan.github.io/my-tagmarks?tags=post-exploitation) `Total 332 (Github 304)`
@@ -276,6 +286,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [PPL (Protected Process Light)](https://pwnfan.github.io/my-tagmarks?tags=ppl) `Total 4 (Github 4)`
 * [horizontal privilege escalation](https://pwnfan.github.io/my-tagmarks?tags=privilege-escalation-horizontal) `Total 2 (Github 2)`
 * [privilege escalation](https://pwnfan.github.io/my-tagmarks?tags=privilege-escalation) `Total 53 (Github 46)`
+* [process hollowing](https://pwnfan.github.io/my-tagmarks?tags=process-hollowing) `Total 1 (Github 1)`
 * [proxy pool](https://pwnfan.github.io/my-tagmarks?tags=proxy-pool) `Total 2 (Github 2)`
 * [proxy](https://pwnfan.github.io/my-tagmarks?tags=proxy) `Total 32 (Github 32)`
 * [Quake](https://pwnfan.github.io/my-tagmarks?tags=quake) `Total 2 (Github 2)`
@@ -298,6 +309,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [backup file scanning](https://pwnfan.github.io/my-tagmarks?tags=scan-backup) `Total 1 (Github 1)`
 * [port scan](https://pwnfan.github.io/my-tagmarks?tags=scan-port) `Total 50 (Github 39)`
 * [vulnerability scan](https://pwnfan.github.io/my-tagmarks?tags=scan-vul) `Total 238 (Github 232)`
+* [search dork](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+search-dork) `Total 3 (Github 3)`
+* [search engine](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+search-engine) `Total 2 (Github 2)`
 * [screenshot](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+screenshot) `Total 9 (Github 8)`
 * [sensitive information](https://pwnfan.github.io/my-tagmarks?tags=sensitive-info) `Total 84 (Github 76)`
 * [serverless](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+serverless) `Total 3 (Github 1)`
@@ -311,6 +324,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [source code](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+source-code) `Total 3 (Github 0)`
 * [SQLMap](https://pwnfan.github.io/my-tagmarks?tags=sqlmap) `Total 2 (Github 1)`
   * [SQLMap Tamper](https://pwnfan.github.io/my-tagmarks?tags=sqlmap-tamper) `Total 1 (Github 1)`
+* [SSPI (Security Support Provider Interface)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+red-team+AND+sspi) `Total 1 (Github 1)`
 * [static analysis](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+static-analysis) `Total 39 (Github 39)`
 * [subdomain](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+subdomain) `Total 72 (Github 61)`
 * [software supplier](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+supplier) `Total 3 (Github 2)`
@@ -326,6 +340,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [trojan](https://pwnfan.github.io/my-tagmarks?tags=trojan) `Total 5 (Github 4)`
 * [TTP (Techniques, Tactics, and Procedures)](https://pwnfan.github.io/my-tagmarks?tags=ttp) `Total 3 (Github 2)`
 * [tunnel](https://pwnfan.github.io/my-tagmarks?tags=tunnel) `Total 29 (Github 29)`
+* [Twitter](https://pwnfan.github.io/my-tagmarks?tags=twitter) `Total 1 (Github 1)`
 * [UAC (User Account Control)](https://pwnfan.github.io/my-tagmarks?tags=uac) `Total 1 (Github 1)`
 * [User Agent](https://pwnfan.github.io/my-tagmarks?tags=user-agent) `Total 1 (Github 0)`
 * [username](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+username) `Total 17 (Github 10)`
@@ -405,6 +420,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [DevSecOps](https://pwnfan.github.io/my-tagmarks?tags=devsecops) `Total 51 (Github 41)`
 * [digital forensics (aka computer forensics / cyber forensics)](https://pwnfan.github.io/my-tagmarks?tags=digital-forensics) `Total 26 (Github 23)`
 * [DLP (Data Loss Prevention)](https://pwnfan.github.io/my-tagmarks?tags=dlp) `Total 2 (Github 1)`
+* [DoD SRG (Department of Defense Security Requirements Guide)](https://pwnfan.github.io/my-tagmarks?tags=dod-srg) `Total 1 (Github 1)`
+* [DoD STIG (Department of Defense Security Technical Implementation Guide)](https://pwnfan.github.io/my-tagmarks?tags=dod-stig) `Total 3 (Github 3)`
 * [DRPS (Digital Risk Protection Service)](https://pwnfan.github.io/my-tagmarks?tags=drps) `Total 1 (Github 0)`
 * [dynamic analysis](https://pwnfan.github.io/my-tagmarks?tags=dynamic-analysis) `Total 5 (Github 5)`
 * [EASM (External Attack Surface Management)](https://pwnfan.github.io/my-tagmarks?tags=easm) `Total 1 (Github 0)`
@@ -453,6 +470,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [mapping (in computer vision and data visualization)](http://localhost:8000/?tags=mapping) `Total 3 (Github 3)`
 * [massive-scale scan](https://pwnfan.github.io/my-tagmarks?tags=massive-scan) `Total 4 (Github 4)`
 * [Apache Maven](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+maven) `Total 3 (Github 2)`
+* [memory](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+blue-team+AND+memory) `Total 1 (Github 1)`
+* [Microsoft Sentinel](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+blue-team+AND+microsoft-sentinel) `Total 1 (Github 1)`
 * [midware](https://pwnfan.github.io/my-tagmarks?tags=sec+and+midware) `Total 0 (Github 0)`
 * [misconfiguration](https://pwnfan.github.io/my-tagmarks?tags=misconfig) `Total 18 (Github 18)`
 * [MITRE ATT&CK](https://pwnfan.github.io/my-tagmarks?tags=mitre-att%26ck) `Total 15 (Github 12)`
@@ -499,6 +518,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [SOAR (Security Orchestration, Automation, and Response)](https://pwnfan.github.io/my-tagmarks?tags=soar) `Total 8 (Github 7)`
 * [SOC (Security Operation Center)](https://pwnfan.github.io/my-tagmarks?tags=soc) `Total 4 (Github 1)`
 * [source code](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+source-code) `Total 3 (Github 0)`
+* [SSPI (Security Support Provider Interface)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+blue-team+AND+sspi) `Total 0 (Github 0)`
 * [static analysis](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+static-analysis) `Total 39 (Github 39)`
 * [STIX (Structured Threat Information eXpression)](https://pwnfan.github.io/my-tagmarks?tags=stix) `Total 3 (Github 3)`
 * [subdomain](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+subdomain) `Total 72 (Github 61)`
@@ -607,6 +627,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [CakePHP](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+cakephp) `Total 2 (Github 2)`
 * [CMS](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+cms) `Total 8 (Github 7)`
 * [database](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+database) `Total 13 (Github 11)`
+* [Debian](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+debian) `Total 2 (Github 2)`
 * [Django (Python)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+django) `Total 7 (Github 7)`
 * [Drupal (PHP)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+drupal) `Total 2 (Github 2)`
 * [Electron](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+electron) `Total 1 (Github 0)`
@@ -705,6 +726,8 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 
 #### 2.1.7. Protocol (Service, Standard) Security
 
+* [ASN (Autonomous System Number)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+asn) `Total 1 (Github 1)`
+* [DCSync](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+dcsync) `Total 1 (Github 1)`
 * [DNS (Domain Name System)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+dns) `Total 33 (Github 26)`
 * [domain](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+domain) `Total 77 (Github 51)`
 * [FTP (File Transfer Protocol)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+ftp) `Total 1 (Github 1)`
@@ -766,6 +789,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [firmware analysis](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+firmware-analysis) `Total 6 (Github 6)`
 * [firmware emulation (hardware emulation)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+firmware-emulation) `Total 3 (Github 3)`
 * [firmware](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+firmware) `Total 4 (Github 4)`
+* [Fortinet](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+fortinet) `Total 1 (Github 1)`
 * [HackRF](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+hackrf) `Total 1 (Github 1)`
 * [hardware / device](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+hardware) `Total 33 (Github 19)`
 * [HID (Human Interface Devices)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+hid) `Total 1 (Github 1)`
@@ -811,6 +835,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 #### 2.1.12. Security Certification, Career
 
 * [BSCP (Burp Suite Certified Practitioner)](https://pwnfan.github.io/my-tagmarks?tags=bscp) `Total 3 (Github 2)`
+* [certification](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+certification) `Total 2 (Github 1)`
 * [career development](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+career) `Total 6 (Github 1)`
 * [health](https://pwnfan.github.io/my-tagmarks?tags=health) `Total 2 (Github 1)`
 * [job interview](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+job-interview) `Total 2 (Github 1)`
@@ -819,6 +844,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [OSCE³ (OffSec Certified Expert³)](https://pwnfan.github.io/my-tagmarks?tags=osce3) `Total 2 (Github 1)`
 * [OSCP (Offsec Certified Professional)](https://pwnfan.github.io/my-tagmarks?tags=oscp) `Total 68 (Github 18)`
 * [OSED (OffSec Exploit Developer)](https://pwnfan.github.io/my-tagmarks?tags=osed) `Total 3 (Github 1)`
+* [OSEE (OffSec Exploitation Expert)](https://pwnfan.github.io/my-tagmarks?tags=osee) `Total 1 (Github 0)`
 * [OSEP (OffSec Experienced Penetration Tester)](https://pwnfan.github.io/my-tagmarks?tags=osep) `Total 1 (Github 0)`
 * [OSWE (OffSec Web Expert)](https://pwnfan.github.io/my-tagmarks?tags=oswe) `Total 3 (Github 2)`
 * [skill tree](https://pwnfan.github.io/my-tagmarks?tags=skill-tree) `Total 3 (Github 0)`
@@ -878,6 +904,7 @@ My bookmarks mainly focus on `cybersecurity` and related `development` things. H
 * [Kali Linux](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+kali) `Total 3 (Github 0)`
 * [Microsoft](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+microsoft) `Total 7 (Github 2)`
 * [MMDB (MaxMind DB)](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+mmdb) `Total 1 (Github 1)`
+* [one-liner](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+one-liner) `Total 1 (Github 1)`
 * [Public Opinion Analysis](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+opinion-analysis) `Total 0 (Github 0)`
 * [Public Opinion Monitoring](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+opinion-monitoring) `Total 0 (Github 0)`
 * [URL parsing](https://pwnfan.github.io/my-tagmarks?tags=sec+AND+parse-url) `Total 1 (Github 1)`
@@ -951,6 +978,7 @@ most without "cybersecurity":
 * [tool](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+tool) `Total 142 (Github 108)`
 * [vocabulary](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+vocabulary) `Total 4 (Github 1)`
 * [wiki](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+wiki) `Total 14 (Github 10)`
+* [window resize](https://pwnfan.github.io/my-tagmarks?tags=window-resize) `Total 1 (Github 0)`
 
 
 #### 2.2.2. Subtopics
@@ -968,9 +996,11 @@ without "cybersecurity":
 * [Cloud Native](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+cloud-native) `Total 5 (Github 3)`
 * [Cloud (Computing)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+cloud) `Total 9 (Github 6)`
 * [code analysis](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-analysis) `Total 27 (Github 26)`
+* [code assistant](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-assistant) `Total 1 (Github 1)`
 * [code complexity](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-complexity) `Total 4 (Github 4)`
 * [code example (code snippet)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-example) `Total 8 (Github 3)`
 * [code formatting](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-format) `Total 4 (Github 3)`
+* [code generator](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-generator) `Total 1 (Github 1)`
 * [code optimization](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-optimization) `Total 32 (Github 32)`
 * [code playground (aka online code editor / coding sandbox)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-playground) `Total 1 (Github 0)`
 * [code quality](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+code-quality) `Total 35 (Github 35)`
@@ -991,6 +1021,7 @@ without "cybersecurity":
 * [DevSecOps](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+devsecops) `Total 18 (Github 13)`
 * [ASCII art diagram](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+diagram-ascii) `Total 11 (Github 3)`
 * [ER diagram (Entity-Relationship diagram)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+diagram-er) `Total 2 (Github 0)`
+* [DNS server](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+dns-server) `Total 1 (Github 0)`
 * [flowchart](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+diagram-flowchart) `Total 1 (Github 0)`
 * [Mermaid](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+diagram-mermaid) `Total 1 (Github 0)`
 * [UML (Unified Modeling Language)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+diagram-uml) `Total 4 (Github 0)`
@@ -1026,6 +1057,7 @@ without "cybersecurity":
 * [NAT (Network Address Translation)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+nat) `Total 0 (Github 0)`
 * [network](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+network) `Total 8 (Github 1)`
 * [Nginx](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+nginx) `Total 1 (Github 1)`
+* [notification](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+notification) `Total 1 (Github 1)`
 * [operations](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+operations) `Total 6 (Github 3)`
 * [ORM (Object-Relational Mapping)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+orm) `Total 1 (Github 1)`
 * [PaaS (Platform as a Service)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+paas) `Total 1 (Github 0)`
@@ -1046,6 +1078,7 @@ without "cybersecurity":
 * [Pytest](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+pytest) `Total 1 (Github 0)`
 * [typing (in Python)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+python-typing) `Total 1 (Github 1)`
 * [Python](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+python) `Total 101 (Github 98)`
+* [README](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+readme) `Total 0 (Github 0)`
 * [Redis](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+redis) `Total 2 (Github 2)`
 * [rich text](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+rich-text) `Total 1 (Github 1)`
 * [RPA (Robotic Process Automation)](https://pwnfan.github.io/my-tagmarks?tags=dev+AND+NOT+sec+AND+rpa) `Total 1 (Github 1)`
@@ -1084,6 +1117,7 @@ without "cybersecurity":
 including "cybersecruity" and "development":
 
 * [AI](https://pwnfan.github.io/my-tagmarks?tags=ai) `Total 49 (Github 34)`
+* [Google Bard](https://pwnfan.github.io/my-tagmarks?tags=bard) `Total 1 (Github 1)`
 * [chatbot](https://pwnfan.github.io/my-tagmarks?tags=chatbot) `Total 10 (Github 7)`
 * [computer vision](https://pwnfan.github.io/my-tagmarks?tags=computer-vision) `Total 8 (Github 8)`
 * [corpus](https://pwnfan.github.io/my-tagmarks?tags=corpus) `Total 1 (Github 1)`
