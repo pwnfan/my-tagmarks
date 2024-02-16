@@ -1061,7 +1061,7 @@ function showPvUserConfirm() {
                 text: "Do you want to load the script (powered by busuanzi) for showing page view statistics in the page bottom, which will include your visit?",
                 icon: "warning",
                 showCancelButton: true,
-                color: "white",
+                // color: "white",
                 confirmButtonColor: "#3085d6",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Yes",
