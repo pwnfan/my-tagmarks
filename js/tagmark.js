@@ -202,7 +202,7 @@ function customHeaderFilter(headerValue, rowValue, rowData, filterParams) {
                     checkHeaderValueParts.push(
                         headerValuePart.replace(
                             keyword,
-                            cellValue.trim().toLowerCase().includes(keyword)
+                            cellValue.trim().toLowerCase().includes(keyword.toLowerCase().trim())
                         )
                     );
                 }
